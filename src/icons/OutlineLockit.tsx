@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineLockitProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineLockit: React.FC<OutlineLockitProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1 7.25C1 7.44891 1.07902 7.63968 1.21967 7.78033C1.36032 7.92098 1.55109 8 1.75 8H4L4 11.25C4 12.2165 4.7835 13 5.75 13H13.25C14.2165 13 15 12.2165 15 11.25V6.75001C15 5.78351 14.2165 5.00001 13.25 5.00001L5.75 5.00001C4.86839 5.00001 4.13903 5.65193 4.01772 6.5H2.5V3.75C2.5 3.33579 2.16421 3 1.75 3C1.33579 3 1 3.33579 1 3.75V7.25ZM5.75 11.5C5.61193 11.5 5.5 11.3881 5.5 11.25L5.5 6.75001C5.5 6.61194 5.61193 6.50001 5.75 6.50001L13.25 6.50001C13.3881 6.50001 13.5 6.61194 13.5 6.75001V11.25C13.5 11.3881 13.3881 11.5 13.25 11.5H5.75ZM9 8.96375C9 8.41146 8.55228 7.96375 8 7.96375C7.44772 7.96375 7 8.41146 7 8.96375C7 9.51603 7.44772 9.96375 8 9.96375C8.55228 9.96375 9 9.51603 9 8.96375ZM11 7.96375C11.5523 7.96375 12 8.41146 12 8.96375C12 9.51603 11.5523 9.96375 11 9.96375C10.4477 9.96375 10 9.51603 10 8.96375C10 8.41146 10.4477 7.96375 11 7.96375Z" />
+  </svg>
+);
+
+OutlineLockit.displayName = 'OutlineLockit';
+
+export default OutlineLockit;

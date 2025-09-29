@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillPersonCircleDefaultProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillPersonCircleDefault: React.FC<FillPersonCircleDefaultProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 10.4174 2.2254 12.5486 4.08892 13.8063C5.2056 14.56 6.55142 15 8 15C9.44871 15 10.7946 14.5599 11.9114 13.8061C13.7747 12.5484 15 10.4173 15 8C15 7.75838 14.9878 7.51961 14.9639 7.28429C14.6054 3.7545 11.6244 1 8 1C4.13401 1 1 4.13401 1 8ZM4.07122 11.849C4.67718 11.0568 5.88715 10.0007 7.99997 10.0007C10.1128 10.0007 11.3228 11.0568 11.9288 11.849C10.9305 12.8678 9.53908 13.5 8 13.5C6.46092 13.5 5.0695 12.8678 4.07122 11.849ZM8 4C6.61929 4 5.5 5.11929 5.5 6.5C5.5 7.88071 6.61929 9 8 9C9.38071 9 10.5 7.88071 10.5 6.5C10.5 5.11929 9.38071 4 8 4Z" />
+  </svg>
+);
+
+FillPersonCircleDefault.displayName = 'FillPersonCircleDefault';
+
+export default FillPersonCircleDefault;

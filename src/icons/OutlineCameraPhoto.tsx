@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineCameraPhotoProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCameraPhoto: React.FC<OutlineCameraPhotoProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.07854 1.41588C5.20532 1.16108 5.4654 1 5.75 1H10.25C10.5346 1 10.7948 1.16114 10.9215 1.416L11.7114 3.00412H13.2526C14.2191 3.00412 15.0026 3.78762 15.0026 4.75412V11.25C15.0026 12.2165 14.2191 13 13.2526 13H12.75C12.3358 13 12 12.6642 12 12.25C12 11.8358 12.3358 11.5 12.75 11.5H13.2526C13.3907 11.5 13.5026 11.3881 13.5026 11.25V4.75412C13.5026 4.61605 13.3907 4.50412 13.2526 4.50412H11.2468C10.9622 4.50412 10.702 4.34298 10.5753 4.08812L9.78538 2.5H6.21452L5.42422 4.08824C5.29743 4.34303 5.03735 4.50412 4.75275 4.50412H2.75C2.61193 4.50412 2.5 4.61605 2.5 4.75412V11.25C2.5 11.3881 2.61193 11.5 2.75 11.5H3.25C3.66421 11.5 4 11.8358 4 12.25C4 12.6642 3.66421 13 3.25 13H2.75C1.7835 13 1 12.2165 1 11.25V4.75412C1 3.78762 1.7835 3.00412 2.75 3.00412H4.28823L5.07854 1.41588Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.0013 8.5C10.0013 7.39543 9.10587 6.5 8.0013 6.5C6.89673 6.5 6.0013 7.39543 6.0013 8.5C6.0013 9.60457 6.89673 10.5 8.0013 10.5C9.10587 10.5 10.0013 9.60457 10.0013 8.5ZM8.0013 5C9.93429 5 11.5013 6.567 11.5013 8.5C11.5013 10.433 9.93429 12 8.0013 12C6.0683 12 4.5013 10.433 4.5013 8.5C4.5013 6.567 6.0683 5 8.0013 5Z" />
+  </svg>
+);
+
+OutlineCameraPhoto.displayName = 'OutlineCameraPhoto';
+
+export default OutlineCameraPhoto;

@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineFolderArrowLeftProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFolderArrowLeft: React.FC<OutlineFolderArrowLeftProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M7.73663 10.8195C7.42213 11.089 6.94866 11.0526 6.67909 10.7381L5.17909 8.98811C4.93835 8.70724 4.93835 8.29279 5.17909 8.01193L6.67909 6.26192C6.94866 5.94743 7.42213 5.911 7.73663 6.18057C8.05112 6.45014 8.08754 6.92361 7.81798 7.23811L7.3792 7.75002H9.5C10.0523 7.75002 10.5 7.3023 10.5 6.75002C10.5 6.3358 10.8358 6.00002 11.25 6.00002C11.6642 6.00002 12 6.3358 12 6.75002C12 8.13073 10.8807 9.25002 9.5 9.25002H7.3792L7.81798 9.76192C8.08754 10.0764 8.05112 10.5499 7.73663 10.8195Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 2C2.7835 2 2 2.7835 2 3.75V12.25C2 13.2165 2.7835 14 3.75 14H13.25C14.2165 14 15 13.2165 15 12.25V4.75C15 3.7835 14.2165 3 13.25 3H9.23607C9.19726 3 9.15898 2.99096 9.12426 2.97361L7.54656 2.18475C7.30356 2.06325 7.03561 2 6.76393 2H3.75ZM3.5 3.75C3.5 3.61193 3.61193 3.5 3.75 3.5H6.76393C6.80274 3.5 6.84102 3.50904 6.87574 3.52639L8.45344 4.31525C8.69644 4.43675 8.96439 4.5 9.23607 4.5H13.25C13.3881 4.5 13.5 4.61193 13.5 4.75V12.25C13.5 12.3881 13.3881 12.5 13.25 12.5H3.75C3.61193 12.5 3.5 12.3881 3.5 12.25V3.75Z" />
+  </svg>
+);
+
+OutlineFolderArrowLeft.displayName = 'OutlineFolderArrowLeft';
+
+export default OutlineFolderArrowLeft;

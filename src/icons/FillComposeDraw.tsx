@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillComposeDrawProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillComposeDraw: React.FC<FillComposeDrawProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.81689 8.50293C9.04377 8.50315 9.24247 8.65658 9.30029 8.87598L10.4839 13.373C10.5231 13.5228 10.4905 13.683 10.396 13.8057C10.3015 13.9281 10.1551 13.9997 10.0005 14H8.50439C8.22854 13.9998 8.00453 13.7759 8.00439 13.5V9.00293C8.00446 8.72699 8.2285 8.50317 8.50439 8.50293H8.81689ZM7.21338 2.55762C7.47514 1.81668 8.52388 1.81668 8.78564 2.55762L10.0005 5.99902H10.1167L10.2212 6.00293C10.707 6.04358 11.1257 6.36483 11.2915 6.82324L11.3237 6.92383L12.9741 13.0537C13.0817 13.4536 12.8446 13.8659 12.4448 13.9736C12.0451 14.081 11.6327 13.844 11.5249 13.4443L9.92432 7.49902H6.07471L4.47412 13.4443C4.36621 13.844 3.95399 14.0813 3.5542 13.9736C3.15465 13.8658 2.91748 13.4534 3.0249 13.0537L4.67529 6.92383C4.8222 6.37837 5.31749 5.99937 5.88232 5.99902H5.99854L7.21338 2.55762Z" />
+  </svg>
+);
+
+FillComposeDraw.displayName = 'FillComposeDraw';
+
+export default FillComposeDraw;

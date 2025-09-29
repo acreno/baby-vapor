@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineAirplayProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineAirplay: React.FC<OutlineAirplayProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M3.74951 11C2.78301 11 1.99951 10.2165 1.99951 9.25V3.74536C1.99951 2.77886 2.78301 1.99536 3.74951 1.99536H12.2504C13.2169 1.99536 14.0004 2.77886 14.0004 3.74536V9.25C14.0004 10.2165 13.2169 11 12.2504 11H11.75C11.3358 11 11 10.6642 11 10.25C11 9.83579 11.3358 9.5 11.75 9.5H12.2504C12.3885 9.5 12.5004 9.38807 12.5004 9.25V3.74536C12.5004 3.60729 12.3885 3.49536 12.2504 3.49536L3.74951 3.49536C3.61144 3.49536 3.49951 3.60729 3.49951 3.74536L3.49951 9.25C3.49951 9.38807 3.61144 9.5 3.74951 9.5H4.25C4.66421 9.5 5 9.83579 5 10.25C5 10.6642 4.66421 11 4.25 11H3.74951Z" />
+    <path fill="currentColor" d="M5.12181 12.8448C4.97363 13.0756 4.96325 13.3689 5.09475 13.6096C5.22625 13.8503 5.47866 14 5.75293 14H10.25C10.5244 14 10.7768 13.8502 10.9083 13.6094C11.0398 13.3686 11.0292 13.0752 10.8809 12.8444L8.63089 9.34443C8.49284 9.1297 8.25506 8.99992 7.99978 9C7.7445 9.00008 7.50679 9.12999 7.36888 9.34481L5.12181 12.8448Z" />
+  </svg>
+);
+
+OutlineAirplay.displayName = 'OutlineAirplay';
+
+export default OutlineAirplay;

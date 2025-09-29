@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineHighlightProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineHighlight: React.FC<OutlineHighlightProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9806 1.17979C10.6831 0.925627 10.2402 0.942848 9.96338 1.21934L5.21995 5.95683C5.0791 6.0975 4.99996 6.28839 4.99995 6.48746C4.99994 6.68652 5.07907 6.87742 5.21991 7.01811L6.97262 8.76892C7.11557 8.91171 7.31009 8.99079 7.51212 8.98824C7.71415 8.98569 7.90661 8.90174 8.04592 8.75539L12.7932 3.7679C12.9352 3.61876 13.0096 3.41782 12.999 3.21219C12.9884 3.00657 12.8937 2.81435 12.7371 2.6806L10.9806 1.17979ZM9.86641 3.43618L10.5331 2.77037L11.1611 3.30695L10.4667 4.03647L9.86641 3.43618ZM8.80509 4.49618L6.81123 6.48753L7.48913 7.16469L9.43221 5.1233L8.80509 4.49618Z" />
+    <path fill="currentColor" d="M4.45658 8.39064C4.24529 8.18191 3.89969 8.2023 3.7144 8.43443L2.64799 9.77051C2.38661 10.098 2.61978 10.5824 3.03877 10.5824H5.1107C5.19291 10.5824 5.27386 10.5622 5.34637 10.5234L5.57151 10.4031C5.8686 10.2443 5.92687 9.84314 5.68723 9.6064L4.45658 8.39064Z" />
+    <path fill="currentColor" d="M3.15174 12.4999C3.05379 12.4999 2.95907 12.535 2.88469 12.5987L2.15308 13.2258C1.84291 13.4917 2.03092 13.9999 2.43944 13.9999H12.2499C12.6642 13.9999 12.9999 13.6642 12.9999 13.2499C12.9999 12.8357 12.6642 12.4999 12.2499 12.4999H3.15174Z" />
+  </svg>
+);
+
+OutlineHighlight.displayName = 'OutlineHighlight';
+
+export default OutlineHighlight;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineMusicProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineMusic: React.FC<OutlineMusicProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 2C2.7835 2 2 2.7835 2 3.75V12.25C2 13.2165 2.7835 14 3.75 14H12.25C13.2165 14 14 13.2165 14 12.25V3.75C14 2.7835 13.2165 2 12.25 2H3.75ZM3.5 3.75C3.5 3.61193 3.61193 3.5 3.75 3.5H12.25C12.3881 3.5 12.5 3.61193 12.5 3.75V12.25C12.5 12.3881 12.3881 12.5 12.25 12.5H3.75C3.61193 12.5 3.5 12.3881 3.5 12.25V3.75ZM6.49821 7.75C6.49821 7.33579 6.16242 7 5.74821 7C5.334 7 4.99821 7.33579 4.99821 7.75V8.25C4.99821 8.66421 5.334 9 5.74821 9C6.16242 9 6.49821 8.66421 6.49821 8.25V7.75ZM8 5C8.41421 5 8.75 5.33579 8.75 5.75V10.2533C8.75 10.6675 8.41421 11.0033 8 11.0033C7.58579 11.0033 7.25 10.6675 7.25 10.2533V5.75C7.25 5.33579 7.58579 5 8 5ZM11 6.75366C11 6.33945 10.6642 6.00366 10.25 6.00366C9.83576 6.00366 9.49998 6.33945 9.49998 6.75366V9.25C9.49998 9.66421 9.83576 10 10.25 10C10.6642 10 11 9.66421 11 9.25V6.75366Z" />
+  </svg>
+);
+
+OutlineMusic.displayName = 'OutlineMusic';
+
+export default OutlineMusic;

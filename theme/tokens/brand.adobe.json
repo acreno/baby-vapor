@@ -1,0 +1,42 @@
+{
+  "Colors": {
+    "Brand": {
+      "Primary": {
+        "value": "rgb(201, 37, 45)",
+        "type": "color"
+      },
+      "Enabled": {
+        "value": "{Colors.Brand.Primary}",
+        "type": "color"
+      },
+      "Light": {
+        "value": "rgb(227, 72, 80)",
+        "type": "color"
+      },
+      "Dark": {
+        "value": "rgba(107, 27, 27, 1)",
+        "type": "color"
+      },
+      "Darker": {
+        "value": "rgba(87, 20, 20, 1)",
+        "type": "color"
+      },
+      "PrimaryAlphaLow": {
+        "value": "rgb(201, 37, 45, 0.25)",
+        "type": "color"
+      },
+      "PrimaryAlphaMedium": {
+        "value": "rgb(201, 37, 45, 0.50)",
+        "type": "color"
+      },
+      "TextContrast": {
+        "value": "{Palette.Grey.100}",
+        "type": "color"
+      },
+      "IconContrast": {
+        "value": "{Palette.Grey.100}",
+        "type": "color"
+      }
+    }
+  }
+}

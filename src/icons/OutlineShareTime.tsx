@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineShareTimeProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineShareTime: React.FC<OutlineShareTimeProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M3.99951 1.75C3.99951 1.33579 4.3353 1 4.74951 1H11.2499C11.6642 1 11.9999 1.33579 11.9999 1.75C11.9999 2.16421 11.6642 2.5 11.2499 2.5H4.74951C4.3353 2.5 3.99951 2.16421 3.99951 1.75Z" />
+    <path fill="currentColor" d="M2 5.75C2 4.7835 2.7835 4 3.75 4H12.25C13.2165 4 14 4.7835 14 5.75V6.25C14 6.66421 13.6642 7 13.25 7C12.8358 7 12.5 6.66421 12.5 6.25V5.75C12.5 5.61193 12.3881 5.5 12.25 5.5H3.75C3.61193 5.5 3.5 5.61193 3.5 5.75V12.25C3.5 12.3881 3.61193 12.5 3.75 12.5H6.2485C6.66272 12.5 6.9985 12.8358 6.9985 13.25C6.9985 13.6642 6.66272 14 6.2485 14H3.75C2.7835 14 2 13.2165 2 12.25V5.75Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 9C10.567 9 9 10.567 9 12.5C9 14.433 10.567 16 12.5 16C14.433 16 16 14.433 16 12.5C16 10.567 14.433 9 12.5 9ZM12.4959 10C12.7721 10 12.9959 10.2239 12.9959 10.5L12.9959 12.0003H14.5C14.7761 12.0003 15 12.2241 15 12.5003C15 12.7764 14.7761 13.0003 14.5 13.0003H12.4959C12.3633 13.0003 12.2361 12.9476 12.1424 12.8538C12.0486 12.7601 11.9959 12.6329 11.9959 12.5003L11.9959 10.5C11.9959 10.2239 12.2198 10 12.4959 10Z" />
+  </svg>
+);
+
+OutlineShareTime.displayName = 'OutlineShareTime';
+
+export default OutlineShareTime;

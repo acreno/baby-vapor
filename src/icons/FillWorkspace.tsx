@@ -1,0 +1,44 @@
+import React from 'react';
+
+export interface FillWorkspaceProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillWorkspace: React.FC<FillWorkspaceProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor"
+        d="M6.47224 7.30555H4.25002C3.78974 7.30555 3.41669 6.9325 3.41669 6.47222V4.25C3.41669 3.78972 3.78974 3.41666 4.25002 3.41666H6.47224C6.93252 3.41666 7.30558 3.78972 7.30558 4.25V6.47222C7.30558 6.9325 6.93252 7.30555 6.47224 7.30555Z"
+         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="currentColor"
+        d="M11.75 7.30555H9.52779C9.06751 7.30555 8.69446 6.9325 8.69446 6.47222V4.25C8.69446 3.78972 9.06751 3.41666 9.52779 3.41666H11.75C12.2103 3.41666 12.5833 3.78972 12.5833 4.25V6.47222C12.5833 6.9325 12.2103 7.30555 11.75 7.30555Z"
+         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="currentColor"
+        d="M6.47224 12.5833H4.25002C3.78974 12.5833 3.41669 12.2103 3.41669 11.75V9.52778C3.41669 9.0675 3.78974 8.69444 4.25002 8.69444H6.47224C6.93252 8.69444 7.30558 9.0675 7.30558 9.52778V11.75C7.30558 12.2103 6.93252 12.5833 6.47224 12.5833Z"
+         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="currentColor"
+        d="M11.75 12.5833H9.52779C9.06751 12.5833 8.69446 12.2103 8.69446 11.75V9.52778C8.69446 9.0675 9.06751 8.69444 9.52779 8.69444H11.75C12.2103 8.69444 12.5833 9.0675 12.5833 9.52778V11.75C12.5833 12.2103 12.2103 12.5833 11.75 12.5833Z"
+         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+);
+
+FillWorkspace.displayName = 'FillWorkspace';
+
+export default FillWorkspace;

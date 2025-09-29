@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillPrimaryNavUploadProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillPrimaryNavUpload: React.FC<FillPrimaryNavUploadProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.66935 5.27524C4.20345 3.38583 5.93946 2.00146 8.00006 2.00146C10.3951 2.00146 12.3532 3.87256 12.4922 6.23273C13.9606 6.64726 15.0015 7.99314 15.0015 9.55126C15.0015 11.4559 13.4574 13 11.5527 13H4.97323C2.77969 13 1.00146 11.2218 1.00146 9.02823C1.00146 7.2673 2.13566 5.81003 3.66935 5.27524ZM10.7047 8.70828C10.3135 9.09812 9.6803 9.09702 9.29046 8.70582L9.00136 8.41571L9.00136 9.99994C9.00136 10.5522 8.55365 10.9999 8.00136 10.9999C7.44908 10.9999 7.00136 10.5522 7.00136 9.99994L7.00136 8.41237L6.70762 8.70653C6.31738 9.09734 5.68421 9.0978 5.29341 8.70756C4.9026 8.31732 4.90214 7.68416 5.29238 7.29335L7.29381 5.28901C7.48151 5.10104 7.73629 4.99547 8.00194 4.99561C8.26758 4.99574 8.52225 5.10157 8.70977 5.28973L10.7071 7.29407C11.097 7.68527 11.0959 8.31844 10.7047 8.70828Z" />
+  </svg>
+);
+
+FillPrimaryNavUpload.displayName = 'FillPrimaryNavUpload';
+
+export default FillPrimaryNavUpload;

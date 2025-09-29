@@ -1,0 +1,32 @@
+{
+  "name": "baby-vapor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"pnpm:watch:tokens\" \"pnpm:build:icons --watch\" \"vite\"",
+    "build": "pnpm build:tokens && pnpm build:icons && vite build",
+    "build:tokens": "tsx scripts/build-tokens.ts",
+    "watch:tokens": "tsx scripts/build-tokens.ts --watch",
+    "build:icons": "tsx scripts/build-icons.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "tsx": "^4.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "chokidar": "^3.5.3"
+  }
+}
+

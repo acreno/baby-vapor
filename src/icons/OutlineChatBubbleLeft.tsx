@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineChatBubbleLeftProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineChatBubbleLeft: React.FC<OutlineChatBubbleLeftProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.24827 8.05746C5.09023 7.91523 4.99999 7.7126 4.99999 7.49999C4.99999 7.28737 5.09023 7.08475 5.24827 6.94252L7.74827 4.69253C8.05615 4.41544 8.53037 4.4404 8.80746 4.74828C9.08456 5.05617 9.0596 5.53039 8.75171 5.80748L7.70446 6.75H11.2482C11.6624 6.75 11.9982 7.08579 11.9982 7.5C11.9982 7.91421 11.6624 8.25 11.2482 8.25H7.70446L8.75172 9.19254C9.0596 9.46963 9.08456 9.94385 8.80746 10.2517C8.53037 10.5596 8.05615 10.5846 7.74827 10.3075L5.24827 8.05746Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1.99762 7.49822C1.99762 3.92058 4.91787 1 8.49576 1C12.073 1 14.9976 3.91995 14.9976 7.49822C14.9976 11.0759 12.0736 14 8.49576 14C7.46633 14 6.4723 13.7523 5.60393 13.3235L3.35068 13.9609L3.34849 13.9615C2.90455 14.0856 2.51147 13.8947 2.28589 13.6447C2.06499 13.4 1.9293 13.022 2.03837 12.6252L2.65158 10.3384C2.22288 9.47381 1.99762 8.52557 1.99762 7.49822ZM8.49576 2.5C5.74636 2.5 3.49762 4.74895 3.49762 7.49822C3.49762 8.38281 3.70976 9.17178 4.10698 9.88384C4.20204 10.0543 4.22694 10.255 4.1764 10.4435L3.67587 12.31L5.48316 11.7988C5.67419 11.7447 5.87886 11.7687 6.0523 11.8653C6.76891 12.2645 7.61757 12.5 8.49576 12.5C11.2452 12.5 13.4976 10.2475 13.4976 7.49822C13.4976 4.74958 11.2458 2.5 8.49576 2.5Z" />
+  </svg>
+);
+
+OutlineChatBubbleLeft.displayName = 'OutlineChatBubbleLeft';
+
+export default OutlineChatBubbleLeft;

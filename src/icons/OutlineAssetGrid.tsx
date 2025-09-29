@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineAssetGridProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineAssetGrid: React.FC<OutlineAssetGridProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 3.75C2 2.7835 2.7835 2 3.75 2H12.25C13.2165 2 14 2.7835 14 3.75V12.25C14 13.2165 13.2165 14 12.25 14H3.75C2.7835 14 2 13.2165 2 12.25V3.75ZM3.75 3.5C3.61193 3.5 3.5 3.61193 3.5 3.75V6L5.99977 6L5.99977 3.5H3.75ZM3.5 9.00023V7L5.99977 7V9.00023L3.5 9.00023ZM3.5 10.0002V12.25C3.5 12.3881 3.61193 12.5 3.75 12.5H5.99977V10.0002H3.5ZM6.99977 10.0002V12.5H9V10.0002H6.99977ZM10 10.0002V12.5H12.25C12.3881 12.5 12.5 12.3881 12.5 12.25V10.0002H10ZM12.5 9.00023L10 9.00023V7L12.5 7V9.00023ZM9 9.00023H6.99977V7H9V9.00023ZM10 6L12.5 6V3.75C12.5 3.61193 12.3881 3.5 12.25 3.5H10V6ZM6.99977 6H9V3.5H6.99977V6Z" />
+  </svg>
+);
+
+OutlineAssetGrid.displayName = 'OutlineAssetGrid';
+
+export default OutlineAssetGrid;

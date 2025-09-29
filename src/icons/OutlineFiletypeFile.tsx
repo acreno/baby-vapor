@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineFiletypeFileProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFiletypeFile: React.FC<OutlineFiletypeFileProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 4.25C4.5 3.83579 4.83579 3.5 5.25 3.5H8.25V4.5C8.25 5.74264 9.25736 6.75 10.5 6.75H11.5V11.75C11.5 12.1642 11.1642 12.5 10.75 12.5H5.25C4.83579 12.5 4.5 12.1642 4.5 11.75V4.25ZM5.25 2C4.00736 2 3 3.00736 3 4.25V11.75C3 12.9926 4.00736 14 5.25 14H10.75C11.9926 14 13 12.9926 13 11.75V6C13 5.80109 12.921 5.61032 12.7803 5.46967L9.53033 2.21967C9.38968 2.07902 9.19891 2 9 2H5.25Z"  />
+  </svg>
+);
+
+OutlineFiletypeFile.displayName = 'OutlineFiletypeFile';
+
+export default OutlineFiletypeFile;

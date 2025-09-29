@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillVolumeMuteProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillVolumeMute: React.FC<FillVolumeMuteProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8.33623 3.91893L6.69708 5.28133C6.58623 5.37346 6.47076 5.45887 6.35129 5.53735L5.62361 4.80967C5.77638 4.72474 5.92185 4.62535 6.05788 4.51229L8.04531 2.86041C8.54559 2.4202 9.33623 2.77416 9.33623 3.445V8.52229L8.33623 7.52229V3.91893ZM3.16296 5.17745L4.15218 6.16667H3.33333C3.1492 6.16667 3 6.31587 3 6.5V9.5C3 9.68414 3.1492 9.83334 3.33333 9.83334H4.24682C5.14188 9.83334 6.00873 10.1465 6.69707 10.7187L8.33623 12.0811V10.3507L9.2784 11.2929C9.29714 11.3116 9.31643 11.3295 9.33623 11.3464V12.555C9.33623 13.2259 8.54559 13.5798 8.04531 13.1396L6.05788 11.4877C5.5491 11.0648 4.90839 10.8333 4.24682 10.8333H3.33333C2.59691 10.8333 2 10.2364 2 9.5V6.5C2 5.8213 2.50701 5.2611 3.16296 5.17745ZM3.72735 3.64645C3.53209 3.45118 3.2155 3.45118 3.02024 3.64645C2.82498 3.84171 2.82498 4.15829 3.02024 4.35355L9.96531 11.2986C10.1606 11.4939 10.4772 11.4939 10.6724 11.2986C10.8677 11.1034 10.8677 10.7868 10.6724 10.5915L3.72735 3.64645Z" />
+  </svg>
+);
+
+FillVolumeMute.displayName = 'FillVolumeMute';
+
+export default FillVolumeMute;

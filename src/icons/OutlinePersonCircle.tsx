@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlinePersonCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlinePersonCircle: React.FC<OutlinePersonCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.00002 13.3334C10.9455 13.3334 13.3334 10.9455 13.3334 8.00002C13.3334 5.0545 10.9455 2.66669 8.00002 2.66669C5.0545 2.66669 2.66669 5.0545 2.66669 8.00002C2.66669 10.9455 5.0545 13.3334 8.00002 13.3334Z"  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="currentColor" d="M11.221 12.0652C10.9784 11.6999 10.6523 11.388 10.252 11.1418C9.61986 10.7529 8.84078 10.5475 8.0001 10.5475C7.17562 10.5475 6.37555 10.762 5.74704 11.1512C5.35045 11.3969 5.0267 11.7056 4.78485 12.0652" />
+    <path fill="currentColor" d="M8.06168 5.5271C7.63658 5.5271 7.24022 5.68633 6.95355 5.99408C6.66567 6.30312 6.53411 6.7184 6.56461 7.14998C6.59284 7.54956 6.75296 7.92958 7.02176 8.21828C7.2978 8.51384 7.6659 8.6915 8.06168 8.6915C8.45759 8.6915 8.82537 8.51423 9.10104 8.21813C9.36947 7.92962 9.52928 7.54982 9.55814 7.1504C9.58879 6.72042 9.45608 6.30574 9.16765 5.99586C8.88271 5.68973 8.48605 5.5271 8.06168 5.5271Z" />
+  </svg>
+);
+
+OutlinePersonCircle.displayName = 'OutlinePersonCircle';
+
+export default OutlinePersonCircle;

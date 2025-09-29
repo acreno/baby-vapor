@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillPrimaryNavDevFlagProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillPrimaryNavDevFlag: React.FC<FillPrimaryNavDevFlagProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.68912 1.04408C7.91105 0.914616 9.43519 1.02143 10.5195 2.06274C10.9924 2.51693 11.4487 2.67367 11.849 2.70232C12.2665 2.73222 12.6737 2.62518 13.0231 2.47257C13.4639 2.27997 13.9402 2.34868 14.2934 2.54194C14.65 2.73715 15 3.13225 15 3.68798V9.32426C15 9.7123 14.8143 10.1254 14.4199 10.3576C14.0678 10.5649 13.3525 10.9211 12.4626 10.9888C11.5419 11.0588 10.4667 10.8148 9.48048 9.86756C8.96959 9.37688 8.18867 9.22007 7.25072 9.30455C6.43332 9.37817 5.61167 9.62665 5 9.85557V13.0012C5 13.5535 4.55228 14.0012 4 14.0012C3.44772 14.0012 3 13.5535 3 13.0012V8.75897V6.75122V2.92652C3 2.43953 3.28705 1.97314 3.77389 1.78247C4.29987 1.57646 5.43941 1.17649 6.68912 1.04408Z" />
+  </svg>
+);
+
+FillPrimaryNavDevFlag.displayName = 'FillPrimaryNavDevFlag';
+
+export default FillPrimaryNavDevFlag;

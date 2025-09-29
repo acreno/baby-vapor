@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlinePartialProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlinePartial: React.FC<OutlinePartialProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M11.3228 12.3832C10.3997 13.0841 9.24842 13.5 8 13.5C4.96243 13.5 2.5 11.0376 2.5 8C2.5 6.75158 2.91594 5.60031 3.61681 4.67721L11.3228 12.3832ZM12.3834 11.3225L4.67751 3.61658C5.60056 2.91585 6.75171 2.5 8 2.5C11.0376 2.5 13.5 4.96243 13.5 8C13.5 9.24829 13.0841 10.3994 12.3834 11.3225ZM15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" />
+  </svg>
+);
+
+OutlinePartial.displayName = 'OutlinePartial';
+
+export default OutlinePartial;

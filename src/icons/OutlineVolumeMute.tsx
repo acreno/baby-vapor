@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineVolumeMuteProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineVolumeMute: React.FC<OutlineVolumeMuteProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1.21972 2.28185L13.7208 14.7805C14.0137 15.0733 14.4886 15.0733 14.7815 14.7804C15.0744 14.4874 15.0743 14.0126 14.7814 13.7197L2.28028 1.22108C1.98735 0.928218 1.51248 0.928265 1.21962 1.22119C0.926753 1.51411 0.9268 1.98898 1.21972 2.28185ZM8.9988 2.74998V5.81717L7.4988 4.31747V4.31077L7.49508 4.31375L6.4278 3.24667L7.78019 2.16441C8.0053 1.98425 8.31376 1.9491 8.57364 2.07398C8.83352 2.19886 8.9988 2.46166 8.9988 2.74998ZM2.75088 6.49998H3.31716L1.99035 5.17344C1.40479 5.45643 1.00088 6.05604 1.00088 6.74998V9.24998C1.00088 10.2165 1.78438 11 2.75088 11H3.75C4.03392 11 4.35763 11.0966 4.5793 11.274L7.78018 13.8357C8.00529 14.0159 8.31375 14.051 8.57363 13.9261C8.83352 13.8013 8.9988 13.5385 8.9988 13.2501V12.1805L7.4988 10.6808V11.6893L5.51656 10.1029C5.02889 9.71262 4.37462 9.49998 3.75 9.49998H2.75088C2.61281 9.49998 2.50088 9.38805 2.50088 9.24998V6.74998C2.50088 6.61191 2.61281 6.49998 2.75088 6.49998Z" />
+  </svg>
+);
+
+OutlineVolumeMute.displayName = 'OutlineVolumeMute';
+
+export default OutlineVolumeMute;

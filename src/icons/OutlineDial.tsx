@@ -1,0 +1,40 @@
+import React from 'react';
+
+export interface OutlineDialProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineDial: React.FC<OutlineDialProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M7.9999 3.5C8.41411 3.5 8.7499 3.16421 8.7499 2.75C8.7499 2.33579 8.41411 2 7.9999 2C7.58569 2 7.2499 2.33579 7.2499 2.75C7.2499 3.16421 7.58569 3.5 7.9999 3.5Z" />
+    <path fill="currentColor" d="M13.5 4.25C13.5 4.66421 13.1642 5 12.75 5C12.3358 5 12 4.66421 12 4.25C12 3.83579 12.3358 3.5 12.75 3.5C13.1642 3.5 13.5 3.83579 13.5 4.25Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8 13C10.2091 13 12 11.2091 12 9C12 6.79086 10.2091 5 8 5C5.79086 5 4 6.79086 4 9C4 11.2091 5.79086 13 8 13ZM8 11.5C9.38071 11.5 10.5 10.3807 10.5 9C10.5 7.61929 9.38071 6.5 8 6.5C6.61929 6.5 5.5 7.61929 5.5 9C5.5 9.35311 5.57321 9.68913 5.70528 9.99369L7.75461 8.1908C8.0656 7.9172 8.53951 7.94752 8.81311 8.25852C9.0867 8.56951 9.05639 9.04342 8.74539 9.31701L6.68701 11.1279C7.0686 11.3638 7.51839 11.5 8 11.5Z" />
+    <path fill="currentColor" d="M2.75 12.99C3.16421 12.99 3.5 12.6542 3.5 12.24C3.5 11.8258 3.16421 11.49 2.75 11.49C2.33579 11.49 2 11.8258 2 12.24C2 12.6542 2.33579 12.99 2.75 12.99Z" />
+    <path fill="currentColor" d="M14 12.25C14 12.6642 13.6642 13 13.25 13C12.8358 13 12.5 12.6642 12.5 12.25C12.5 11.8358 12.8358 11.5 13.25 11.5C13.6642 11.5 14 11.8358 14 12.25Z" />
+    <path fill="currentColor" d="M14.25 9C14.6642 9 15 8.66421 15 8.25C15 7.83579 14.6642 7.5 14.25 7.5C13.8358 7.5 13.5 7.83579 13.5 8.25C13.5 8.66421 13.8358 9 14.25 9Z" />
+    <path fill="currentColor" d="M1.75 8.99487C2.16421 8.99487 2.5 8.65909 2.5 8.24487C2.5 7.83066 2.16421 7.49487 1.75 7.49487C1.33579 7.49487 1 7.83066 1 8.24487C1 8.65909 1.33579 8.99487 1.75 8.99487Z" />
+    <path fill="currentColor" d="M4 4.25C4 4.66421 3.66421 5 3.25 5C2.83579 5 2.5 4.66421 2.5 4.25C2.5 3.83579 2.83579 3.5 3.25 3.5C3.66421 3.5 4 3.83579 4 4.25Z" />
+  </svg>
+);
+
+OutlineDial.displayName = 'OutlineDial';
+
+export default OutlineDial;

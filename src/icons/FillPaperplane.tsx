@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillPaperplaneProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillPaperplane: React.FC<FillPaperplaneProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M10.283 14.4805L13.9627 2.97683C14.1478 2.39806 13.6017 1.85195 13.023 2.03708L1.51991 5.71669C0.899623 5.91511 0.812051 6.75666 1.37819 7.07853L4.47956 8.84179C4.81319 9.03147 5.22609 9.01275 5.54119 8.79366L8.72424 6.58042C9.18066 6.26306 9.73539 6.8182 9.4177 7.27439L7.20307 10.4545C6.98354 10.7697 6.9647 11.183 7.15464 11.5169L8.92121 14.6223C9.24318 15.1883 10.0846 15.1007 10.283 14.4805Z" />
+  </svg>
+);
+
+FillPaperplane.displayName = 'FillPaperplane';
+
+export default FillPaperplane;

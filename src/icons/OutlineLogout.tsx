@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineLogoutProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineLogout: React.FC<OutlineLogoutProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M7.99988 2.5C8.61895 2.5 9.2662 2.59546 9.9775 2.86824C10.3643 3.01656 10.798 2.82327 10.9463 2.43652C11.0946 2.04977 10.9014 1.61601 10.5146 1.4677C9.61653 1.12329 8.78539 1 7.99988 1C4.13388 1 0.999878 4.13401 0.999878 8C0.999878 11.866 4.13388 15 7.99988 15C8.78705 15 9.63573 14.8684 10.5141 14.5379C10.9017 14.392 11.0978 13.9595 10.9519 13.5718C10.8061 13.1842 10.3735 12.9881 9.98586 13.134C9.28607 13.3973 8.61729 13.5 7.99988 13.5C4.96231 13.5 2.49988 11.0376 2.49988 8C2.49988 4.96243 4.96231 2.5 7.99988 2.5Z" />
+    <path fill="currentColor" d="M12.2932 8.75L6.7501 8.75C6.33589 8.75 6.0001 8.41421 6.0001 8C6.0001 7.58579 6.33589 7.25 6.7501 7.25L12.2954 7.25L11.2482 6.30744C10.9404 6.03034 10.9154 5.55612 11.1925 5.24825C11.4696 4.94038 11.9439 4.91544 12.2517 5.19254L14.7517 7.44272C14.9098 7.58503 15.0001 7.78779 15 8.00051C14.9999 8.21323 14.9095 8.4159 14.7512 8.55807L12.2512 10.8042C11.9431 11.0811 11.4689 11.0557 11.1921 10.7476C10.9153 10.4395 10.9406 9.96527 11.2487 9.68843L12.2932 8.75Z" />
+  </svg>
+);
+
+OutlineLogout.displayName = 'OutlineLogout';
+
+export default OutlineLogout;

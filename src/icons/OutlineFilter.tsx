@@ -1,0 +1,36 @@
+import React from 'react';
+
+export interface OutlineFilterProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFilter: React.FC<OutlineFilterProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M7.75 10C7.33579 10 7 10.3358 7 10.75C7 11.1642 7.33579 11.5 7.75 11.5H8.25C8.66421 11.5 9 11.1642 9 10.75C9 10.3358 8.66421 10 8.25 10H7.75Z" />
+    <path fill="currentColor" d="M5 5.75C5 5.33579 5.33579 5 5.75 5H10.25C10.6642 5 11 5.33579 11 5.75C11 6.16421 10.6642 6.5 10.25 6.5H5.75C5.33579 6.5 5 6.16421 5 5.75Z" />
+    <path fill="currentColor" d="M6.75 7.5C6.33579 7.5 6 7.83579 6 8.25C6 8.66421 6.33579 9 6.75 9H9.25116C9.66537 9 10.0012 8.66421 10.0012 8.25C10.0012 7.83579 9.66537 7.5 9.25116 7.5H6.75Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15ZM13.5 8C13.5 11.0376 11.0376 13.5 8 13.5C4.96243 13.5 2.5 11.0376 2.5 8C2.5 4.96243 4.96243 2.5 8 2.5C11.0376 2.5 13.5 4.96243 13.5 8Z" />
+  </svg>
+);
+
+OutlineFilter.displayName = 'OutlineFilter';
+
+export default OutlineFilter;

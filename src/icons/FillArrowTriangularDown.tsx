@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface FillArrowTriangularDownProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillArrowTriangularDown: React.FC<FillArrowTriangularDownProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor"
+        d="M12.2292 4.66667H3.77083C3.60458 4.66667 3.45233 4.76455 3.37854 4.9197C3.30475 5.07455 3.32225 5.2597 3.42287 5.39697L7.65206 11.1546C7.73519 11.2673 7.86352 11.3333 8.00002 11.3333C8.13652 11.3333 8.26486 11.2673 8.34769 11.1546L12.5769 5.39697C12.6778 5.2597 12.695 5.07455 12.6212 4.9197C12.5477 4.76455 12.3955 4.66667 12.2292 4.66667Z"
+         />
+  </svg>
+);
+
+FillArrowTriangularDown.displayName = 'FillArrowTriangularDown';
+
+export default FillArrowTriangularDown;

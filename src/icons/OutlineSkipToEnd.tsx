@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineSkipToEndProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineSkipToEnd: React.FC<OutlineSkipToEndProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 4.75193C4.5 4.55838 4.71049 4.43824 4.87714 4.53668L10.376 7.78458C10.5398 7.88133 10.5398 8.11833 10.376 8.21509L4.87714 11.4631C4.71049 11.5615 4.5 11.4414 4.5 11.2478V4.75193ZM5.63998 3.24514C4.4734 2.5561 3 3.39706 3 4.75193V11.2478C3 12.6027 4.47342 13.4436 5.64 12.7546L11.1389 9.50662C11.2757 9.42581 11.3962 9.33102 11.5004 9.2256V12.2499C11.5004 12.6641 11.8362 12.9999 12.2504 12.9999C12.6646 12.9999 13.0004 12.6641 13.0004 12.2499V3.74988C13.0004 3.33567 12.6646 2.99988 12.2504 2.99988C11.8362 2.99988 11.5004 3.33567 11.5004 3.74988V6.77407C11.3962 6.66864 11.2757 6.57385 11.1389 6.49304L5.63998 3.24514Z" />
+  </svg>
+);
+
+OutlineSkipToEnd.displayName = 'OutlineSkipToEnd';
+
+export default OutlineSkipToEnd;

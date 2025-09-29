@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineTextPlusProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineTextPlus: React.FC<OutlineTextPlusProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M4.3123 4.75024C4.17491 4.9051 3.9744 5.00269 3.7511 5.00269C3.33689 5.00269 3.0011 4.6669 3.0011 4.25269V3.75269C3.0011 3.33847 3.33688 3.00269 3.7511 3.00269C3.97204 3.00269 4.17067 3.09822 4.30793 3.25024L9.6932 3.25025C9.83046 3.09823 10.0291 3.00269 10.25 3.00269C10.6643 3.00269 11 3.33847 11 3.75269V4.25269C11 4.6669 10.6643 5.00269 10.25 5.00269C10.0267 5.00269 9.82624 4.9051 9.68885 4.75025L7.74928 4.75025V11.4998H8.25004C8.66426 11.4998 9.00004 11.8355 9.00004 12.2498C9.00004 12.664 8.66426 12.9998 8.25004 12.9998H5.75004C5.33582 12.9998 5.00004 12.664 5.00004 12.2498C5.00004 11.8355 5.33582 11.4998 5.75004 11.4998H6.24928V4.75025L4.3123 4.75024Z" />
+    <path fill="currentColor" d="M12.5 13C12.0858 13 11.75 12.6642 11.75 12.25V11.25H10.75C10.3358 11.25 10 10.9142 10 10.5C10 10.0858 10.3358 9.75 10.75 9.75H11.75V8.75C11.75 8.33579 12.0858 8 12.5 8C12.9142 8 13.25 8.33579 13.25 8.75V9.75L14.25 9.75C14.6642 9.75 15 10.0858 15 10.5C15 10.9142 14.6642 11.25 14.25 11.25H13.25V12.25C13.25 12.6642 12.9142 13 12.5 13Z" />
+  </svg>
+);
+
+OutlineTextPlus.displayName = 'OutlineTextPlus';
+
+export default OutlineTextPlus;

@@ -1,0 +1,72 @@
+@import "./tokens.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component styles */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center text-90 font-medium rounded-6 transition-all duration-150 ease-primary;
+    height: 32px;
+    padding: 4px 8px;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-brand-enabled);
+    color: var(--color-brand-text-contrast);
+    @apply btn;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-brand-dark;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-bg-panel text-text-primary;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-interactive-hover;
+  }
+  
+  .btn-destructive {
+    background-color: #dc2626;
+    color: white;
+    @apply btn;
+  }
+  
+  .btn-destructive:hover {
+    @apply opacity-90;
+  }
+  
+  .card {
+    background-color: var(--color-background-card);
+    border-radius: var(--radii-8);
+    padding: var(--spaces-32);
+    box-shadow: var(--shadows-2dp);
+  }
+  
+  .swatch {
+    @apply w-16 h-16 rounded-4 border border-border-secondary flex items-center justify-center text-70 font-medium;
+  }
+}
+
+/* Global styles */
+@layer base {
+  html {
+    font-family: var(--fonts-body);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}

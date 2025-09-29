@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillArrowUpDownCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillArrowUpDownCircle: React.FC<FillArrowUpDownCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M15 8.00025C15 4.13425 11.866 1.00024 8 1.00024C4.13401 1.00024 1 4.13425 1 8.00024C1 11.8662 4.13401 15.0002 8 15.0002C11.866 15.0002 15 11.8662 15 8.00025ZM7.58515 12.8717C7.83713 13.0398 8.16547 13.0398 8.41745 12.8717L10.669 11.3701C11.0136 11.1403 11.1066 10.6746 10.8768 10.33C10.6469 9.98539 10.1813 9.89235 9.83667 10.1222L8.75174 10.8458L8.75174 5.15212L9.83392 5.87418C10.1785 6.10408 10.6442 6.01113 10.8741 5.66657C11.104 5.32201 11.011 4.85633 10.6665 4.62643L8.41789 3.12612C8.16599 2.95805 7.83773 2.95795 7.58573 3.12587L5.3342 4.62618C4.98951 4.85587 4.89628 5.3215 5.12596 5.66619C5.35565 6.01089 5.82129 6.10412 6.16598 5.87443L7.25174 5.15094L7.25174 10.8463L6.16617 10.1222C5.82158 9.89235 5.3559 9.98538 5.12606 10.33C4.89622 10.6746 4.98925 11.1402 5.33384 11.3701L7.58515 12.8717Z" />
+  </svg>
+);
+
+FillArrowUpDownCircle.displayName = 'FillArrowUpDownCircle';
+
+export default FillArrowUpDownCircle;

@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineCompareLinkSlashProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCompareLinkSlash: React.FC<OutlineCompareLinkSlashProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M1.21967 2.28033L13.7197 14.7803C14.0126 15.0732 14.4875 15.0732 14.7804 14.7803C15.0733 14.4874 15.0733 14.0126 14.7804 13.7197L2.28033 1.21967C1.98744 0.926776 1.51256 0.926777 1.21967 1.21967C0.926776 1.51256 0.926777 1.98744 1.21967 2.28033Z" />
+    <path fill="currentColor" d="M1.00002 7.99828C1.00002 6.94043 1.41065 5.97849 2.08123 5.26318L3.14278 6.32473C2.74323 6.76784 2.50002 7.35465 2.50002 7.99828C2.50002 9.37899 3.6193 10.4983 5.00002 10.4983H6.00002C6.38459 10.4983 6.74888 10.4114 7.07436 10.2563L8.17433 11.3563C7.54838 11.7624 6.80174 11.9983 6.00002 11.9983H5.00002C2.79088 11.9983 1.00002 10.2074 1.00002 7.99828Z" />
+    <path fill="currentColor" d="M15 7.99828C15 9.05699 14.5887 10.0196 13.9172 10.7351L12.8556 9.67362C13.2561 9.2303 13.5 8.64277 13.5 7.99828C13.5 6.61756 12.3807 5.49828 11 5.49828H10C9.61453 5.49828 9.24942 5.58552 8.92336 5.74135L7.82363 4.64162C8.45 4.23467 9.1974 3.99828 10 3.99828H11C13.2092 3.99828 15 5.78914 15 7.99828Z" />
+  </svg>
+);
+
+OutlineCompareLinkSlash.displayName = 'OutlineCompareLinkSlash';
+
+export default OutlineCompareLinkSlash;

@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineSortArrowsProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineSortArrows: React.FC<OutlineSortArrowsProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M4.55748 4.24828C4.41525 4.09024 4.21262 4 4.00001 4C3.78739 4 3.58477 4.09024 3.44254 4.24828L1.19254 6.74828C0.915442 7.05616 0.9404 7.53038 1.24828 7.80747C1.55617 8.08457 2.03038 8.05961 2.30748 7.75172L3.25 6.70448V11.25C3.25 11.6642 3.58579 12 4 12C4.41421 12 4.75 11.6642 4.75 11.25V6.70446L5.69254 7.75172C5.96963 8.05961 6.44385 8.08457 6.75173 7.80747C7.05961 7.53038 7.08457 7.05616 6.80748 6.74828L4.55748 4.24828Z" />
+    <path fill="currentColor" d="M11.4468 11.7517C11.589 11.9098 11.7917 12 12.0043 12C12.2169 12 12.4195 11.9098 12.5617 11.7517L14.8117 9.25172C15.0888 8.94384 15.0639 8.46962 14.756 8.19253C14.4481 7.91544 13.9739 7.94039 13.6968 8.24828L12.7543 9.29552L12.7543 4.75C12.7543 4.33579 12.4185 4 12.0043 4C11.5901 4 11.2543 4.33579 11.2543 4.75L11.2543 9.29554L10.3117 8.24828C10.0346 7.94039 9.56042 7.91544 9.25254 8.19253C8.94466 8.46962 8.9197 8.94384 9.1968 9.25172L11.4468 11.7517Z" />
+  </svg>
+);
+
+OutlineSortArrows.displayName = 'OutlineSortArrows';
+
+export default OutlineSortArrows;

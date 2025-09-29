@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineMediaComposerProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineMediaComposer: React.FC<OutlineMediaComposerProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8ZM8 2.5C7.10163 2.5 6.25357 2.71539 5.50464 3.09734V4.5L10.498 4.5V3.09871C9.74846 2.7159 8.89944 2.5 8 2.5ZM11.998 4.22299V6.99854L13.409 6.99853C13.2133 5.93459 12.7114 4.97783 11.998 4.22299ZM11.998 8.49854V11.777C12.8221 10.905 13.3641 9.76347 13.4777 8.49853L11.998 8.49854ZM10.498 12.9013V11.5L5.50464 11.5V12.9027C6.25357 13.2846 7.10163 13.5 8 13.5C8.89944 13.5 9.74846 13.2841 10.498 12.9013ZM10.498 10L10.498 6H5.50464L5.50464 10L10.498 10ZM2.59096 6.99854C2.78693 5.93325 3.28986 4.97543 4.00464 4.22015L4.00464 6.99853L2.59096 6.99854ZM2.52229 8.49854C2.63606 9.76484 3.17903 10.9075 4.00464 11.7798L4.00464 8.49853L2.52229 8.49854Z" />
+  </svg>
+);
+
+OutlineMediaComposer.displayName = 'OutlineMediaComposer';
+
+export default OutlineMediaComposer;

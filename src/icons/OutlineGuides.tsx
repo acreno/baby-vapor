@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineGuidesProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineGuides: React.FC<OutlineGuidesProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 3.75C2 2.7835 2.7835 2 3.75 2H12.25C13.2165 2 14 2.7835 14 3.75V12.25C14 13.2165 13.2165 14 12.25 14H3.75C2.7835 14 2 13.2165 2 12.25V3.75ZM3.75 3.5C3.61193 3.5 3.5 3.61193 3.5 3.75V7.25L4.25 7.25C4.66421 7.25 5 7.58579 5 8C5 8.41422 4.66421 8.75 4.25 8.75L3.5 8.75V12.25C3.5 12.3881 3.61193 12.5 3.75 12.5H7.25L7.25 11.7487C7.25 11.3345 7.58579 10.9987 8 10.9987C8.41422 10.9987 8.75 11.3345 8.75 11.7487L8.75 12.5H12.25C12.3881 12.5 12.5 12.3881 12.5 12.25V8.75H11.75C11.3358 8.75 11 8.41421 11 8C11 7.58579 11.3358 7.25 11.75 7.25H12.5V3.75C12.5 3.61193 12.3881 3.5 12.25 3.5H8.75V4.25C8.75 4.66421 8.41421 5 8 5C7.58579 5 7.25 4.66421 7.25 4.25V3.5H3.75Z" />
+  </svg>
+);
+
+OutlineGuides.displayName = 'OutlineGuides';
+
+export default OutlineGuides;

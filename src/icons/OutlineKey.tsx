@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineKeyProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineKey: React.FC<OutlineKeyProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 2.5C8.84315 2.5 7.50001 3.84315 7.50001 5.5C7.50001 6.00151 7.54686 6.38008 7.68668 6.69836C7.82172 7.00578 7.73598 7.3655 7.47679 7.57895L3.5 10.8539V12.5H4.5V11.75C4.5 11.3358 4.83579 11 5.25 11H6.5V10.25C6.5 9.83579 6.83579 9.5 7.25 9.5H8.5V9.09149C8.5 8.85331 8.61314 8.62929 8.80482 8.48791C8.99651 8.34653 9.24395 8.3046 9.47151 8.37495C9.76147 8.46459 10.1076 8.5 10.5 8.5C12.1569 8.5 13.5 7.15685 13.5 5.5C13.5 3.84315 12.1569 2.5 10.5 2.5ZM10 9.98252C10.1703 9.99517 10.3379 10 10.5 10C12.9853 10 15 7.98528 15 5.5C15 3.01472 12.9853 1 10.5 1C8.01473 1 6.00001 3.01472 6.00001 5.5C6.00001 5.89721 6.0233 6.32202 6.12704 6.74732L2.27322 9.92105C2.10022 10.0635 2 10.2759 2 10.5V13.25C2 13.6642 2.33579 14 2.75 14H5.25C5.66421 14 6 13.6642 6 13.25V12.5H7.25C7.66421 12.5 8 12.1642 8 11.75V11H9.25C9.66421 11 10 10.6642 10 10.25V9.98252Z" />
+    <path fill="currentColor" d="M12 5C12 5.55228 11.5523 6 11 6C10.4477 6 10 5.55228 10 5C10 4.44772 10.4477 4 11 4C11.5523 4 12 4.44772 12 5Z" />
+  </svg>
+);
+
+OutlineKey.displayName = 'OutlineKey';
+
+export default OutlineKey;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineAssetCarouselProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineAssetCarousel: React.FC<OutlineAssetCarouselProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 13H4.16841C4.44927 13.5912 5.0519 14 5.75 14H10.25C10.9481 14 11.5507 13.5912 11.8316 13H13.25C14.2165 13 15 12.2165 15 11.25V4.75C15 3.7835 14.2165 3 13.25 3H11.8316C11.5507 2.40876 10.9481 2 10.25 2H5.75C5.0519 2 4.44927 2.40876 4.16841 3H2.75C1.7835 3 1 3.7835 1 4.75V11.25C1 12.2165 1.7835 13 2.75 13ZM2.75 4.5H4V11.5H2.75C2.61193 11.5 2.5 11.3881 2.5 11.25V4.75C2.5 4.61193 2.61193 4.5 2.75 4.5ZM12 4.5V11.5H13.25C13.3881 11.5 13.5 11.3881 13.5 11.25V4.75C13.5 4.61193 13.3881 4.5 13.25 4.5H12ZM5.75 3.5C5.61193 3.5 5.5 3.61193 5.5 3.75V12.25C5.5 12.3881 5.61193 12.5 5.75 12.5H10.25C10.3881 12.5 10.5 12.3881 10.5 12.25V3.75C10.5 3.61193 10.3881 3.5 10.25 3.5H5.75Z" />
+  </svg>
+);
+
+OutlineAssetCarousel.displayName = 'OutlineAssetCarousel';
+
+export default OutlineAssetCarousel;

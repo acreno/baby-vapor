@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineDuplicateProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineDuplicate: React.FC<OutlineDuplicateProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M11.25 10.25C11.6642 10.25 12 9.91421 12 9.5C12 9.08579 11.6642 8.75 11.25 8.75H10.25V7.75C10.25 7.33579 9.91421 7 9.5 7C9.08579 7 8.75 7.33579 8.75 7.75V8.75H7.75C7.33579 8.75 7 9.08579 7 9.5C7 9.91421 7.33579 10.25 7.75 10.25H8.75V11.25C8.75 11.6642 9.08579 12 9.5 12C9.91421 12 10.25 11.6642 10.25 11.25V10.25H11.25Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 1C1.7835 1 1 1.7835 1 2.75V10.25C1 11.2165 1.7835 12 2.75 12H4V13.25C4 14.2165 4.7835 15 5.75 15H13.25C14.2165 15 15 14.2165 15 13.25V5.75C15 4.7835 14.2165 4 13.25 4H12V2.75C12 1.7835 11.2165 1 10.25 1H2.75ZM10.5 4V2.75C10.5 2.61193 10.3881 2.5 10.25 2.5H2.75C2.61193 2.5 2.5 2.61193 2.5 2.75V10.25C2.5 10.3881 2.61193 10.5 2.75 10.5H4V5.75C4 4.7835 4.7835 4 5.75 4H10.5ZM5.5 5.75C5.5 5.61193 5.61193 5.5 5.75 5.5H13.25C13.3881 5.5 13.5 5.61193 13.5 5.75V13.25C13.5 13.3881 13.3881 13.5 13.25 13.5H5.75C5.61193 13.5 5.5 13.3881 5.5 13.25V5.75Z" />
+  </svg>
+);
+
+OutlineDuplicate.displayName = 'OutlineDuplicate';
+
+export default OutlineDuplicate;

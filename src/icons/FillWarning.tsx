@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillWarningProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillWarning: React.FC<FillWarningProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.42782 2.96555C7.07192 1.67458 8.91367 1.67374 9.55895 2.96413L13.8101 11.4653C14.3919 12.6289 13.5458 13.998 12.2449 13.998H3.75225C2.45199 13.998 1.60584 12.6303 2.18633 11.4668L6.42782 2.96555ZM7.24194 6.75358C7.24194 6.33887 7.57813 6.00269 7.99283 6.00269C8.40754 6.00269 8.74373 6.33887 8.74373 6.75358V8.25001C8.74373 8.66472 8.40754 9.0009 7.99283 9.0009C7.57813 9.0009 7.24194 8.66472 7.24194 8.25001V6.75358ZM8.74373 10.7502C8.74373 11.1645 8.40754 11.5002 7.99283 11.5002C7.57813 11.5002 7.24194 11.1645 7.24194 10.7502C7.24194 10.336 7.57813 10.0002 7.99283 10.0002C8.40754 10.0002 8.74373 10.336 8.74373 10.7502Z" />
+  </svg>
+);
+
+FillWarning.displayName = 'FillWarning';
+
+export default FillWarning;

@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineCustomFieldSelectMultiProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCustomFieldSelectMulti: React.FC<OutlineCustomFieldSelectMultiProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M9.72919 8.67308C10.0478 8.93774 10.0916 9.41059 9.82692 9.72923L8.58103 11.2292C8.43874 11.4005 8.22769 11.4997 8.00501 11.5C7.78232 11.5003 7.57103 11.4016 7.42832 11.2306L6.17617 9.73064C5.91073 9.41266 5.95333 8.9397 6.27131 8.67426C6.58929 8.40882 7.06225 8.45141 7.32769 8.76939L8.00264 9.57794L8.67304 8.77081C8.9377 8.45218 9.41055 8.40842 9.72919 8.67308Z" />
+    <path fill="currentColor" d="M9.82616 5.73014C10.0125 5.50658 10.0526 5.19542 9.92918 4.93188C9.80575 4.66835 9.541 4.5 9.24999 4.5L6.74999 4.5C6.45898 4.5 6.19423 4.66834 6.0708 4.93188C5.94736 5.19542 5.98752 5.50658 6.17382 5.73014L7.42382 7.23014C7.56632 7.40113 7.77741 7.5 7.99999 7.5C8.22258 7.5 8.43366 7.40113 8.57616 7.23014L9.82616 5.73014Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.00195 3.75C2.00195 2.7835 2.78545 2 3.75195 2H12.252C13.2185 2 14.002 2.7835 14.002 3.75V12.25C14.002 13.2165 13.2185 14 12.252 14H3.75195C2.78545 14 2.00195 13.2165 2.00195 12.25V3.75ZM3.75195 3.5C3.61388 3.5 3.50195 3.61193 3.50195 3.75V12.25C3.50195 12.3881 3.61388 12.5 3.75195 12.5H12.252C12.39 12.5 12.502 12.3881 12.502 12.25V3.75C12.502 3.61193 12.39 3.5 12.252 3.5H3.75195Z" />
+  </svg>
+);
+
+OutlineCustomFieldSelectMulti.displayName = 'OutlineCustomFieldSelectMulti';
+
+export default OutlineCustomFieldSelectMulti;

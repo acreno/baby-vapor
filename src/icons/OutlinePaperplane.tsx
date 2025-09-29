@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlinePaperplaneProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlinePaperplane: React.FC<OutlinePaperplaneProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M13.7803 2.21969C13.98 2.41932 14.0506 2.71413 13.9631 2.98254L10.2131 14.4825C10.1179 14.7743 9.85465 14.9786 9.54842 14.9985C9.24219 15.0183 8.95479 14.8495 8.82286 14.5725L6.43735 9.56274L1.42756 7.17717C1.1505 7.04524 0.981763 6.75783 1.00157 6.4516C1.02138 6.14538 1.22574 5.88211 1.51749 5.78697L13.0175 2.03697C13.2859 1.94945 13.5807 2.02006 13.7803 2.21969ZM7.90495 9.1558L9.36942 12.2313L11.5662 5.49451L7.90495 9.1558ZM10.5056 4.43381L3.76873 6.63061L6.84429 8.09514L10.5056 4.43381Z" />
+  </svg>
+);
+
+OutlinePaperplane.displayName = 'OutlinePaperplane';
+
+export default OutlinePaperplane;

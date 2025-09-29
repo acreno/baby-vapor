@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineAccordionCollapseProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineAccordionCollapse: React.FC<OutlineAccordionCollapseProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M7.42386 6.73016C7.56635 6.90115 7.77744 7.00002 8.00002 7.00002C8.22261 7.00002 8.43369 6.90115 8.57619 6.73016L9.82619 5.23016C10.0914 4.91195 10.0484 4.43903 9.73016 4.17385C9.41195 3.90868 8.93902 3.95167 8.67385 4.26988L8.00002 5.07848L7.32618 4.26988C7.06101 3.95167 6.58809 3.90868 6.26988 4.17385C5.95167 4.43903 5.90868 4.91195 6.17385 5.23016L7.42386 6.73016ZM7.4238 9.26989C7.56629 9.0989 7.77738 9.00002 7.99996 9.00002C8.22255 9.00001 8.43364 9.09888 8.57613 9.26987L9.8262 10.7699C10.0914 11.0881 10.0484 11.561 9.73019 11.8262C9.41199 12.0914 8.93907 12.0484 8.67389 11.7302L8.00001 10.9216L7.32622 11.7301C7.06105 12.0484 6.58813 12.0914 6.26992 11.8262C5.9517 11.561 5.9087 11.0881 6.17386 10.7699L7.4238 9.26989Z" />
+  </svg>
+);
+
+OutlineAccordionCollapse.displayName = 'OutlineAccordionCollapse';
+
+export default OutlineAccordionCollapse;

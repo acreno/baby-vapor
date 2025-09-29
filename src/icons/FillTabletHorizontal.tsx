@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillTabletHorizontalProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillTabletHorizontal: React.FC<FillTabletHorizontalProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M13.25 2.48999C14.2165 2.48999 15 3.27349 15 4.23999V12.74C15 13.6462 14.3113 14.3917 13.4287 14.4812L13.25 14.49H2.75C1.7835 14.49 1 13.7065 1 12.74V4.23999C1 3.27349 1.7835 2.48999 2.75 2.48999H13.25ZM11.25 6.48999C10.8358 6.48999 10.5 6.82578 10.5 7.23999V9.73999C10.5 10.1542 10.8358 10.49 11.25 10.49C11.6642 10.49 12 10.1542 12 9.73999V7.23999C12 6.82578 11.6642 6.48999 11.25 6.48999Z" />
+  </svg>
+);
+
+FillTabletHorizontal.displayName = 'FillTabletHorizontal';
+
+export default FillTabletHorizontal;

@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlinePermissionsProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlinePermissions: React.FC<OutlinePermissionsProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M9 9C9 8.44772 8.55228 8 8 8C7.44772 8 7 8.44772 7 9V10C7 10.5523 7.44772 11 8 11C8.55228 11 9 10.5523 9 10V9Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.99713 3.99815V5.00439H4.75354C3.78704 5.00439 3.00354 5.7879 3.00354 6.75439V12.25C3.00354 13.2165 3.78704 14 4.75354 14H11.2535C12.22 14 13.0035 13.2165 13.0035 12.25V6.75439C13.0035 5.7879 12.22 5.00439 11.2535 5.00439H10.9971V3.99815C10.9971 2.26901 9.64031 1 7.99713 1C6.35395 1 4.99713 2.26901 4.99713 3.99815ZM7.99713 2.5C7.15492 2.5 6.49713 3.12463 6.49713 3.99815V5.00439H9.49713V3.99815C9.49713 3.12463 8.83934 2.5 7.99713 2.5ZM4.75354 6.50439C4.61547 6.50439 4.50354 6.61632 4.50354 6.75439V12.25C4.50354 12.3881 4.61547 12.5 4.75354 12.5H11.2535C11.3916 12.5 11.5035 12.3881 11.5035 12.25V6.75439C11.5035 6.61632 11.3916 6.50439 11.2535 6.50439H4.75354Z" />
+  </svg>
+);
+
+OutlinePermissions.displayName = 'OutlinePermissions';
+
+export default OutlinePermissions;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillHeartProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillHeart: React.FC<FillHeartProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M12.4761 3.52998C11.4226 2.81998 9.67985 2.62998 8.00605 4.17998C6.3224 2.62998 4.58952 2.81998 3.53601 3.52998C2.03944 4.53998 1.56683 6.60998 2.43327 8.35998C4.55014 12.39 7.75005 12.97 7.8879 13C7.92728 13 7.96666 13 8.00605 13C8.04543 13 8.08481 13 8.1242 13C8.26204 12.98 11.462 12.39 13.5788 8.35998C13.5788 8.35998 13.5788 8.34998 13.5788 8.33998C14.4354 6.59998 13.953 4.52998 12.4662 3.52998H12.4761Z" />
+  </svg>
+);
+
+FillHeart.displayName = 'FillHeart';
+
+export default FillHeart;

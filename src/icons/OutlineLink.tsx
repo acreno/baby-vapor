@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineLinkProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineLink: React.FC<OutlineLinkProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.03846 4C2.81626 4 1 5.78241 1 8C1 10.2176 2.81626 12 5.03846 12H6.25288C6.6671 12 7.00288 11.6642 7.00288 11.25C7.00288 10.8358 6.6671 10.5 6.25288 10.5H5.03846C3.62801 10.5 2.5 9.37258 2.5 8C2.5 6.62742 3.62801 5.5 5.03846 5.5H6.25288C6.6671 5.5 7.00288 5.16421 7.00288 4.75C7.00288 4.33579 6.6671 4 6.25288 4H5.03846ZM9.00275 4.75C9.00275 4.33579 9.33854 4 9.75275 4H10.9615C13.1837 4 15 5.78241 15 8C15 10.2176 13.1837 12 10.9615 12H9.75275C9.33853 12 9.00275 11.6642 9.00275 11.25C9.00275 10.8358 9.33853 10.5 9.75275 10.5H10.9615C12.372 10.5 13.5 9.37258 13.5 8C13.5 6.62742 12.372 5.5 10.9615 5.5H9.75275C9.33854 5.5 9.00275 5.16421 9.00275 4.75ZM5 7.75C5 7.33579 5.33579 7 5.75 7H10.25C10.6642 7 11 7.33579 11 7.75C11 8.16421 10.6642 8.5 10.25 8.5H5.75C5.33579 8.5 5 8.16421 5 7.75Z" />
+  </svg>
+);
+
+OutlineLink.displayName = 'OutlineLink';
+
+export default OutlineLink;

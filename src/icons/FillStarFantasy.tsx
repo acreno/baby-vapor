@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillStarFantasyProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillStarFantasy: React.FC<FillStarFantasyProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M7.64638 3.271C7.74367 2.90967 8.25633 2.90967 8.35362 3.271L8.82951 5.0386C9.10945 6.07837 9.92163 6.89056 10.9614 7.17049L12.729 7.64638C13.0903 7.74367 13.0903 8.25633 12.729 8.35362L10.9614 8.82951C9.92163 9.10945 9.10945 9.92163 8.82951 10.9614L8.35362 12.729C8.25633 13.0903 7.74367 13.0903 7.64638 12.729L7.17049 10.9614C6.89056 9.92163 6.07837 9.10945 5.0386 8.82951L3.271 8.35362C2.90967 8.25633 2.90967 7.74367 3.271 7.64638L5.0386 7.17049C6.07837 6.89056 6.89056 6.07837 7.17049 5.0386L7.64638 3.271Z" />
+  </svg>
+);
+
+FillStarFantasy.displayName = 'FillStarFantasy';
+
+export default FillStarFantasy;

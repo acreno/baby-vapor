@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineScrubProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineScrub: React.FC<OutlineScrubProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8.75 2.75C8.75 2.33579 8.41421 2 8 2C7.58579 2 7.25 2.33579 7.25 2.75V4.00098H3.75C2.7835 4.00098 2 4.78448 2 5.75098V10.25C2 11.2165 2.7835 12 3.75 12H7.25V13.25C7.25 13.6642 7.58579 14 8 14C8.41421 14 8.75 13.6642 8.75 13.25V12H12.25C13.2165 12 14 11.2165 14 10.25V5.75098C14 4.78448 13.2165 4.00098 12.25 4.00098H8.75V2.75ZM7.25 5.50098H3.75C3.61193 5.50098 3.5 5.61291 3.5 5.75098V10.25C3.5 10.3881 3.61193 10.5 3.75 10.5H7.25V5.50098ZM8.75 10.5V5.50098H12.25C12.3881 5.50098 12.5 5.61291 12.5 5.75098V10.25C12.5 10.3881 12.3881 10.5 12.25 10.5H8.75Z" />
+  </svg>
+);
+
+OutlineScrub.displayName = 'OutlineScrub';
+
+export default OutlineScrub;

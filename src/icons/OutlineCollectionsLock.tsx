@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineCollectionsLockProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCollectionsLock: React.FC<OutlineCollectionsLockProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 2C2.7835 2 2 2.7835 2 3.75V12.25C2 13.2165 2.7835 14 3.75 14H6.25C6.66421 14 7 13.6642 7 13.25C7 12.8358 6.66421 12.5 6.25 12.5H3.75C3.61193 12.5 3.5 12.3881 3.5 12.25V7.5H7V8.25C7 8.66421 7.33579 9 7.75 9C8.16421 9 8.5 8.66421 8.5 8.25V3.5H12.25C12.3881 3.5 12.5 3.61193 12.5 3.75V4.25C12.5 4.66421 12.8358 5 13.25 5C13.6642 5 14 4.66421 14 4.25V3.75C14 2.7835 13.2165 2 12.25 2H3.75ZM7 6H3.5V3.75C3.5 3.61193 3.61193 3.5 3.75 3.5H7V6Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10 8.89317V9.99951C9.44772 9.99951 9 10.4472 9 10.9995V13.9995C9 14.5518 9.44772 14.9995 10 14.9995H14C14.5523 14.9995 15 14.5518 15 13.9995V10.9995C15 10.4472 14.5523 9.99951 14 9.99951V8.89317C14 8.63721 13.9453 8.38513 13.8405 8.15181C13.7358 7.91865 13.5838 7.71024 13.396 7.53701C13.2083 7.36388 12.9881 7.22895 12.7492 7.13769C12.5104 7.04644 12.2559 7 12 7C11.7441 7 11.4896 7.04644 11.2508 7.13769C11.0119 7.22895 10.7917 7.36388 10.604 7.53701C10.4162 7.71024 10.2642 7.91865 10.1595 8.15181C10.0547 8.38513 10 8.63721 10 8.89317ZM12 8.25C11.8948 8.25 11.7917 8.26916 11.6969 8.30538C11.6021 8.34158 11.5191 8.39348 11.4515 8.45587C11.3839 8.51816 11.3333 8.58935 11.2998 8.66392C11.2664 8.73832 11.25 8.81606 11.25 8.89317V9.99951H12.75V8.89317C12.75 8.81606 12.7336 8.73832 12.7002 8.66392C12.6667 8.58935 12.6161 8.51816 12.5485 8.45587C12.4809 8.39348 12.3979 8.34158 12.3031 8.30538C12.2083 8.26916 12.1052 8.25 12 8.25Z" />
+  </svg>
+);
+
+OutlineCollectionsLock.displayName = 'OutlineCollectionsLock';
+
+export default OutlineCollectionsLock;

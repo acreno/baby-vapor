@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineArrowDownProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineArrowDown: React.FC<OutlineArrowDownProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.75 10.3413L10.7025 8.24019C10.9845 7.93677 11.459 7.91937 11.7624 8.20134C12.0659 8.48331 12.0833 8.95787 11.8013 9.26129L8.54945 12.7606C8.40753 12.9133 8.20844 13.0001 7.99995 13C7.79146 13 7.5924 12.9132 7.45051 12.7604L4.20046 9.26114C3.91858 8.95764 3.9361 8.48309 4.2396 8.2012C4.54311 7.91932 5.01766 7.93684 5.29954 8.24034L7.25 10.3404V3.75C7.25 3.33579 7.58579 3 8 3C8.41422 3 8.75 3.33579 8.75 3.75V10.3413Z" />
+  </svg>
+);
+
+OutlineArrowDown.displayName = 'OutlineArrowDown';
+
+export default OutlineArrowDown;

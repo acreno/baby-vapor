@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineBlankProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineBlank: React.FC<OutlineBlankProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.75 1C3.7835 1 3 1.7835 3 2.75V12.25C3 13.2165 3.7835 14 4.75 14H11.25C12.2165 14 13 13.2165 13 12.25V5.41421C13 4.95008 12.8156 4.50496 12.4874 4.17678L9.82322 1.51256C9.49503 1.18437 9.04992 1 8.58579 1H4.75ZM4.5 2.75C4.5 2.61193 4.61193 2.5 4.75 2.5H8V4.75C8 5.7165 8.7835 6.5 9.75 6.5H11.5V12.25C11.5 12.3881 11.3881 12.5 11.25 12.5H4.75C4.61193 12.5 4.5 12.3881 4.5 12.25V2.75ZM11.1893 5L9.5 3.31066V4.75C9.5 4.88807 9.61193 5 9.75 5H11.1893Z" />
+  </svg>
+);
+
+OutlineBlank.displayName = 'OutlineBlank';
+
+export default OutlineBlank;

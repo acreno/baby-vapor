@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineFiletypeVideoProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFiletypeVideo: React.FC<OutlineFiletypeVideoProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.87714 4.5368C5.71049 4.43836 5.5 4.5585 5.5 4.75206V11.2479C5.5 11.4415 5.71049 11.5616 5.87714 11.4632L11.376 8.21521C11.5398 8.11845 11.5398 7.88145 11.376 7.7847L5.87714 4.5368ZM4 4.75206C4 3.39718 5.4734 2.55622 6.63998 3.24526L12.1389 6.49316C13.2856 7.17044 13.2856 8.82945 12.1389 9.50674L6.64 12.7547C5.47342 13.4438 4 12.6028 4 11.2479V4.75206Z" />
+  </svg>
+);
+
+OutlineFiletypeVideo.displayName = 'OutlineFiletypeVideo';
+
+export default OutlineFiletypeVideo;

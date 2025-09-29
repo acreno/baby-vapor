@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineOverviewProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineOverview: React.FC<OutlineOverviewProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M5 9.75C5 9.33579 5.33579 9 5.75 9H8.25C8.66421 9 9 9.33579 9 9.75C9 10.1642 8.66421 10.5 8.25 10.5H5.75C5.33579 10.5 5 10.1642 5 9.75Z" />
+    <path fill="currentColor" d="M5.75 6C5.33579 6 5 6.33579 5 6.75C5 7.16421 5.33579 7.5 5.75 7.5H10.25C10.6642 7.5 11 7.16421 11 6.75C11 6.33579 10.6642 6 10.25 6H5.75Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 3.75C2 2.7835 2.7835 2 3.75 2H12.25C13.2165 2 14 2.7835 14 3.75V12.25C14 13.2165 13.2165 14 12.25 14H3.75C2.7835 14 2 13.2165 2 12.25V3.75ZM3.75 3.5C3.61193 3.5 3.5 3.61193 3.5 3.75V12.25C3.5 12.3881 3.61193 12.5 3.75 12.5H12.25C12.3881 12.5 12.5 12.3881 12.5 12.25V3.75C12.5 3.61193 12.3881 3.5 12.25 3.5H3.75Z" />
+  </svg>
+);
+
+OutlineOverview.displayName = 'OutlineOverview';
+
+export default OutlineOverview;

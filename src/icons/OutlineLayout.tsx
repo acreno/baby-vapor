@@ -1,0 +1,36 @@
+import React from 'react';
+
+export interface OutlineLayoutProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineLayout: React.FC<OutlineLayoutProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 2C2.33579 2 2 2.33579 2 2.75V6.25C2 6.66421 2.33579 7 2.75 7H6.25C6.66421 7 7 6.66421 7 6.25V2.75C7 2.33579 6.66421 2 6.25 2H2.75ZM3.5 5.5V3.5H5.5V5.5H3.5Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.74731 2C9.3331 2 8.99731 2.33579 8.99731 2.75V6.25C8.99731 6.66421 9.3331 7 9.74731 7H13.2473C13.6615 7 13.9973 6.66421 13.9973 6.25V2.75C13.9973 2.33579 13.6615 2 13.2473 2H9.74731ZM10.4973 5.5V3.5H12.4973V5.5H10.4973Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8.99731 9.75C8.99731 9.33579 9.3331 9 9.74731 9H13.2473C13.6615 9 13.9973 9.33579 13.9973 9.75V13.25C13.9973 13.6642 13.6615 14 13.2473 14H9.74731C9.3331 14 8.99731 13.6642 8.99731 13.25V9.75ZM10.4973 10.5V12.5H12.4973V10.5H10.4973Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 9C2.33579 9 2 9.33579 2 9.75V13.25C2 13.6642 2.33579 14 2.75 14H6.25C6.66421 14 7 13.6642 7 13.25V9.75C7 9.33579 6.66421 9 6.25 9H2.75ZM3.5 12.5V10.5H5.5V12.5H3.5Z" />
+  </svg>
+);
+
+OutlineLayout.displayName = 'OutlineLayout';
+
+export default OutlineLayout;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillPersonCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillPersonCircle: React.FC<FillPersonCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2.09149 8.16421C2.09149 4.94254 4.70316 2.33087 7.92483 2.33087C11.1465 2.33087 13.7582 4.94254 13.7582 8.16421C13.7582 11.3859 11.1465 13.9975 7.92483 13.9975C4.70316 13.9975 2.09149 11.3859 2.09149 8.16421ZM7.92483 12.9975C9.24009 12.9975 10.4326 12.4722 11.3041 11.6199C11.0608 11.3372 10.7702 11.0917 10.4387 10.8878C9.71757 10.4441 8.84527 10.2194 7.92489 10.2194C7.01839 10.2194 6.12493 10.4544 5.40851 10.898C5.08021 11.1014 4.79197 11.345 4.55011 11.6243C5.42117 12.474 6.61186 12.9975 7.92483 12.9975ZM7.94768 4.99999C7.38096 4.99999 6.85255 5.21227 6.47037 5.62255C6.08659 6.03455 5.9112 6.58818 5.95185 7.16354C5.98948 7.69624 6.20295 8.20287 6.5613 8.58776C6.92931 8.98178 7.42004 9.21863 7.94768 9.21863C8.47549 9.21863 8.9658 8.9823 9.33331 8.58756C9.69116 8.20293 9.90422 7.69659 9.9427 7.16411C9.98356 6.59087 9.80664 6.03805 9.42211 5.62492C9.04224 5.2168 8.51343 4.99999 7.94768 4.99999Z" />
+  </svg>
+);
+
+FillPersonCircle.displayName = 'FillPersonCircle';
+
+export default FillPersonCircle;

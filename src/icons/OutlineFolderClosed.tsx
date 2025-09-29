@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineFolderClosedProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFolderClosed: React.FC<OutlineFolderClosedProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 3.75C2 2.7835 2.7835 2 3.75 2H6.76393C7.03561 2 7.30356 2.06325 7.54656 2.18475L9.12426 2.97361C9.15898 2.99096 9.19726 3 9.23607 3H13.25C14.2165 3 15 3.7835 15 4.75V12.25C15 13.2165 14.2165 14 13.25 14H3.75C2.7835 14 2 13.2165 2 12.25V3.75ZM3.5 3.75C3.5 3.61193 3.61193 3.5 3.75 3.5H6.76393C6.80274 3.5 6.84102 3.50904 6.87574 3.52639L8.45344 4.31525C8.69644 4.43675 8.96439 4.5 9.23607 4.5H13.25C13.3881 4.5 13.5 4.61193 13.5 4.75V6H3.5V3.75ZM3.5 7.5H13.5V12.25C13.5 12.3881 13.3881 12.5 13.25 12.5H3.75C3.61193 12.5 3.5 12.3881 3.5 12.25V7.5Z" />
+  </svg>
+);
+
+OutlineFolderClosed.displayName = 'OutlineFolderClosed';
+
+export default OutlineFolderClosed;

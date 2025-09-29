@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillLockitNanoProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillLockitNano: React.FC<FillLockitNanoProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 28 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M18 3.75C18 3.33579 17.6642 3 17.25 3C16.8358 3 16.5 3.33579 16.5 3.75V7H10.75C9.23122 7 8 8.23122 8 9.75V22.2458C8 23.7646 9.23122 24.9958 10.75 24.9958H17.25C18.7688 24.9958 20 23.7646 20 22.2458V9.75C20 8.49122 19.1543 7.42998 18 7.10352V3.75ZM10.75 8.5C10.0596 8.5 9.5 9.05964 9.5 9.75V22.2458C9.5 22.9362 10.0596 23.4958 10.75 23.4958H17.25C17.9404 23.4958 18.5 22.9362 18.5 22.2458V9.75C18.5 9.05964 17.9404 8.5 17.25 8.5H10.75ZM15 12C15 12.5523 14.5523 13 14 13C13.4477 13 13 12.5523 13 12C13 11.4477 13.4477 11 14 11C14.5523 11 15 11.4477 15 12ZM14 17C14.5523 17 15 16.5523 15 16C15 15.4477 14.5523 15 14 15C13.4477 15 13 15.4477 13 16C13 16.5523 13.4477 17 14 17ZM15 20C15 20.5523 14.5523 21 14 21C13.4477 21 13 20.5523 13 20C13 19.4477 13.4477 19 14 19C14.5523 19 15 19.4477 15 20Z" />
+  </svg>
+);
+
+FillLockitNano.displayName = 'FillLockitNano';
+
+export default FillLockitNano;

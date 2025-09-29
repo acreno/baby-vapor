@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillComputerProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillComputer: React.FC<FillComputerProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 11.0046C2.7835 11.0046 2 10.2211 2 9.25464V3.75C2 2.7835 2.7835 2 3.75 2H12.2509C13.2174 2 14.0009 2.7835 14.0009 3.75V9.25464C14.0009 10.2211 13.2174 11.0046 12.2509 11.0046H10V12.5H10.25C10.6642 12.5 11 12.8358 11 13.25C11 13.6642 10.6642 14 10.25 14H5.75C5.33579 14 5 13.6642 5 13.25C5 12.8358 5.33579 12.5 5.75 12.5H6V11.0046H3.75ZM3.5 9.25464C3.5 9.39271 3.61193 9.50464 3.75 9.50464L12.2509 9.50464C12.389 9.50464 12.5009 9.39271 12.5009 9.25464V3.75C12.5009 3.61193 12.389 3.5 12.2509 3.5L3.75 3.5C3.61193 3.5 3.5 3.61193 3.5 3.75L3.5 9.25464Z" />
+  </svg>
+);
+
+FillComputer.displayName = 'FillComputer';
+
+export default FillComputer;

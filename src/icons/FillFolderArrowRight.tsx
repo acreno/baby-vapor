@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillFolderArrowRightProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillFolderArrowRight: React.FC<FillFolderArrowRightProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 3.75C2 2.7835 2.7835 2 3.75 2H6.76393C7.03561 2 7.30356 2.06325 7.54656 2.18475L9.12426 2.97361C9.15898 2.99096 9.19726 3 9.23607 3H13.25C14.2165 3 15 3.7835 15 4.75V12.25C15 13.2165 14.2165 14 13.25 14H3.75C2.7835 14 2 13.2165 2 12.25V3.75ZM9.2619 10.8195C9.5764 11.089 10.0499 11.0526 10.3194 10.7381L11.8194 8.98811C12.0602 8.70724 12.0602 8.29279 11.8194 8.01193L10.3194 6.26192C10.0499 5.94743 9.5764 5.911 9.26191 6.18057C8.94741 6.45014 8.91099 6.92361 9.18056 7.23811L9.61935 7.75003H7.49854C6.94625 7.75003 6.49854 7.30232 6.49854 6.75003C6.49854 6.33582 6.16275 6.00003 5.74854 6.00003C5.33432 6.00003 4.99854 6.33582 4.99854 6.75003C4.99854 8.13074 6.11782 9.25003 7.49854 9.25003H9.61932L9.18056 9.76192C8.91099 10.0764 8.94741 10.5499 9.2619 10.8195Z" />
+  </svg>
+);
+
+FillFolderArrowRight.displayName = 'FillFolderArrowRight';
+
+export default FillFolderArrowRight;

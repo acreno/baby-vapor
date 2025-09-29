@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineClockProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineClock: React.FC<OutlineClockProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.5 4.74927C8.5 4.33505 8.16421 3.99927 7.75 3.99927C7.33579 3.99927 7 4.33505 7 4.74927V8.25C7 8.66421 7.33579 9 7.75 9H10.25C10.6642 9 11 8.66421 11 8.25C11 7.83579 10.6642 7.5 10.25 7.5H8.5V4.74927Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8ZM8 2.5C11.0376 2.5 13.5 4.96243 13.5 8C13.5 11.0376 11.0376 13.5 8 13.5C4.96243 13.5 2.5 11.0376 2.5 8C2.5 4.96243 4.96243 2.5 8 2.5Z" />
+  </svg>
+);
+
+OutlineClock.displayName = 'OutlineClock';
+
+export default OutlineClock;

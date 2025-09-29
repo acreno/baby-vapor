@@ -1,0 +1,48 @@
+{
+  "Colors": {
+    "Brand": {
+      "Primary": {
+        "value": "rgba(91, 83, 255, 1)",
+        "type": "color"
+      },
+      "Enabled": {
+        "value": "{Colors.Brand.Primary}",
+        "type": "color"
+      },
+      "Light": {
+        "value": "rgb(126, 133, 255)",
+        "type": "color"
+      },
+      "Dark": {
+        "value": "rgb(77, 61, 234)",
+        "type": "color"
+      },
+      "Darker": {
+        "value": "rgb(52, 37, 197)",
+        "type": "color"
+      },
+      "PrimaryAlphaLow": {
+        "value": "rgba(91, 83, 255, 0.25)",
+        "type": "color"
+      },
+      "PrimaryAlphaMedium": {
+        "value": "rgba(91, 83, 255, 0.50)",
+        "type": "color"
+      },
+      "TextContrast": {
+        "value": "{Palette.Grey.100}",
+        "type": "color"
+      },
+      "IconContrast": {
+        "value": "{Palette.Grey.100}",
+        "type": "color"
+      },
+      "Checkbox": {
+        "SVG": {
+          "value": "url(\"data:image/svg+xml, %3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M4.12158 8.82129C4.4292 8.82129 4.6709 8.70264 4.83789 8.45654L8.9292 2.2207C9.04785 2.04053 9.09619 1.86914 9.09619 1.71094C9.09619 1.28467 8.771 0.968262 8.33154 0.968262C8.03271 0.968262 7.84375 1.07812 7.65918 1.36377L4.104 6.97119L2.30225 4.76074C2.13525 4.55859 1.95068 4.4707 1.6958 4.4707C1.25195 4.4707 0.931152 4.78711 0.931152 5.21777C0.931152 5.41113 0.988281 5.57812 1.15527 5.76709L3.42285 8.4917C3.61182 8.71582 3.83154 8.82129 4.12158 8.82129Z' fill='white' /%3E%3C/svg%3E\")",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

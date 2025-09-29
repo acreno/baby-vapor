@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineMoreVerticalProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineMoreVertical: React.FC<OutlineMoreVerticalProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3ZM9.5 7.99999C9.5 8.82842 8.82843 9.49999 8 9.49999C7.17157 9.49999 6.5 8.82842 6.5 7.99999C6.5 7.17156 7.17157 6.49999 8 6.49999C8.82843 6.49999 9.5 7.17156 9.5 7.99999ZM8 14.6605C8.82843 14.6605 9.5 13.9889 9.5 13.1605C9.5 12.3321 8.82843 11.6605 8 11.6605C7.17157 11.6605 6.5 12.3321 6.5 13.1605C6.5 13.9889 7.17157 14.6605 8 14.6605Z" />
+  </svg>
+);
+
+OutlineMoreVertical.displayName = 'OutlineMoreVertical';
+
+export default OutlineMoreVertical;

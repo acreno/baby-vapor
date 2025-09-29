@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillCameraProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillCamera: React.FC<FillCameraProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M1 11.25C1 12.2165 1.7835 13 2.75 13H9.25C10.2165 13 11 12.2165 11 11.25V10.8968L13.9494 12.1871C14.1813 12.2886 14.4487 12.2662 14.6605 12.1277C14.8723 11.9891 15 11.7531 15 11.5V4.75C15 4.4969 14.8723 4.26086 14.6605 4.12232C14.4487 3.98379 14.1813 3.96143 13.9494 4.06288L11 5.35324V4.75C11 3.7835 10.2165 3 9.25 3H2.75C1.7835 3 1 3.7835 1 4.75V11.25Z" />
+  </svg>
+);
+
+FillCamera.displayName = 'FillCamera';
+
+export default FillCamera;

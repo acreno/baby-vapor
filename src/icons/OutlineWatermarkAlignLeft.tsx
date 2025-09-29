@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineWatermarkAlignLeftProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineWatermarkAlignLeft: React.FC<OutlineWatermarkAlignLeftProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 2C2.7835 2 2 2.7835 2 3.75V12.25C2 13.2165 2.7835 14 3.75 14H7.25C8.2165 14 9 13.2165 9 12.25V3.75C9 2.7835 8.2165 2 7.25 2H3.75ZM3.5 3.75C3.5 3.61193 3.61193 3.5 3.75 3.5H7.25C7.38807 3.5 7.5 3.61193 7.5 3.75V12.25C7.5 12.3881 7.38807 12.5 7.25 12.5H3.75C3.61193 12.5 3.5 12.3881 3.5 12.25V3.75Z" />
+    <path fill="currentColor" d="M14.4915 4.03999C14.7955 4.1434 15 4.42891 15 4.75005V11.25C15 11.5712 14.7955 11.8567 14.4915 11.9601C14.1875 12.0635 13.8513 11.9619 13.6555 11.7073L11.1555 8.45733C10.9482 8.18774 10.9482 7.81235 11.1555 7.54276L13.6555 4.29276C13.8513 4.03822 14.1875 3.93658 14.4915 4.03999Z" />
+  </svg>
+);
+
+OutlineWatermarkAlignLeft.displayName = 'OutlineWatermarkAlignLeft';
+
+export default OutlineWatermarkAlignLeft;

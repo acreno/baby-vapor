@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineShareIosProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineShareIos: React.FC<OutlineShareIosProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.5575 1.24681C8.41527 1.08878 8.21265 0.998535 8.00003 0.998535C7.78742 0.998535 7.58479 1.08877 7.44256 1.24681L5.19254 3.74681C4.91544 4.05469 4.9404 4.52891 5.24828 4.806C5.55616 5.0831 6.03038 5.05814 6.30747 4.75026L7.24614 3.70731L7.24614 9.25C7.24614 9.66421 7.58193 10 7.99614 10C8.41035 10 8.74614 9.66421 8.74614 9.25L8.74614 3.6987L9.69253 4.75026C9.96963 5.05814 10.4438 5.0831 10.7517 4.80601C11.0596 4.52892 11.0846 4.0547 10.8075 3.74681L8.5575 1.24681Z" />
+    <path fill="currentColor" d="M3 8.25C3 7.2835 3.7835 6.5 4.75 6.5H5.25C5.66421 6.5 6 6.83579 6 7.25C6 7.66421 5.66421 8 5.25 8H4.75C4.61193 8 4.5 8.11193 4.5 8.25V12.25C4.5 12.3881 4.61193 12.5 4.75 12.5H11.25C11.3881 12.5 11.5 12.3881 11.5 12.25V8.25C11.5 8.11193 11.3881 8 11.25 8H10.754C10.3397 8 10.004 7.66421 10.004 7.25C10.004 6.83579 10.3397 6.5 10.754 6.5H11.25C12.2165 6.5 13 7.2835 13 8.25V12.25C13 13.2165 12.2165 14 11.25 14H4.75C3.7835 14 3 13.2165 3 12.25V8.25Z" />
+  </svg>
+);
+
+OutlineShareIos.displayName = 'OutlineShareIos';
+
+export default OutlineShareIos;

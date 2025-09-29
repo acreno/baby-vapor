@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineSwapArrowsProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineSwapArrows: React.FC<OutlineSwapArrowsProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M6.80957 9.14633C7.11629 8.92166 7.54966 8.96135 7.80957 9.24985C8.06936 9.5385 8.06306 9.97318 7.80762 10.2547L7.75391 10.3094L6.70703 11.2518H11.252C11.666 11.2518 12.0018 11.5878 12.002 12.0018C12.002 12.416 11.6662 12.7518 11.252 12.7518H6.70703L7.75391 13.6942C8.06174 13.9713 8.08665 14.4459 7.80957 14.7538C7.53247 15.0616 7.05786 15.0865 6.75 14.8094L4.25 12.5594L4.19434 12.5028C4.07141 12.3659 4.00195 12.1877 4.00195 12.0018C4.00201 11.7893 4.09207 11.5864 4.25 11.4442L6.75 9.19418L6.80957 9.14633Z" />
+    <path fill="currentColor" d="M8.19434 1.24594C8.47139 0.938159 8.94604 0.913344 9.25391 1.19027L11.7539 3.44027L11.8096 3.49692C11.9326 3.63386 12.0019 3.81194 12.002 3.99789C12.002 4.21048 11.9119 4.41328 11.7539 4.55551L9.25391 6.80551L9.19434 6.85336C8.88754 7.07798 8.45418 7.03851 8.19434 6.74985C7.93471 6.46123 7.94098 6.02646 8.19629 5.74496L8.25 5.69027L9.29688 4.74789H4.75195C4.33789 4.74776 4.00202 4.41197 4.00195 3.99789C4.00195 3.58376 4.33785 3.24802 4.75195 3.24789H9.29688L8.25 2.30551C7.94235 2.02842 7.9174 1.55375 8.19434 1.24594Z" />
+  </svg>
+);
+
+OutlineSwapArrows.displayName = 'OutlineSwapArrows';
+
+export default OutlineSwapArrows;

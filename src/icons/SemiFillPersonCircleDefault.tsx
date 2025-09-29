@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface SemiFillPersonCircleDefaultProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const SemiFillPersonCircleDefault: React.FC<SemiFillPersonCircleDefaultProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8 4C6.61929 4 5.5 5.11929 5.5 6.5C5.5 7.88071 6.61929 9 8 9C9.38071 9 10.5 7.88071 10.5 6.5C10.5 5.11929 9.38071 4 8 4Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.08892 13.8063C2.2254 12.5486 1 10.4174 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 10.4173 13.7747 12.5484 11.9114 13.8061C11.8943 13.8185 11.8769 13.8304 11.8591 13.8419L11.8082 13.8745C10.9029 14.4626 9.85304 14.8471 8.72366 14.963C8.49079 14.9885 8.24923 15.0027 7.99997 15.0027C7.75035 15.0027 7.50847 14.9885 7.2753 14.9629C6.14604 14.8468 5.09636 14.4622 4.19115 13.874L4.14086 13.8419C4.12317 13.8304 4.10585 13.8186 4.08892 13.8063ZM4.07122 11.849C4.67718 11.0568 5.88715 10.0007 7.99997 10.0007C10.1128 10.0007 11.3228 11.0568 11.9288 11.849C12.9007 10.857 13.5 9.49849 13.5 8C13.5 4.96243 11.0376 2.5 8 2.5C4.96243 2.5 2.5 4.96243 2.5 8C2.5 9.49849 3.09927 10.857 4.07122 11.849Z" />
+  </svg>
+);
+
+SemiFillPersonCircleDefault.displayName = 'SemiFillPersonCircleDefault';
+
+export default SemiFillPersonCircleDefault;

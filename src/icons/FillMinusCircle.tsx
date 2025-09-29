@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillMinusCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillMinusCircle: React.FC<FillMinusCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM5.74785 7.25C5.33363 7.25 4.99785 7.58579 4.99785 8C4.99785 8.41421 5.33363 8.75 5.74785 8.75L10.2478 8.75C10.6621 8.75 10.9978 8.41421 10.9978 8C10.9978 7.58579 10.6621 7.25 10.2478 7.25L5.74785 7.25Z" />
+  </svg>
+);
+
+FillMinusCircle.displayName = 'FillMinusCircle';
+
+export default FillMinusCircle;

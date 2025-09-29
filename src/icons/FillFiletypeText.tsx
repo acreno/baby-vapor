@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillFiletypeTextProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillFiletypeText: React.FC<FillFiletypeTextProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.75079 5.00269C4.97409 5.00269 5.1746 4.9051 5.312 4.75024L7.25002 4.75024V11.5H6.75449C6.34028 11.5 6.00449 11.8358 6.00449 12.25C6.00449 12.6642 6.34028 13 6.75449 13H9.2545C9.66871 13 10.0045 12.6642 10.0045 12.25C10.0045 11.8358 9.66871 11.5 9.2545 11.5H8.75002V4.75024L10.6885 4.75024C10.8259 4.9051 11.0264 5.00269 11.2497 5.00269C11.6639 5.00269 11.9997 4.6669 11.9997 4.25269V3.75269C11.9997 3.33847 11.6639 3.00269 11.2497 3.00269C11.0287 3.00269 10.8301 3.09822 10.6929 3.25024L5.30763 3.25024C5.17037 3.09822 4.97174 3.00269 4.75079 3.00269C4.33658 3.00269 4.00079 3.33847 4.00079 3.75269V4.25269C4.00079 4.6669 4.33658 5.00269 4.75079 5.00269Z" />
+  </svg>
+);
+
+FillFiletypeText.displayName = 'FillFiletypeText';
+
+export default FillFiletypeText;

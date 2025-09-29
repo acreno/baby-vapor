@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillTagProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillTag: React.FC<FillTagProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1 4.75C1 3.7835 1.78465 3 2.75257 3H9.67138C10.0592 3 10.4361 3.12846 10.743 3.36525L13.9299 5.82423C15.3565 6.925 15.3567 9.07496 13.9303 10.176L10.7431 12.6361C10.4362 12.873 10.0592 13.0016 9.67128 13.0016H2.75257C1.78465 13.0016 1 12.2181 1 11.2516V4.75ZM12.0016 8C12.0016 8.55228 11.5539 9 11.0016 9C10.4493 9 10.0016 8.55228 10.0016 8C10.0016 7.44772 10.4493 7 11.0016 7C11.5539 7 12.0016 7.44772 12.0016 8Z" />
+  </svg>
+);
+
+FillTag.displayName = 'FillTag';
+
+export default FillTag;

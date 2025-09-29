@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineCustomFieldLinkProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCustomFieldLink: React.FC<OutlineCustomFieldLinkProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M14.7783 1.21766C14.9202 1.35703 15 1.54605 15 1.74315L15 5.24553C15 5.65597 14.6611 5.9887 14.2431 5.9887C13.8251 5.9887 13.4862 5.65598 13.4862 5.24555L13.4862 3.56426L9.28781 7.76719C8.99511 8.06022 8.51588 8.06478 8.21744 7.77739C7.91899 7.49 7.91434 7.01948 8.20704 6.72646L12.4425 2.48636L10.7464 2.48639C10.3284 2.4864 9.98951 2.15368 9.9895 1.74325C9.98949 1.33281 10.3284 1.00008 10.7464 1.00007L14.2431 1C14.4438 0.999996 14.6363 1.07829 14.7783 1.21766Z" />
+    <path fill="currentColor" d="M4.49933 4.7452C4.49933 4.60704 4.61121 4.49504 4.74922 4.49504H7.2481C7.66213 4.49504 7.99776 4.15904 7.99776 3.74456C7.99776 3.33008 7.66213 2.99408 7.2481 2.99408H4.74922C3.78315 2.99408 3 3.77808 3 4.7452V11.2489C3 12.216 3.78317 13 4.74924 13L11.2463 12.9999C12.2124 12.9999 12.9955 12.2159 12.9955 11.2488V8.74776C12.9955 8.33328 12.6599 7.99728 12.2459 7.99728C11.8318 7.99728 11.4962 8.33328 11.4962 8.74776V11.2488C11.4962 11.3869 11.3843 11.4989 11.2463 11.4989L4.74922 11.499C4.61121 11.499 4.49933 11.387 4.49933 11.2489V4.7452Z" />
+  </svg>
+);
+
+OutlineCustomFieldLink.displayName = 'OutlineCustomFieldLink';
+
+export default OutlineCustomFieldLink;

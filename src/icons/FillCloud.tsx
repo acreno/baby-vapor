@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillCloudProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillCloud: React.FC<FillCloudProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.00006 2.00146C6.14379 2.00146 4.58357 3.26539 4.13185 4.97991C2.36411 5.39751 1.00146 6.98312 1.00146 8.9365C1.00146 11.1807 2.82075 13 5.06496 13H11.4901C13.4294 13 15.0015 11.4279 15.0015 9.48863C15.0015 7.78048 13.7722 6.32014 12.0891 6.02873L12 6.0133L12.0001 6.00146C12.0001 3.79233 10.2092 2.00146 8.00006 2.00146Z" />
+  </svg>
+);
+
+FillCloud.displayName = 'FillCloud';
+
+export default FillCloud;

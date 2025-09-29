@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineWorkfrontProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineWorkfront: React.FC<OutlineWorkfrontProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M11.4231 2.17492C11.4231 2.17492 13.7915 5.50458 14.4548 7.84187C11.5866 12.5135 8.11271 14.968 7.99684 15C7.87821 14.9677 4.20341 12.4718 1.53891 7.84187C2.20214 5.50459 4.57061 2.17492 4.57061 2.17492C4.57061 2.17492 6.05103 2 8.00263 2C9.95424 2 11.4231 2.17492 11.4231 2.17492ZM7.79374 9.34371L6.91201 8.67029C6.8904 8.65259 6.90291 8.61752 6.93086 8.61752H9.06609C9.09405 8.61752 9.10656 8.65257 9.08495 8.67029L8.20321 9.34371L8.43674 10.0266L10.1419 10.3257C10.1569 10.3283 10.1714 10.3193 10.1757 10.3046L11.5472 5.53238L9.52343 6.90917L9.60531 8.42987C9.60723 8.4641 9.55926 8.47388 9.54764 8.44164L8.71386 6.07106L11.5601 5.09543L10.0978 4.2861L7.9985 5.00226L5.88175 4.2861L4.43356 5.0951L7.28313 6.07106L6.44935 8.44164C6.43771 8.47388 6.38974 8.4641 6.39167 8.42987L6.47356 6.90917L4.44984 5.5324L5.82337 10.3043C5.82758 10.3189 5.84212 10.328 5.8571 10.3254L7.56033 10.0263L7.79374 9.34371ZM6.63493 10.594L6.99762 11.5465H8.9964L9.3591 10.594L7.99689 10.3817L6.63493 10.594Z" />
+  </svg>
+);
+
+OutlineWorkfront.displayName = 'OutlineWorkfront';
+
+export default OutlineWorkfront;

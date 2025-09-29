@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineArrowRightCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineArrowRightCircle: React.FC<OutlineArrowRightCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M9.29546 7.25L8.24826 6.30745C7.94038 6.03035 7.91544 5.55613 8.19255 5.24826C8.46965 4.94038 8.94387 4.91544 9.25174 5.19255L11.7517 7.44271C11.9098 7.58495 12 7.78757 12 8.00019C12 8.2128 11.9097 8.41542 11.7517 8.55765L9.2517 10.8075C8.94381 11.0846 8.46959 11.0596 8.19251 10.7517C7.91543 10.4438 7.9404 9.96959 8.2483 9.69251L9.29561 8.75H4.75C4.33579 8.75 4 8.41421 4 8C4 7.58579 4.33579 7.25 4.75 7.25H9.29546Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM8 13.5C11.0376 13.5 13.5 11.0376 13.5 8C13.5 4.96243 11.0376 2.5 8 2.5C4.96243 2.5 2.5 4.96243 2.5 8C2.5 11.0376 4.96243 13.5 8 13.5Z" />
+  </svg>
+);
+
+OutlineArrowRightCircle.displayName = 'OutlineArrowRightCircle';
+
+export default OutlineArrowRightCircle;

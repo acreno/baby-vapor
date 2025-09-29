@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineAttachmentProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineAttachment: React.FC<OutlineAttachmentProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M7.29294 3.05023C8.85504 1.48814 11.3877 1.48814 12.9498 3.05023C14.5119 4.61233 14.5119 7.14499 12.9498 8.70709L7.6465 14.0104C6.67018 14.9867 5.08727 14.9867 4.11096 14.0104C3.13465 13.0341 3.13465 11.4512 4.11096 10.4749L8.17683 6.40899C8.46972 6.1161 8.94459 6.1161 9.23749 6.40899C9.53038 6.70189 9.53038 7.17676 9.23749 7.46965L5.17162 11.5355C4.7811 11.926 4.7811 12.5592 5.17162 12.9497C5.56215 13.3403 6.19531 13.3403 6.58584 12.9497L11.8891 7.64643C12.8654 6.67012 12.8654 5.08721 11.8891 4.1109C10.9128 3.13458 9.32991 3.13458 8.3536 4.1109L4.64129 7.82321C4.3484 8.1161 3.87352 8.1161 3.58063 7.82321C3.28774 7.53031 3.28774 7.05544 3.58063 6.76255L7.29294 3.05023Z" />
+  </svg>
+);
+
+OutlineAttachment.displayName = 'OutlineAttachment';
+
+export default OutlineAttachment;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineChevronLeftProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineChevronLeft: React.FC<OutlineChevronLeftProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.75865 4.19811C10.063 4.47904 10.0821 4.95353 9.80116 5.25792L7.27063 7.99991L9.80111 10.7413C10.0821 11.0457 10.0631 11.5202 9.75871 11.8011C9.45434 12.0821 8.97985 12.0631 8.69889 11.7587L5.69889 8.50867C5.43372 8.2214 5.4337 7.77861 5.69884 7.49131L8.69884 4.24062C8.97976 3.93622 9.45426 3.91719 9.75865 4.19811Z" />
+  </svg>
+);
+
+OutlineChevronLeft.displayName = 'OutlineChevronLeft';
+
+export default OutlineChevronLeft;

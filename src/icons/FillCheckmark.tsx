@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillCheckmarkProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillCheckmark: React.FC<FillCheckmarkProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 28 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M21.7098 7.15528C22.037 7.40919 22.0965 7.88032 21.8426 8.20759L12.1426 20.7097C12.0051 20.8869 11.7957 20.9932 11.5716 20.9997C11.3475 21.0061 11.1322 20.912 10.9849 20.7431L6.18646 15.2431C5.91416 14.931 5.94643 14.4572 6.25855 14.1849C6.57068 13.9126 7.04445 13.9449 7.31676 14.257L11.5161 19.0703L20.6574 7.28809C20.9114 6.96083 21.3825 6.90136 21.7098 7.15528Z" />
+  </svg>
+);
+
+FillCheckmark.displayName = 'FillCheckmark';
+
+export default FillCheckmark;

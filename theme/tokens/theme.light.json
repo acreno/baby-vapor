@@ -1,0 +1,3048 @@
+{
+  "Colors": {
+    "Brand": {
+      "Enabled": {
+        "value": "{Colors.Brand.Primary}",
+        "type": "color"
+      },
+      "Interactive": {
+        "Hover": {
+          "value": "{Colors.Brand.Light}",
+          "type": "color"
+        },
+        "Activated": {
+          "value": "{Colors.Brand.Primary}",
+          "type": "color"
+        },
+        "Disabled": {
+          "value": "{Palette.GreyAlpha.10}",
+          "type": "color"
+        }
+      }
+    },
+    "Background": {
+      "Base": {
+        "value": "{Palette.Grey.95}",
+        "type": "color",
+        "description": "{Palette.Grey.95}"
+      },
+      "Panel": {
+        "value": "{Palette.Grey.100}",
+        "type": "color",
+        "description": "{Palette.Grey.100}"
+      },
+      "Primary": {
+        "value": "{Palette.Grey.97}",
+        "type": "color",
+        "description": "{Palette.Grey.97}"
+      },
+      "Secondary": {
+        "value": "{Palette.Grey.95}",
+        "type": "color",
+        "description": "{Palette.Grey.95}"
+      },
+      "Tertiary": {
+        "value": "{Palette.Grey.100}",
+        "type": "color",
+        "description": "{Palette.Grey.100}"
+      },
+      "Canvas": {
+        "value": "linear-gradient(45deg, {Palette.Grey.80} 25%, transparent 25%), linear-gradient(135deg, {Palette.Grey.80} 25%, transparent 25%), linear-gradient(45deg, transparent 75%, {Palette.Grey.80} 75%), linear-gradient(135deg, transparent 75%, {Palette.Grey.80} 75%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Card": {
+        "value": "{Palette.Grey.97}",
+        "type": "color",
+        "description": "{Palette.Grey.97}"
+      },
+      "Component": {
+        "value": "{Palette.GreyAlpha.80}",
+        "type": "color",
+        "description": "{Palette.GreyAlpha.80}"
+      },
+      "Sheet": {
+        "value": "linear-gradient(270deg, {Palette.GreyAlpha.0} 0%, {Palette.LightAlpha.00} 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Scroll Top": {
+        "value": "linear-gradient(180deg, {Palette.DarkAlpha.5} 0%, {Palette.DarkAlpha.00} 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Scroll Bottom": {
+        "value": "linear-gradient(0deg, {Palette.DarkAlpha.5} 0%, {Palette.GreyAlpha.00} 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Card Gradient": {
+        "value": "radial-gradient(102.98% 102.98% at 19.2% -29.76%,rgba(255, 255, 255, 0.064) 0%,rgba(255, 255, 255, 0) 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Interactive": {
+        "Hover": {
+          "value": "{Palette.GreyAlpha.90}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.80}"
+        },
+        "Activated": {
+          "value": "{Palette.GreyAlpha.80}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.70}"
+        },
+        "ActivatedSolid": {
+          "value": "{Palette.Grey.93}",
+          "type": "color",
+          "description": "{Palette.Grey.93}"
+        },
+        "Selected": {
+          "value": "{Palette.GreyAlpha.80}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.90}"
+        },
+        "Pressed": {
+          "value": "{Palette.GreyAlpha.15}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.15}"
+        },
+        "On": {
+          "value": "{Colors.Brand.Primary}",
+          "type": "color",
+          "description": "{Colors.Brand.Primary}"
+        },
+        "Off": {
+          "value": "{Palette.GreyAlpha.60}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.60}"
+        },
+        "Off Stark": {
+          "value": "{Palette.DarkAlpha.15}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.15}"
+        },
+        "Disabled": {
+          "value": "{Palette.GreyAlpha.80}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.80}"
+        },
+        "Dropzone": {
+          "value": "{Palette.GreyAlpha.90}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.90}"
+        },
+        "Highlight": {
+          "value": "{Palette.GreyAlpha.40}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.40}"
+        },
+        "Informative": {
+          "value": "{Palette.Alert.Informative.10}",
+          "type": "color",
+          "description": "{Palette.Alert.Informative.10}"
+        },
+        "Success": {
+          "value": "{Palette.Alert.Success.10}",
+          "type": "color",
+          "description": "{Palette.Alert.Success.10}"
+        },
+        "Notice": {
+          "value": "{Palette.Alert.Notice.10}",
+          "type": "color",
+          "description": "{Palette.Alert.Notice.10}"
+        },
+        "Error": {
+          "value": "{Palette.Alert.Error.10}",
+          "type": "color",
+          "description": "{Palette.Alert.Error.10}"
+        },
+        "BrandLow": {
+          "value": "{Colors.Brand.PrimaryAlphaLow}",
+          "type": "color",
+          "description": "{Colors.Brand.PrimaryAlphaLow}"
+        },
+        "BrandMedium": {
+          "value": "{Colors.Brand.PrimaryAlphaMedium}",
+          "type": "color",
+          "description": "{Colors.Brand.PrimaryAlphaMedium}"
+        },
+        "Neutral": {
+          "value": "{Palette.GreyAlpha.15}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.15}"
+        },
+        "Scroll Bottom": {
+          "value": "linear-gradient(0deg, {Palette.LightAlpha.00} 0%, {Palette.LightAlpha.50} 100%)",
+          "type": "color",
+          "description": "Gradient"
+        }
+      }
+    },
+    "Blur": {
+      "Panel": {
+        "Background": {
+          "value": "{Palette.LightAlpha.90}",
+          "type": "color"
+        },
+        "Strength": {
+          "value": "16px",
+          "type": "number"
+        },
+        "Saturation": {
+          "value": "1.8",
+          "type": "number"
+        }
+      }
+    },
+    "Border": {
+      "Primary": {
+        "value": "{Palette.DarkAlpha.5}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.5}"
+      },
+      "Secondary": {
+        "value": "{Palette.GreyAlpha.70}",
+        "type": "color",
+        "description": "$GreyAlpha.GreyAlpha.70"
+      },
+      "Secondary Stark": {
+        "value": "{Palette.DarkAlpha.15}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.15}"
+      },
+      "Secondary Solid": {
+        "value": "{Palette.Grey.90}",
+        "type": "color",
+        "description": "{Palette.Grey.90}"
+      },
+      "Tertiary": {
+        "value": "{Palette.Grey.80}",
+        "type": "color",
+        "description": "{Palette.Grey.80}"
+      },
+      "Tertiary Stark": {
+        "value": "{Palette.DarkAlpha.20}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.20}"
+      },
+      "Stark": {
+        "value": "{Palette.DarkAlpha.100}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.100}"
+      },
+      "Neutral": {
+        "value": "{Palette.LightAlpha.20}",
+        "type": "color",
+        "description": "{Palette.LightAlpha.20}"
+      },
+      "Container": {
+        "value": "{Palette.GreyAlpha.70}",
+        "type": "color",
+        "description": "{Palette.GreyAlpha.70}"
+      },
+      "Gradient Separator": {
+        "value": "linear-gradient(180deg, rgba({Palette.Grey.20}, 0.4) 0%, rgba({Palette.Grey.20}, 0) 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Card": {
+        "value": "{Palette.Grey.97}",
+        "type": "color",
+        "description": "{Palette.Grey.97} "
+      },
+      "Interactive": {
+        "Selected": {
+          "value": "{Colors.Brand.Primary}",
+          "type": "color",
+          "description": "{Colors.Brand.Primary}"
+        },
+        "Focused": {
+          "value": "{Palette.Grey.60}",
+          "type": "color",
+          "description": "{Palette.Grey.60}"
+        },
+        "Hover": {
+          "value": "{Palette.GreyAlpha.80}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.80}"
+        },
+        "Activated": {
+          "value": "{Palette.GreyAlpha.70}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.70}"
+        },
+        "Informative": {
+          "value": "{Palette.Alert.Informative.15}",
+          "type": "color",
+          "description": "{Palette.Alert.Informative.15}"
+        },
+        "Success": {
+          "value": "{Palette.Alert.Success.15}",
+          "type": "color",
+          "description": "{Palette.Alert.Success.15}"
+        },
+        "Notice": {
+          "value": "{Palette.Alert.Notice.15}",
+          "type": "color",
+          "description": "{Palette.Alert.Notice.15}"
+        },
+        "Error": {
+          "value": "{Palette.Alert.Error.15}",
+          "type": "color",
+          "description": "{Palette.Alert.Error.15}"
+        },
+        "Opaque": {
+          "Informative": {
+            "value": "{Palette.Alert.Informative.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Informative.100}"
+          },
+          "Success": {
+            "value": "{Palette.Alert.Success.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Success.100}"
+          },
+          "Notice": {
+            "value": "{Palette.Alert.Notice.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Notice.100}"
+          },
+          "Error": {
+            "value": "{Palette.Alert.Error.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Error.100}"
+          },
+          "Brand": {
+            "value": "{Colors.Brand.Enabled}",
+            "type": "color",
+            "description": "{Colors.Brand.Enabled}"
+          },
+          "Pink": {
+            "value": "{Palette.TintAlpha.Pink.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Pink.100}"
+          },
+          "Gradient": {
+            "value": "{Palette.Gradient.Hawaii}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Neutral": {
+            "value": "{Palette.Grey.50}",
+            "type": "color",
+            "description": "{Palette.Grey.50}"
+          },
+          "Linear Gradient": {
+            "value": "repeating-linear-gradient(90deg, {Colors.Brand.Primary}, {Palette.TintAlpha.Pink.100}, {Palette.TintAlpha.Yellow.100}, {Palette.Grey.100}, {Palette.TintAlpha.Yellow.100}, {Palette.TintAlpha.Pink.100}, {Colors.Brand.Primary})",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Selected Stark": {
+          "value": "{Palette.DarkAlpha.100}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.100}"
+        }
+      }
+    },
+    "Text": {
+      "Primary": {
+        "value": "{Palette.Grey.10}",
+        "type": "color",
+        "description": "{Palette.Grey.10}"
+      },
+      "Body": {
+        "value": "{Palette.Grey.12}",
+        "type": "color",
+        "description": "{Palette.Grey.12}"
+      },
+      "Body Stark": {
+        "value": "{Palette.GreyNeutral.12}",
+        "type": "color",
+        "description": "{Palette.GreyNeutral.12}"
+      },
+      "Secondary": {
+        "value": "{Palette.Grey.40}",
+        "type": "color",
+        "description": "{Palette.Grey.40}"
+      },
+      "Secondary Stark": {
+        "value": "{Palette.GreyNeutral.5}",
+        "type": "color",
+        "description": "{Palette.GreyNeutral.5} "
+      },
+      "Tertiary": {
+        "value": "{Palette.Grey.50}",
+        "type": "color",
+        "description": "{Palette.Grey.50}"
+      },
+      "Tertiary Stark": {
+        "value": "{Palette.GreyNeutral.50}",
+        "type": "color",
+        "description": "{Palette.GreyNeutral.50}"
+      },
+      "Link": {
+        "value": "{Colors.Brand.Dark}",
+        "type": "color",
+        "description": "{Colors.Brand.Dark}"
+      },
+      "Interactive": {
+        "Informative": {
+          "value": "{Palette.Tint.Blue.50}",
+          "type": "color",
+          "description": "{Palette.Alert.Informative.100}"
+        },
+        "Success": {
+          "value": "{Palette.Alert.Success.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Success.100}"
+        },
+        "Notice": {
+          "value": "{Palette.Tint.Yellow.50}",
+          "type": "color",
+          "description": "{Palette.Alert.Notice.100}"
+        },
+        "Error": {
+          "value": "{Palette.Alert.Error.100}",
+          "type": "color",
+          "description": "Palette.Alert.Error.100}"
+        },
+        "Disabled": {
+          "value": "{Palette.GreyAlpha.30}",
+          "type": "color",
+          "description": "Palette.GreyAlpha.30"
+        },
+        "Disabled Stark": {
+          "value": "{Palette.DarkAlpha.30}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.30}"
+        }
+      }
+    },
+    "Icon": {
+      "Primary": {
+        "value": "{Palette.Grey.30}",
+        "type": "color",
+        "description": "{Palette.Grey.30}"
+      },
+      "PrimarySolid": {
+        "value": "{Palette.Grey.30}",
+        "type": "color",
+        "description": "{Palette.Grey.30}"
+      },
+      "Secondary": {
+        "value": "{Palette.Grey.50}",
+        "type": "color",
+        "description": "{Palette.Grey.50}"
+      },
+      "Gradient": {
+        "value": "linear-gradient(0deg, {Palette.Grey.90} 0%, {Palette.Grey.88} 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Interactive": {
+        "Hover": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "{Palette.Grey.10}"
+        },
+        "Activated": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "{Palette.Grey.10}"
+        },
+        "On": {
+          "value": "{Colors.Brand.Primary}",
+          "type": "color",
+          "description": "{Colors.Brand.Primary}"
+        },
+        "Off": {
+          "value": "{Palette.GreyAlpha.50}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.50}"
+        },
+        "Disabled": {
+          "value": "{Palette.DarkAlpha.60}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.60}"
+        },
+        "Informative": {
+          "value": "{Palette.Alert.Informative.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Informative.100}"
+        },
+        "Success": {
+          "value": "{Palette.Alert.Success.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Success.100}"
+        },
+        "Notice": {
+          "value": "{Palette.Alert.Notice.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Notice.100}"
+        },
+        "Error": {
+          "value": "{Palette.Alert.Error.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Error.100}"
+        }
+      },
+      "Primary Stark": {
+        "value": "{Palette.DarkAlpha.70}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.70}"
+      },
+      "Secondary Stark": {
+        "value": "{Palette.DarkAlpha.40}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.40}"
+      }
+    },
+    "Components": {
+      "TextHighlight": {
+        "Background": {
+          "FocusStrong": {
+            "value": "{Palette.Grey.20}",
+            "type": "color",
+            "description": "{Palette.Grey.20}"
+          },
+          "FocusMedium": {
+            "value": "{Palette.GreyAlpha.60}",
+            "type": "color",
+            "description": "{Palette.GreyAlpha.60}"
+          },
+          "Hover": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "{Palette.Grey.93}"
+          },
+          "ActiveStrong": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "{Colors.Brand.Primary}"
+          },
+          "ActiveMedium": {
+            "value": "{Colors.Brand.PrimaryAlphaLow}",
+            "type": "color",
+            "description": "{Colors.Brand.PrimaryAlphaLow}"
+          },
+          "Highlight": {
+            "value": "{Palette.TintAlpha.Yellow.30}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Yellow.30}"
+          }
+        },
+        "Text": {
+          "FocusStrong": {
+            "value": "{Palette.Grey.97}",
+            "type": "color",
+            "description": "{Palette.Grey.97}"
+          },
+          "ActiveStrong": {
+            "value": "{Palette.Grey.97}",
+            "type": "color",
+            "description": "{Palette.Grey.97}"
+          }
+        }
+      },
+      "Checkbox": {
+        "OverImage": {
+          "Border": {
+            "Interactive": {
+              "Default": {
+                "value": "{Palette.DarkAlpha.20}",
+                "type": "color",
+                "description": "{Palette.DarkAlpha.20}"
+              },
+              "Hover": {
+                "value": "{Palette.DarkAlpha.30}",
+                "type": "color",
+                "description": "{Palette.DarkAlpha.30}"
+              },
+              "Pressed": {
+                "value": "{Palette.DarkAlpha.40}",
+                "type": "color",
+                "description": "{Palette.DarkAlpha.40}"
+              },
+              "Disabled": {
+                "value": "{Palette.DarkAlpha.5}",
+                "type": "color",
+                "description": "{Palette.DarkAlpha.5}"
+              }
+            }
+          },
+          "Background": {
+            "Interactive": {
+              "Default": {
+                "value": "{Palette.LightAlpha.20}",
+                "type": "color",
+                "description": "{Palette.LightAlpha.20}"
+              },
+              "Hover": {
+                "value": "{Palette.LightAlpha.30}",
+                "type": "color",
+                "description": "{Palette.LightAlpha.30}"
+              },
+              "Pressed": {
+                "value": "{Palette.LightAlpha.40}",
+                "type": "color",
+                "description": "{Palette.LightAlpha.40}"
+              },
+              "Disabled": {
+                "value": "{Palette.LightAlpha.10}",
+                "type": "color",
+                "description": "{Palette.LightAlpha.10}"
+              },
+              "Activated": {
+                "value": "{Colors.Brand.Primary}",
+                "type": "color",
+                "description": "{Colors.Brand.Primary}"
+              }
+            }
+          }
+        },
+        "Interactive": {
+          "Icon onColor": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          },
+          "Icon": {
+            "value": "{Palette.Grey.0}",
+            "type": "color",
+            "description": "{Palette.Grey.0}"
+          }
+        },
+        "Border": {
+          "value": "{Palette.Grey.60}",
+          "type": "color",
+          "description": "Grey.60"
+        }
+      },
+      "Modal Overlay": {
+        "Background": {
+          "value": "{Palette.DarkAlpha.90}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.90}"
+        }
+      },
+      "Alert": {
+        "Background": {
+          "value": "{Palette.LightAlpha.100}",
+          "type": "color",
+          "description": "LightAlpha.100"
+        }
+      },
+      "Annotation": {
+        "1": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Red.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Red.100}"
+          }
+        },
+        "2": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Lime.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Lime.100}"
+          }
+        },
+        "3": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Orange.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Orange.100}"
+          }
+        },
+        "4": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Teal.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Teal.100}"
+          }
+        }
+      },
+      "Avatar": {
+        "Text": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "{Palette.Grey.10}"
+        },
+        "Background": {
+          "Interactive": {
+            "Default Gradient": {
+              "value": "linear-gradient(160deg, {Palette.LightAlpha.40} 0%, {Palette.GreyAlpha.00} 83.3%)",
+              "type": "color",
+              "description": "Gradient"
+            }
+          }
+        }
+      },
+      "AspectRatio": {
+        "Border": {
+          "High": {
+            "value": "{Palette.LightAlpha.90}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.90}"
+          },
+          "Medium": {
+            "value": "{Palette.LightAlpha.80}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.80}"
+          },
+          "Low": {
+            "value": "{Palette.LightAlpha.80}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.80}"
+          }
+        }
+      },
+      "Badge": {
+        "Text": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "{Palette.Grey.100}"
+        },
+        "Icon": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "{Palette.Grey.100}"
+        },
+        "Background": {
+          "Brand": {
+            "value": "{Colors.Brand.Enabled}",
+            "type": "color",
+            "description": "{Colors.Brand.Enabled}"
+          },
+          "Informative": {
+            "value": "{Palette.Alert.Informative.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Informative.100}"
+          },
+          "Success": {
+            "value": "{Palette.Alert.Success.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Success.100}"
+          },
+          "Notice": {
+            "value": "{Palette.Alert.Notice.100}",
+            "type": "color",
+            "description": "{Palette.Alert.Notice.100}"
+          },
+          "Error": {
+            "value": "{Palette.Alert.Error.100}",
+            "type": "color",
+            "description": "$Alert.Error.100"
+          },
+          "Black": {
+            "value": "{Palette.DarkAlpha.90}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.90}"
+          }
+        },
+        "Neutral": {
+          "Opaque": {
+            "value": "{Palette.DarkAlpha.100}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.100}"
+          }
+        }
+      },
+      "Button": {
+        "Primary": {
+          "Background": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "{Colors.Brand.Primary}"
+          },
+          "Text": {
+            "value": "{Colors.Brand.TextContrast}",
+            "type": "color",
+            "description": "{Colors.Brand.TextContrast}"
+          },
+          "Icon": {
+            "value": "{Colors.Brand.IconContrast}",
+            "type": "color",
+            "description": "{Colors.Brand.IconContrast}"
+          },
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Colors.Brand.Dark}",
+                "type": "color",
+                "description": "{Colors.Brand.Dark}"
+              },
+              "Activated": {
+                "value": "{Colors.Brand.Primary}",
+                "type": "color",
+                "description": "{Colors.Brand.Primary}"
+              },
+              "Pressed": {
+                "value": "{Colors.Brand.Darker}",
+                "type": "color",
+                "description": "Brand.Darker"
+              },
+              "Disabled": {
+                "value": "{Colors.Brand.PrimaryAlphaLow}",
+                "type": "color",
+                "description": "{Colors.Brand.PrimaryAlphaLow}"
+              }
+            }
+          }
+        },
+        "Secondary": {
+          "Background": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "{Palette.Grey.93}"
+          },
+          "BackgroundSolid": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "{Palette.Grey.93}"
+          },
+          "Text": {
+            "value": "{Palette.Grey.10}",
+            "type": "color",
+            "description": "{Palette.Grey.10}"
+          },
+          "Icon": {
+            "value": "{Palette.Grey.30}",
+            "type": "color",
+            "description": "{Palette.Grey.30}"
+          },
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Palette.Grey.90}",
+                "type": "color",
+                "description": "{Palette.Grey.90}"
+              },
+              "HoverSolid": {
+                "value": "{Palette.Grey.90}",
+                "type": "color",
+                "description": "{Palette.Grey.90}"
+              },
+              "Selected": {
+                "value": "{Palette.Grey.80}",
+                "type": "color",
+                "description": "{Palette.Grey.80} "
+              },
+              "SelectedDisabled": {
+                "value": "{Palette.Grey.93}",
+                "type": "color",
+                "description": "{Palette.Grey.93}"
+              },
+              "Activated": {
+                "value": "{Palette.Grey.93}",
+                "type": "color",
+                "description": "{Palette.Grey.93}"
+              },
+              "ActivatedSolid": {
+                "value": "{Palette.Grey.93}",
+                "type": "color",
+                "description": "{Palette.Grey.93}"
+              },
+              "Pressed": {
+                "value": "{Palette.Grey.88}",
+                "type": "color",
+                "description": "{Palette.Grey.88}"
+              },
+              "PressedSolid": {
+                "value": "{Palette.Grey.88}",
+                "type": "color",
+                "description": "{Palette.Grey.88}"
+              },
+              "Disabled": {
+                "value": "{Palette.Grey.95}",
+                "type": "color",
+                "description": "{Palette.Grey.95}"
+              },
+              "DisabledSolid": {
+                "value": "{Palette.Grey.95}",
+                "type": "color",
+                "description": "{Palette.Grey.95}"
+              }
+            }
+          }
+        },
+        "Tertiary": {
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Palette.GreyAlpha.90}",
+                "type": "color",
+                "description": "{Palette.GreyAlpha.90} "
+              },
+              "Pressed": {
+                "value": "{Palette.Grey.93}",
+                "type": "color",
+                "description": "{Palette.Grey.93} "
+              }
+            }
+          }
+        },
+        "Destructive": {
+          "Background": {
+            "value": "{Palette.Alert.Error.100}",
+            "type": "color"
+          },
+          "Text": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          },
+          "Icon": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          },
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Palette.Alert.Error.Light}",
+                "type": "color",
+                "description": "{Palette.Alert.Error.Light}"
+              },
+              "Activated": {
+                "value": "{Palette.Alert.Error.100}",
+                "type": "color",
+                "description": "{Palette.Alert.Error.100}"
+              },
+              "Pressed": {
+                "value": "{Palette.Alert.Error.Dark}",
+                "type": "color",
+                "description": "{Palette.Alert.Error.Dark}"
+              },
+              "Disabled": {
+                "value": "{Palette.Alert.Error.15}",
+                "type": "color",
+                "description": "{Palette.Alert.Error.15} "
+              }
+            }
+          }
+        },
+        "Neutral": {
+          "Background": {
+            "value": "{Palette.LightAlpha.100}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.100}"
+          },
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Palette.Grey.93}",
+                "type": "color",
+                "description": "{Palette.Grey.93}"
+              }
+            }
+          }
+        },
+        "Secure": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Aqua.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Aqua.100}"
+          },
+          "Text": {
+            "value": "{Palette.DarkAlpha.90}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.90}"
+          },
+          "Icon": {
+            "value": "{Palette.DarkAlpha.90}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.90}"
+          },
+          "Interactive": {
+            "Background": {
+              "Hover": {
+                "value": "{Palette.Tint.Aqua.Light}",
+                "type": "color",
+                "description": "{Palette.Tint.Aqua.Light}"
+              },
+              "Activated": {
+                "value": "{Palette.TintAlpha.Aqua.100}",
+                "type": "color",
+                "description": "{Palette.TintAlpha.Aqua.100}"
+              },
+              "Pressed": {
+                "value": "{Palette.Tint.Aqua.Dark}",
+                "type": "color",
+                "description": "{Palette.Tint.Aqua.Dark}"
+              },
+              "Disabled": {
+                "value": "{Palette.TintAlpha.Aqua.15}",
+                "type": "color",
+                "description": "{Palette.TintAlpha.Aqua.15}"
+              }
+            }
+          }
+        }
+      },
+      "ListBox": {
+        "HeaderShadow": {
+          "value": "0px 16px 40px rgba(0,0,0,0.08)",
+          "type": "shadows",
+          "description": "Sticky header pinned shadow"
+        }
+      },
+      "Filetype": {
+        "PDF": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Red.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Red.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Red.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Red.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Red.00} 0%, {Palette.TintAlpha.Red.10} 99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Spreadsheet": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Green.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Green.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Green.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Green.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Green.00} 0%, {Palette.TintAlpha.Green.10}  99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Motion": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Purple.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Purple.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Purple.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Purple.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Purple.00}  0%, {Palette.TintAlpha.Purple.10}  99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Presentation": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Coral.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Coral.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Coral.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Coral.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Coral.00}  0%, {Palette.TintAlpha.Coral.10}  99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Image": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Orange.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Orange.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Orange.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Orange.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Orange.00} 0%, {Palette.TintAlpha.Orange.10} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Video": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Blue.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Blue.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Blue.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Blue.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Blue.00} 0%, {Palette.TintAlpha.Blue.10}  99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Compressed": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Pink.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Pink.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Pink.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Pink.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Pink.00} 0%, {Palette.TintAlpha.Pink.10} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Vector": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Yellow.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Yellow.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Yellow.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Yellow.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Yellow.00} 0%, {Palette.TintAlpha.Yellow.10} 99.69%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Text": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Aqua.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Aqua.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Aqua.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Aqua.100} "
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Aqua.00} 0%, {Palette.TintAlpha.Aqua.10} 99.69%)",
+            "type": "color",
+            "description": "Gradient\n\nlinear-gradient(135deg, {Palette.TintAlpha.Aqua.00} 0%, {Palette.TintAlpha.Aqua.10} 99.69%)"
+          }
+        },
+        "Audio": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Teal.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Teal.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Teal.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Teal.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Teal.00} 0%, {Palette.TintAlpha.Teal.10} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Drawing": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Maroon.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Maroon.10}"
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Maroon.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Maroon.100}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Maroon.00} 0%, {Palette.TintAlpha.Maroon.10} 100%)",
+            "type": "color",
+            "description": "Gradient\n\nlinear-gradient(135deg, {Palette.TintAlpha.Maroon.00} 0%, {Palette.TintAlpha.Maroon.10} 100%)"
+          }
+        },
+        "Blank": {
+          "Background": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "$Palette.Grey.93"
+          },
+          "Text": {
+            "value": "{Palette.Grey.60}",
+            "type": "color",
+            "description": "{Palette.Grey.60}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.LightAlpha.0} 0%, {Palette.DarkAlpha.15} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Default": {
+          "Background": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "$Palette.Grey.93"
+          },
+          "Text": {
+            "value": "{Palette.Grey.60}",
+            "type": "color",
+            "description": "$Grey.Grey60"
+          }
+        },
+        "Folder": {
+          "Background": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "{Palette.Grey.93}"
+          },
+          "Text": {
+            "value": "{Palette.Grey.60}",
+            "type": "color",
+            "description": "{Palette.Grey.60}"
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.LightAlpha.0} 0%, {Palette.DarkAlpha.15} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Interactive": {
+          "Background": {
+            "value": "{Palette.TintAlpha.Lime.10}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Lime.10} "
+          },
+          "Text": {
+            "value": "{Palette.TintAlpha.Lime.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Lime.100} "
+          },
+          "Gradient": {
+            "value": "linear-gradient(135deg, {Palette.TintAlpha.Lime.00} 0%, {Palette.TintAlpha.Lime.10} 100%)",
+            "type": "color",
+            "description": "Gradient\n\nlinear-gradient(135deg, {Palette.TintAlpha.Lime.00} 0%, {Palette.TintAlpha.Lime.10} 100%)"
+          }
+        }
+      },
+      "Icon": {
+        "Button": {
+          "Active": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "{Colors.Brand.Primary}"
+          },
+          "Primary": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          },
+          "Secondary": {
+            "value": "{Palette.Grey.20}",
+            "type": "color",
+            "description": "{Palette.Grey.20}"
+          }
+        }
+      },
+      "Input": {
+        "Background": {
+          "value": "{Palette.GreyAlpha.90}",
+          "type": "color",
+          "description": "$Palette.GreyAlpha.90"
+        }
+      },
+      "Link": {
+        "Text": {
+          "value": "{Palette.Grey.50}",
+          "type": "color",
+          "description": "{Palette.Grey.50}"
+        },
+        "Interactive": {
+          "Text": {
+            "Hover": {
+              "value": "{Palette.Grey.20}",
+              "type": "color",
+              "description": "{Palette.Grey.20}"
+            },
+            "Pressed": {
+              "value": "{Palette.Grey.20}",
+              "type": "color",
+              "description": "{Palette.Grey.20}"
+            },
+            "Focus": {
+              "value": "{Palette.Grey.20}",
+              "type": "color",
+              "description": "{Palette.Grey.20}"
+            },
+            "Active": {
+              "value": "{Colors.Brand.Primary}",
+              "type": "color",
+              "description": "{Colors.Brand.Primary}"
+            }
+          }
+        }
+      },
+      "Modal": {
+        "Background": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "{Palette.Grey.100}"
+        }
+      },
+      "Popover": {
+        "Background": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "$Grey.Grey15"
+        },
+        "Border": {
+          "value": "{Palette.Grey.100}",
+          "type": "color"
+        },
+        "Interactive": {
+          "Background": {
+            "Expanded": {
+              "value": "{Palette.Grey.100}",
+              "type": "color",
+              "description": "{Palette.Grey.100}"
+            }
+          }
+        }
+      },
+      "Primary Nav": {
+        "Background": {
+          "value": "{Palette.GreyAlpha.40}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.40}"
+        },
+        "Interactive": {
+          "Background": {
+            "Hover": {
+              "value": "{Palette.GreyAlpha.70}",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.70}"
+            },
+            "Activated": {
+              "value": "{Palette.Grey.100}",
+              "type": "color",
+              "description": "{Palette.Grey.100}"
+            }
+          }
+        }
+      },
+      "Segmented Control": {
+        "Background": {
+          "Default": {
+            "value": "{Palette.GreyAlpha.80}",
+            "type": "color",
+            "description": "{Palette.GreyAlpha.80}"
+          },
+          "Interactive": {
+            "Active": {
+              "value": "{Palette.Grey.100}",
+              "type": "color",
+              "description": "{Palette.Grey.100}"
+            }
+          }
+        },
+        "Text": {
+          "Default": {
+            "value": "{Palette.Grey.50}",
+            "type": "color",
+            "description": "{Palette.Grey.50}"
+          },
+          "Interactive": {
+            "Active": {
+              "value": "{Palette.Grey.0}",
+              "type": "color",
+              "description": "{Palette.Grey.0}"
+            }
+          }
+        }
+      },
+      "Select": {
+        "Background": {
+          "value": "{Palette.GreyAlpha.80}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.80}"
+        },
+        "Hover": {
+          "value": "{Palette.GreyAlpha.70}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.70}"
+        }
+      },
+      "Select Knob": {
+        "Interactive": {
+          "Default": {
+            "value": "{Palette.Grey.80}",
+            "type": "color",
+            "description": "{Palette.Grey.80}"
+          },
+          "On": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          },
+          "Off": {
+            "value": "{Palette.GreyAlpha.70}",
+            "type": "color",
+            "description": "{Palette.GreyAlpha.70}"
+          },
+          "Off Stark": {
+            "value": "{Palette.DarkAlpha.40}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.40}"
+          }
+        }
+      },
+      "Sheet": {
+        "Background": {
+          "value": "{Palette.GreyAlpha.100}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.100}"
+        }
+      },
+      "Shortcut": {
+        "Background": {
+          "value": "{Palette.Grey.95}",
+          "type": "color",
+          "description": "{Palette.Grey.95}"
+        },
+        "Border": {
+          "value": "{Palette.GreyAlpha.70}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.70}"
+        },
+        "Interactive": {
+          "Hover": {
+            "value": "{Palette.Grey.97}",
+            "type": "color",
+            "description": "{Palette.Grey.97}"
+          }
+        }
+      },
+      "Skeleton": {
+        "Background": {
+          "value": "{Palette.DarkAlpha.10}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.10}"
+        }
+      },
+      "Toast": {
+        "Background": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "{Palette.Grey.100} "
+        }
+      },
+      "Tooltip": {
+        "Background": {
+          "value": "{Palette.LightAlpha.100}",
+          "type": "color",
+          "description": "{Palette.LightAlpha.100}"
+        }
+      },
+      "Timestamp": {
+        "Background": {
+          "value": "{Palette.Alert.Notice.100}",
+          "type": "color",
+          "description": "{Palette.Alert.Notice.100}"
+        },
+        "Text": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "{Palette.Grey.10}"
+        },
+        "Interactive": {
+          "Active": {
+            "value": "{Palette.TintAlpha.Yellow.100}",
+            "type": "color",
+            "description": "{Palette.TintAlpha.Yellow.100}"
+          }
+        }
+      },
+      "Composer": {
+        "Background": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "{Palette.Grey.100}"
+        }
+      },
+      "Icon Tip": {
+        "Background": {
+          "value": "{Palette.DarkAlpha.100}",
+          "type": "color",
+          "description": "{Palette.DarkAlpha.100}"
+        }
+      },
+      "Chip": {
+        "Text": {
+          "value": "{Palette.Grey.0}",
+          "type": "color",
+          "description": "{Palette.Grey.0}"
+        },
+        "Icon": {
+          "value": "{Palette.Grey.5}",
+          "type": "color",
+          "description": "{Palette.Grey.5}"
+        },
+        "Background": {
+          "Neutral": {
+            "value": "{Palette.Grey.60}",
+            "type": "color",
+            "description": "{Palette.Grey.60}"
+          }
+        }
+      },
+      "Comment": {
+        "Background": {
+          "value": "{Palette.Grey.97}",
+          "type": "color",
+          "description": "{Palette.Grey.97} "
+        }
+      },
+      "BrandedHeader": {
+        "Background": {
+          "Radial": {
+            "value": "radial-gradient(180% 100% at 100% 0%, rgba(255, 255, 255, 0) 53.76%, rgba(255, 255, 255, 0.050416) 60.01%, rgba(255, 255, 255, 0.106624) 65.51%, rgba(255, 255, 255, 0.167824) 70.32%, rgba(255, 255, 255, 0.233214) 74.52%, rgba(255, 255, 255, 0.301994) 78.17%, rgba(255, 255, 255, 0.373363) 81.34%, rgba(255, 255, 255, 0.446519) 84.11%, rgba(255, 255, 255, 0.520661) 86.54%, rgba(255, 255, 255, 0.594989) 88.7%, rgba(255, 255, 255, 0.668702) 90.66%, rgba(255, 255, 255, 0.740998) 92.5%, rgba(255, 255, 255, 0.811077) 94.29%, rgba(255, 255, 255, 0.878138) 96.09%, rgba(255, 255, 255, 0.941379) 97.97%, #FFFFFF 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "RadialSmall": {
+            "value": "radial-gradient(180% 100% at 100% 0%, rgba(255, 255, 255, 0) 53.76%, rgba(255, 255, 255, 0.0539031) 59.79%, rgba(255, 255, 255, 0.111958) 65.13%, rgba(255, 255, 255, 0.173626) 69.83%, rgba(255, 255, 255, 0.238372) 73.97%, rgba(255, 255, 255, 0.305657) 77.6%, rgba(255, 255, 255, 0.374945) 80.79%, rgba(255, 255, 255, 0.445698) 83.6%, rgba(255, 255, 255, 0.517379) 86.09%, rgba(255, 255, 255, 0.589451) 88.33%, rgba(255, 255, 255, 0.661376) 90.38%, rgba(255, 255, 255, 0.732617) 92.31%, rgba(255, 255, 255, 0.802637) 94.17%, rgba(255, 255, 255, 0.870899) 96.03%, rgba(255, 255, 255, 0.936866) 97.95%, #FFFFFF 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Linear": {
+            "value": "linear-gradient(180deg, rgba(255, 255, 255, 0) 15.81%, rgba(255, 255, 255, 0.00838519) 25.03%, rgba(255, 255, 255, 0.0324148) 32.53%, rgba(255, 255, 255, 0.0704) 38.58%, rgba(255, 255, 255, 0.120652) 43.44%, rgba(255, 255, 255, 0.181481) 47.38%, rgba(255, 255, 255, 0.2512) 50.65%, rgba(255, 255, 255, 0.328119) 53.53%, rgba(255, 255, 255, 0.410548) 56.28%, rgba(255, 255, 255, 0.4968) 59.16%, rgba(255, 255, 255, 0.585185) 62.43%, rgba(255, 255, 255, 0.674015) 66.37%, rgba(255, 255, 255, 0.7616) 71.23%, rgba(255, 255, 255, 0.846252) 77.28%, rgba(255, 255, 255, 0.926281) 84.78%, #FFFFFF 94%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "LinearSmall": {
+            "value": "linear-gradient(180deg, rgba(255, 255, 255, 0) 20.95%, rgba(255, 255, 255, 0.0381766) 26.29%, rgba(255, 255, 255, 0.0783069) 30.72%, rgba(255, 255, 255, 0.120879) 34.43%, rgba(255, 255, 255, 0.166382) 37.6%, rgba(255, 255, 255, 0.215303) 40.41%, rgba(255, 255, 255, 0.268132) 43.04%, rgba(255, 255, 255, 0.325356) 45.69%, rgba(255, 255, 255, 0.387464) 48.53%, rgba(255, 255, 255, 0.454945) 51.75%, rgba(255, 255, 255, 0.528287) 55.53%, rgba(255, 255, 255, 0.607977) 60.05%, rgba(255, 255, 255, 0.694506) 65.5%, rgba(255, 255, 255, 0.78836) 72.06%, rgba(255, 255, 255, 0.890028) 79.92%, #FFFFFF 89.25%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Gradient1": {
+            "value": "radial-gradient(at 80% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 30% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 25% 75%, hsla(234, 23%, 35%, 0.75) 0, hsla(234, 23%, 35%, 0.75) 50%),radial-gradient(at 50% 100%, hsla(235, 32%, 18%, 0.5) 0%, hsla(235, 32%, 18%, 0) 50%), radial-gradient(at 80% 100%, hsla(232, 26%, 27%, 0.85) 0%, hsla(232, 26%, 27%, 0) 65%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Gradient2": {
+            "value": "radial-gradient(at 80% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 30% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 15% 60%,  hsla(244, 100%, 66%, 0.5) 0, hsla(244, 100%, 66%, 0) 60%), radial-gradient(  at 40% 70%, hsla(274, 89%, 60%, 0.75) 0, hsla(274, 89%, 60%, 0) 70%), radial-gradient(at 95% 95%, hsla(185, 100%, 43%, 0.75) 0, hsla(185, 100%, 43%, 0) 50%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Gradient3": {
+            "value": "radial-gradient(at 80% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 30% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 25% 75%, hsla(244, 100%, 66%, 0.75) 0, hsla(244, 100%, 66%, 0) 60%), radial-gradient(at 60% 60%, hsla(356, 100%, 60%, 0.5) 0%, hsla(356, 100%, 60%, 0) 65%), radial-gradient(at 80% 100%, hsla(15, 100%, 63%, 0.8) 0%, hsla(15, 100%, 63%, 0) 60%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Gradient4": {
+            "value": "radial-gradient(at 80% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 30% 30%, hsla(237, 20%, 21%, 0.5) 0, hsla(237, 20%, 21%, 0) 60%), radial-gradient(at 25% 75%, hsla(238, 100%, 66%, 0.75) 0, hsla(189, 100%, 66%, 0) 60%), radial-gradient(at 50% 100%, hsla(189, 100%, 68%, 0.5) 0%, hsla(30, 100%, 68%, 0) 50%), radial-gradient(at 80% 100%, hsla(30, 100%, 68%, 0.85) 0%, hsla(30, 100%, 68%, 0) 65%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Interactive": {
+            "Default": {
+              "value": "{Palette.DarkAlpha.5}",
+              "type": "color",
+              "description": "{Palette.DarkAlpha.5}"
+            }
+          }
+        }
+      },
+      "Metadata": {
+        "Interactive": {
+          "Border": {
+            "Default": {
+              "value": "{Palette.Grey.90}",
+              "type": "color",
+              "description": "{Palette.Grey.90}"
+            },
+            "Focus": {
+              "value": "{Palette.Grey.80}",
+              "type": "color",
+              "description": "{Palette.Grey.80}"
+            }
+          },
+          "Background": {
+            "Default": {
+              "value": "{Palette.Grey.100}",
+              "type": "color",
+              "description": "{Palette.Grey.100}"
+            },
+            "Activated": {
+              "value": "{Palette.Grey.98}",
+              "type": "color",
+              "description": "{Palette.Grey.98}"
+            },
+            "Hover": {
+              "value": "{Palette.Grey.99}",
+              "type": "color",
+              "description": "{Palette.Grey.99}"
+            }
+          }
+        }
+      },
+      "Player": {
+        "Background": {
+          "Media": {
+            "value": "{Palette.DarkAlpha.100}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.100}"
+          },
+          "Knob": {
+            "value": "{Palette.DarkAlpha.100}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.100}"
+          },
+          "Control": {
+            "value": "{Palette.LightAlpha.100}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.100}"
+          },
+          "Range": {
+            "value": "{Palette.DarkAlpha.10}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.10}"
+          },
+          "Overlay": {
+            "value": "{Palette.LightAlpha.50}",
+            "type": "color"
+          },
+          "Preview": {
+            "value": "{Palette.Grey.100}",
+            "type": "color"
+          },
+          "Fullscreen": {
+            "value": "{Palette.LightAlpha.80}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.80}"
+          }
+        },
+        "Blur": {
+          "Background": {
+            "value": "{Palette.LightAlpha.70}",
+            "type": "color"
+          },
+          "Strength": {
+            "value": "50px",
+            "type": "number"
+          },
+          "Saturation": {
+            "value": "3",
+            "type": "number"
+          }
+        },
+        "Text": {
+          "value": "{Palette.DarkAlpha.100}",
+          "type": "color",
+          "description": "DarkAlpha.100"
+        },
+        "Icon": {
+          "value": "{Palette.DarkAlpha.100}",
+          "type": "color"
+        },
+        "Interactive": {
+          "Background": {
+            "Overlay": {
+              "Hover": {
+                "value": "{Palette.LightAlpha.90}",
+                "type": "color"
+              }
+            }
+          },
+          "Text": {
+            "Automated": {
+              "value": "{Palette.DarkAlpha.100}",
+              "type": "color",
+              "description": "This will be automatically changed by code"
+            }
+          }
+        },
+        "Superscript": {
+          "Text": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "Colors.Brand.Primary"
+          }
+        },
+        "SeekBar": {
+          "Background": {
+            "Progress": {
+              "value": "{Palette.DarkAlpha.40}",
+              "type": "color",
+              "description": "{Palette.DarkAlpha.40}"
+            },
+            "Progress Solid": {
+              "value": "{Palette.GreyNeutral.70}",
+              "type": "color",
+              "description": "{Palette.GreyNeutral.70}"
+            },
+            "Default": {
+              "value": "{Palette.DarkAlpha.15}",
+              "type": "color",
+              "description": "{Palette.DarkAlpha.15}"
+            },
+            "Default Solid": {
+              "value": "{Palette.GreyNeutral.88}",
+              "type": "color",
+              "description": "{Palette.GreyNeutral.88} "
+            }
+          }
+        },
+        "Border": {
+          "Fullscreen": {
+            "value": "{Palette.DarkAlpha.0}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.0}"
+          }
+        }
+      },
+      "Spinner": {
+        "Default": {
+          "StopColorBegin": {
+            "value": "{Palette.Grey.88}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Palette.Grey.90}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "TrackColor": {
+            "value": "{Palette.DarkAlpha.5}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.5}"
+          }
+        },
+        "Brand": {
+          "StopColorBegin": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "TrackColor": {
+            "value": "{Palette.DarkAlpha.5}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.5}"
+          }
+        },
+        "Brand Multi": {
+          "StopColorBegin": {
+            "value": "{Colors.Brand.Primary}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Palette.TintAlpha.Teal.100}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "TrackColor": {
+            "value": "{Palette.DarkAlpha.5}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.5}"
+          }
+        },
+        "Brand Overlay": {
+          "StopColorBegin": {
+            "value": "{Palette.LightAlpha.60}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Palette.LightAlpha.80}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "TrackColor": {
+            "value": "{Palette.LightAlpha.10}",
+            "type": "color",
+            "description": "{Palette.LightAlpha.10}"
+          }
+        }
+      },
+      "Groupfield": {
+        "Background": {
+          "Interactive": {
+            "Default": {
+              "value": "{Palette.GreyAlpha.30}",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.30}"
+            },
+            "Hover": {
+              "value": "rgba(98, 101, 121, 0.5)",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.30}\nlch.d: 0.1"
+            },
+            "Focus": {
+              "value": "rgba(98, 101, 121, 0.5)",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.30}\nlch.d: 0.1"
+            },
+            "Active": {
+              "value": "{Palette.GreyAlpha.20}",
+              "type": "color"
+            },
+            "Highlight": {
+              "value": "{Palette.DarkAlpha.15}",
+              "type": "color",
+              "description": "{Palette.DarkAlpha.15} "
+            }
+          }
+        }
+      },
+      "Illustration": {
+        "Background": {
+          "value": "{Palette.DarkAlpha.100}",
+          "type": "color",
+          "description": "DarkAlpha.100"
+        },
+        "Gradient": {
+          "value": "linear-gradient(135deg, rgba(14, 34, 133, 0.05) 0%, rgba(38, 61, 173, 0.15) 100%)",
+          "type": "color",
+          "description": "Gradient"
+        },
+        "Gradient1": {
+          "StopColorBegin": {
+            "value": "{Palette.Grey.97}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Palette.Grey.93}",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "Gradient2": {
+          "StopColorBegin": {
+            "value": "{Palette.Grey.90}",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "StopColorEnd": {
+            "value": "{Palette.Grey.97}",
+            "type": "color",
+            "description": "Gradient"
+          }
+        },
+        "LinearColorStop01": {
+          "value": "rgb(14, 34, 133)",
+          "type": "color",
+          "description": "Gradient"
+        },
+        "LinearColorStop02": {
+          "value": "rgb(37, 60, 172)",
+          "type": "color",
+          "description": "Gradient"
+        }
+      },
+      "AlertBanner": {
+        "Background": {
+          "Informative": {
+            "value": "linear-gradient(90deg, {Palette.Alert.Informative.00} -6.67%, {Palette.Alert.Informative.15} 50%, {Palette.Alert.Informative.00} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Success": {
+            "value": "linear-gradient(90deg, {Palette.Alert.Success.00} -6.67%, {Palette.Alert.Success.15} 50%, {Palette.Alert.Success.00} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Notice": {
+            "value": "linear-gradient(90deg, {Palette.Alert.Notice.00} -6.67%, {Palette.Alert.Notice.15} 50%, {Palette.Alert.Notice.00} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Error": {
+            "value": "linear-gradient(90deg, {Palette.Alert.Error.00} -6.67%, {Palette.Alert.Error.15} 50%, {Palette.Alert.Error.00} 100%)",
+            "type": "color",
+            "description": "Gradient"
+          },
+          "Default": {
+            "value": "{Palette.Grey.100}",
+            "type": "color",
+            "description": "{Palette.Grey.100}"
+          }
+        }
+      },
+      "Folder": {
+        "Header": {
+          "Background": {
+            "value": "{Palette.Grey.93}",
+            "type": "color"
+          }
+        },
+        "Border": {
+          "value": "{Palette.Grey.93}",
+          "type": "color"
+        },
+        "NoPreview": {
+          "Border": {
+            "value": "{Palette.Grey.93}",
+            "type": "color"
+          }
+        }
+      },
+      "Properties": {
+        "Background": {
+          "value": "{Palette.Grey.97}",
+          "type": "color",
+          "description": "{Palette.Grey.97}"
+        }
+      },
+      "DnD": {
+        "Background": {
+          "value": "linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.99) 88.17%, #FFF 100%);",
+          "type": "color",
+          "description": "Gradient"
+        }
+      },
+      "Reel": {
+        "Background": {
+          "Back Folder": {
+            "value": "{Palette.DarkAlpha.5}",
+            "type": "color",
+            "description": "{Palette.DarkAlpha.5} "
+          }
+        }
+      },
+      "Pricing": {
+        "Background": {
+          "Free": {
+            "value": "linear-gradient(21deg, #FBFBFB 0%, #F8F8F8 75%, #F4F4FB 100%)",
+            "type": "color"
+          },
+          "Pro": {
+            "value": "linear-gradient(21deg, #FBFBFB 0%, #F8F8F8 75%, #F0F0FF 100%)",
+            "type": "color"
+          },
+          "Team": {
+            "value": "linear-gradient(21deg, #FBFBFB 0%, #F2F2FB 75%, #EBEBFF 100%)",
+            "type": "color"
+          },
+          "Enterprise": {
+            "value": "linear-gradient(21deg, #FBFBFB 0%, #E7E6FE 75%, #DBDFFF 100%)",
+            "type": "color"
+          }
+        }
+      },
+      "Project Switcher": {
+        "Border": {
+          "Default": {
+            "value": "{Palette.Grey.97}",
+            "type": "color"
+          }
+        }
+      },
+      "Thumbnail": {
+        "Background": {
+          "value": "linear-gradient(0deg, {Palette.Grey.90} 0%, {Palette.LightAlpha.15} 100%)",
+          "type": "color",
+          "description": "Gradient"
+        },
+        "Interactive": {
+          "Background": {
+            "Hover": {
+              "value": "linear-gradient(0deg, {Palette.Grey.90} 0%, {Palette.LightAlpha.70} 100%)",
+              "type": "color",
+              "description": "linear-gradient(0deg, {Palette.Grey.90} 0%, {Palette.LightAlpha.70} 100%)"
+            },
+            "Pressed": {
+              "value": "linear-gradient(0deg, {Palette.Grey.70} 0%, {Palette.LightAlpha.15} 100%)",
+              "type": "color",
+              "description": "Gradient"
+            }
+          }
+        }
+      },
+      "TransparencyGrid": {
+        "Grid": {
+          "Primary": {
+            "value": "{Palette.GreyAlpha.70}",
+            "type": "color",
+            "description": "{Palette.GreyAlpha.70}"
+          },
+          "Secondary": {
+            "value": "{Palette.GreyAlpha.90}",
+            "type": "color",
+            "description": "{Palette.GreyAlpha.90}"
+          },
+          "Pattern": {
+            "value": "linear-gradient(45deg, {Palette.GreyAlpha.90} 25%, transparent 25%, transparent 75%, {Palette.GreyAlpha.90} 75%), linear-gradient(45deg, {Palette.GreyAlpha.90} 25%, transparent 25%, transparent 75%, {Palette.GreyAlpha.90} 75%), linear-gradient(-45deg, {Palette.GreyAlpha.70} 25%, transparent 25%, transparent 75%, {Palette.GreyAlpha.70} 75%), linear-gradient(-45deg, {Palette.GreyAlpha.70} 25%, transparent 25%, transparent 75%, {Palette.GreyAlpha.70} 75%)",
+            "type": "color",
+            "description": "Gradient"
+          }
+        }
+      }
+    },
+    "Overlay": {
+      "Share": {
+        "value": "linear-gradient(0deg, #161722 7.18%, #161722fa 14.04%, #161722f2 20.63%, #161722eb 27.02%, #161722e0 33.25%, #161722d4 39.39%, #161722c4 45.5%, #161722b5 51.63%, #161722a3 57.84%, #1617228f 64.18%, #16172278 70.73%, #1617225e 77.52%, #16172245 84.63%, #16172229 92.1%, #1617220d 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "Transparent": {
+        "value": "rgba(0, 0, 0, 0)",
+        "type": "color",
+        "description": "rgba(0, 0, 0, 0)"
+      },
+      "Card": {
+        "value": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0129734) 6.64%, rgba(0, 0, 0, 0.0314703) 12.42%, rgba(0, 0, 0, 0.0556566) 17.52%, rgba(0, 0, 0, 0.0856979) 22.16%, rgba(0, 0, 0, 0.12176) 26.54%, rgba(0, 0, 0, 0.164009) 30.85%, rgba(0, 0, 0, 0.21261) 35.3%, rgba(0, 0, 0, 0.267729) 40.09%, rgba(0, 0, 0, 0.329533) 45.42%, rgba(0, 0, 0, 0.398186) 51.49%, rgba(0, 0, 0, 0.473855) 58.5%, rgba(0, 0, 0, 0.556704) 66.66%, rgba(0, 0, 0, 0.646902) 76.16%, rgba(0, 0, 0, 0.744611) 87.2%, rgba(0, 0, 0, 0.85) 100%)",
+        "type": "color",
+        "description": "Gradient"
+      },
+      "LightStark": {
+        "value": "{Palette.DarkAlpha.30}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.30}"
+      },
+      "Low": {
+        "value": "{Palette.DarkAlpha.15}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.15}"
+      },
+      "Medium": {
+        "value": "{Palette.DarkAlpha.40}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.40}"
+      },
+      "High": {
+        "value": "{Palette.DarkAlpha.60}",
+        "type": "color",
+        "description": "{Palette.DarkAlpha.60}"
+      }
+    },
+    "Contrast": {
+      "Text": {
+        "Light": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "For use on whitelabeling"
+        },
+        "Dark": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "For use on whitelabeling"
+        }
+      },
+      "Icon": {
+        "Light": {
+          "value": "{Palette.Grey.100}",
+          "type": "color",
+          "description": "For use on whitelabeling"
+        },
+        "Dark": {
+          "value": "{Palette.Grey.10}",
+          "type": "color",
+          "description": "For use on whitelabeling"
+        }
+      },
+      "Checkbox": {
+        "SVG": {
+          "Light": {
+            "value": "url(\"data:image/svg+xml, %3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M4.12158 8.82129C4.4292 8.82129 4.6709 8.70264 4.83789 8.45654L8.9292 2.2207C9.04785 2.04053 9.09619 1.86914 9.09619 1.71094C9.09619 1.28467 8.771 0.968262 8.33154 0.968262C8.03271 0.968262 7.84375 1.07812 7.65918 1.36377L4.104 6.97119L2.30225 4.76074C2.13525 4.55859 1.95068 4.4707 1.6958 4.4707C1.25195 4.4707 0.931152 4.78711 0.931152 5.21777C0.931152 5.41113 0.988281 5.57812 1.15527 5.76709L3.42285 8.4917C3.61182 8.71582 3.83154 8.82129 4.12158 8.82129Z' fill='white' /%3E%3C/svg%3E\")",
+            "type": "color",
+            "description": "checkmark icon svg"
+          },
+          "Dark": {
+            "value": "url(\"data:image/svg+xml, %3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M4.12158 8.82129C4.4292 8.82129 4.6709 8.70264 4.83789 8.45654L8.9292 2.2207C9.04785 2.04053 9.09619 1.86914 9.09619 1.71094C9.09619 1.28467 8.771 0.968262 8.33154 0.968262C8.03271 0.968262 7.84375 1.07812 7.65918 1.36377L4.104 6.97119L2.30225 4.76074C2.13525 4.55859 1.95068 4.4707 1.6958 4.4707C1.25195 4.4707 0.931152 4.78711 0.931152 5.21777C0.931152 5.41113 0.988281 5.57812 1.15527 5.76709L3.42285 8.4917C3.61182 8.71582 3.83154 8.82129 4.12158 8.82129Z' fill='rgb(24, 27, 41)' /%3E%3C/svg%3E\")",
+            "type": "color",
+            "description": "checkmark icon svg"
+          }
+        }
+      }
+    },
+    "Meta": {
+      "Opaque": {
+        "Default": {
+          "value": "{Palette.Grey.60}",
+          "type": "color",
+          "description": "{Palette.Grey.60}"
+        },
+        "Red": {
+          "value": "{Palette.Tint.Red.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Red.70}"
+        },
+        "Coral": {
+          "value": "{Palette.Tint.Coral.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Coral.70}"
+        },
+        "Orange": {
+          "value": "{Palette.Tint.Orange.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Orange.70}"
+        },
+        "Yellow": {
+          "value": "{Palette.Tint.Yellow.80}",
+          "type": "color",
+          "description": "{Palette.Tint.Yellow.80}"
+        },
+        "Lime": {
+          "value": "{Palette.Tint.Lime.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Lime.70}"
+        },
+        "Green": {
+          "value": "{Palette.Tint.Green.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Green.70}"
+        },
+        "Teal": {
+          "value": "{Palette.Tint.Teal.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Teal.70}"
+        },
+        "Aqua": {
+          "value": "{Palette.Tint.Aqua.70}",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "{Palette.Tint.Blue.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Blue.70}"
+        },
+        "Purple": {
+          "value": "{Palette.Tint.Purple.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Purple.70}"
+        },
+        "Pink": {
+          "value": "{Palette.Tint.Pink.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Pink.70}"
+        },
+        "Maroon": {
+          "value": "{Palette.Tint.Maroon.70}",
+          "type": "color",
+          "description": "{Palette.Tint.Maroon.70}"
+        }
+      },
+      "Text": {
+        "Default": {
+          "value": "{Palette.Grey.60}",
+          "type": "color",
+          "description": "{Palette.Grey.60}"
+        },
+        "Red": {
+          "value": "{Palette.Tint.Red.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Red.50}"
+        },
+        "Coral": {
+          "value": "{Palette.Tint.Coral.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Coral.50}"
+        },
+        "Orange": {
+          "value": "{Palette.Tint.Orange.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Orange.50}"
+        },
+        "Yellow": {
+          "value": "{Palette.Tint.Yellow.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Yellow.50}"
+        },
+        "Lime": {
+          "value": "{Palette.Tint.Lime.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Lime.50}"
+        },
+        "Green": {
+          "value": "{Palette.Tint.Green.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Green.50}"
+        },
+        "Teal": {
+          "value": "{Palette.Tint.Teal.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Teal.50}"
+        },
+        "Aqua": {
+          "value": "{Palette.Tint.Aqua.50}",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "{Palette.Tint.Blue.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Blue.50}"
+        },
+        "Purple": {
+          "value": "{Palette.Tint.Purple.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Purple.50}"
+        },
+        "Pink": {
+          "value": "{Palette.Tint.Pink.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Pink.50}"
+        },
+        "Maroon": {
+          "value": "{Palette.Tint.Maroon.50}",
+          "type": "color",
+          "description": "{Palette.Tint.Maroon.50}"
+        }
+      },
+      "Icon": {
+        "Default": {
+          "value": "{Palette.Grey.60}",
+          "type": "color",
+          "description": "{Palette.Grey.60}"
+        },
+        "Coral": {
+          "value": "{Palette.Tint.Coral.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Coral.60}"
+        },
+        "Red": {
+          "value": "{Palette.Tint.Red.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Red.60}"
+        },
+        "Orange": {
+          "value": "{Palette.Tint.Orange.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Orange.60}"
+        },
+        "Yellow": {
+          "value": "{Palette.Tint.Yellow.80}",
+          "type": "color",
+          "description": "{Palette.Tint.Yellow.80}"
+        },
+        "Lime": {
+          "value": "{Palette.Tint.Lime.60}",
+          "type": "color"
+        },
+        "Green": {
+          "value": "{Palette.Tint.Green.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Green.60}"
+        },
+        "Teal": {
+          "value": "{Palette.Tint.Teal.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Teal.60}"
+        },
+        "Aqua": {
+          "value": "{Palette.Tint.Aqua.60}",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "{Palette.Tint.Blue.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Blue.60}"
+        },
+        "Purple": {
+          "value": "{Palette.Tint.Purple.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Purple.60}"
+        },
+        "Pink": {
+          "value": "{Palette.Tint.Pink.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Pink.60}"
+        },
+        "Maroon": {
+          "value": "{Palette.Tint.Maroon.60}",
+          "type": "color",
+          "description": "{Palette.Tint.Maroon.60}"
+        }
+      },
+      "Low Opacity": {
+        "Default": {
+          "value": "{Palette.Grey.90}",
+          "type": "color"
+        },
+        "Red": {
+          "value": "{Palette.TintAlpha.Red.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Red.10}"
+        },
+        "Coral": {
+          "value": "{Palette.TintAlpha.Coral.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Coral.10}"
+        },
+        "Orange": {
+          "value": "{Palette.TintAlpha.Orange.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Orange.10}"
+        },
+        "Yellow": {
+          "value": "{Palette.TintAlpha.Yellow.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Yellow.10}"
+        },
+        "Lime": {
+          "value": "{Palette.TintAlpha.Lime.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Lime.10}"
+        },
+        "Green": {
+          "value": "{Palette.TintAlpha.Green.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Green.10}"
+        },
+        "Teal": {
+          "value": "{Palette.TintAlpha.Teal.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Teal.10}"
+        },
+        "Aqua": {
+          "value": "{Palette.TintAlpha.Aqua.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Aqua.10}"
+        },
+        "Blue": {
+          "value": "{Palette.TintAlpha.Blue.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Blue.10}"
+        },
+        "Purple": {
+          "value": "{Palette.TintAlpha.Purple.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Purple.10}"
+        },
+        "Pink": {
+          "value": "{Palette.TintAlpha.Pink.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Pink.10}"
+        },
+        "Maroon": {
+          "value": "{Palette.TintAlpha.Maroon.10}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Maroon.10}"
+        },
+        "Interactive": {
+          "Hover": {
+            "Default": {
+              "value": "{Palette.GreyAlpha.15}",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.15}"
+            },
+            "Red": {
+              "value": "rgba(255, 126, 128, 0.3)",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Red.15}"
+            },
+            "Coral": {
+              "value": "{Palette.TintAlpha.Coral.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Coral.15}"
+            },
+            "Orange": {
+              "value": "{Palette.TintAlpha.Orange.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Orange.15}"
+            },
+            "Yellow": {
+              "value": "{Palette.TintAlpha.Yellow.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Yellow.15}"
+            },
+            "Lime": {
+              "value": "{Palette.TintAlpha.Lime.15}",
+              "type": "color"
+            },
+            "Green": {
+              "value": "{Palette.TintAlpha.Green.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Green.15}"
+            },
+            "Teal": {
+              "value": "{Palette.TintAlpha.Teal.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Teal.15}"
+            },
+            "Aqua": {
+              "value": "{Palette.TintAlpha.Aqua.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Aqua.15}"
+            },
+            "Blue": {
+              "value": "{Palette.TintAlpha.Blue.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Blue.15}"
+            },
+            "Purple": {
+              "value": "{Palette.TintAlpha.Purple.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Purple.15}"
+            },
+            "Pink": {
+              "value": "{Palette.TintAlpha.Pink.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Pink.15}"
+            },
+            "Maroon": {
+              "value": "{Palette.TintAlpha.Maroon.15}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Maroon.15}"
+            }
+          },
+          "Active": {
+            "Default": {
+              "value": "{Palette.Grey.60}",
+              "type": "color",
+              "description": "{Palette.Grey.60}"
+            },
+            "Red": {
+              "value": "{Palette.Tint.Red.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Red.70}"
+            },
+            "Orange": {
+              "value": "{Palette.Tint.Orange.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Orange.70}"
+            },
+            "Coral": {
+              "value": "{Palette.Tint.Coral.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Coral.70}"
+            },
+            "Yellow": {
+              "value": "{Palette.Tint.Yellow.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Yellow.70}"
+            },
+            "Lime": {
+              "value": "{Palette.Tint.Lime.70}",
+              "type": "color"
+            },
+            "Green": {
+              "value": "{Palette.Tint.Green.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Green.70}"
+            },
+            "Teal": {
+              "value": "{Palette.Tint.Teal.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Teal.70}"
+            },
+            "Aqua": {
+              "value": "{Palette.Tint.Aqua.70}",
+              "type": "color"
+            },
+            "Blue": {
+              "value": "{Palette.Tint.Blue.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Blue.70}"
+            },
+            "Purple": {
+              "value": "{Palette.Tint.Purple.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Purple.70}"
+            },
+            "Pink": {
+              "value": "{Palette.Tint.Pink.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Pink.70}"
+            },
+            "Maroon": {
+              "value": "{Palette.Tint.Maroon.70}",
+              "type": "color",
+              "description": "{Palette.Tint.Maroon.70}"
+            }
+          }
+        }
+      },
+      "Medium Opacity": {
+        "Default": {
+          "value": "{Palette.GreyAlpha.40}",
+          "type": "color",
+          "description": "{Palette.GreyAlpha.40}"
+        },
+        "Red": {
+          "value": "{Palette.TintAlpha.Red.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Red.30}"
+        },
+        "Coral": {
+          "value": "{Palette.TintAlpha.Coral.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Coral.30}"
+        },
+        "Orange": {
+          "value": "{Palette.TintAlpha.Orange.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Orange.30}"
+        },
+        "Yellow": {
+          "value": "rgba(232, 181, 48, 0.25)",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Yellow.30}\nlch.d: 0.1"
+        },
+        "Lime": {
+          "value": "{Palette.TintAlpha.Lime.30}",
+          "type": "color"
+        },
+        "Green": {
+          "value": "{Palette.TintAlpha.Green.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Green.30}"
+        },
+        "Teal": {
+          "value": "rgba(67, 209, 209, 0.3)",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Teal.30}\nlch.d: 0.1"
+        },
+        "Aqua": {
+          "value": "{Palette.TintAlpha.Aqua.30}",
+          "type": "color"
+        },
+        "Blue": {
+          "value": "{Palette.TintAlpha.Blue.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Blue.30}"
+        },
+        "Purple": {
+          "value": "{Palette.TintAlpha.Purple.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Purple.30}"
+        },
+        "Pink": {
+          "value": "{Palette.TintAlpha.Pink.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Pink.30}"
+        },
+        "Maroon": {
+          "value": "{Palette.TintAlpha.Maroon.30}",
+          "type": "color",
+          "description": "{Palette.TintAlpha.Maroon.30}"
+        },
+        "Interactive": {
+          "Hover": {
+            "Default": {
+              "value": "{Palette.GreyAlpha.50}",
+              "type": "color",
+              "description": "{Palette.GreyAlpha.50}"
+            },
+            "Red": {
+              "value": "{Palette.TintAlpha.Red.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Red.60}"
+            },
+            "Coral": {
+              "value": "{Palette.TintAlpha.Coral.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Coral.60}"
+            },
+            "Orange": {
+              "value": "{Palette.TintAlpha.Orange.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Orange.60}"
+            },
+            "Yellow": {
+              "value": "rgba(237, 174, 12, 0.55)",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Yellow.60}"
+            },
+            "Lime": {
+              "value": "{Palette.TintAlpha.Lime.60}",
+              "type": "color"
+            },
+            "Green": {
+              "value": "{Palette.TintAlpha.Green.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Green.60}"
+            },
+            "Teal": {
+              "value": "rgba(62, 183, 183, 0.6)",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Teal.60}\nlch.d: 0.2"
+            },
+            "Aqua": {
+              "value": "{Palette.TintAlpha.Aqua.60}",
+              "type": "color"
+            },
+            "Blue": {
+              "value": "{Palette.TintAlpha.Blue.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Blue.60}"
+            },
+            "Purple": {
+              "value": "{Palette.TintAlpha.Purple.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Purple.60}"
+            },
+            "Pink": {
+              "value": "{Palette.TintAlpha.Pink.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Pink.60}"
+            },
+            "Maroon": {
+              "value": "{Palette.TintAlpha.Maroon.60}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Maroon.60}"
+            }
+          },
+          "Active": {
+            "Default": {
+              "value": "{Palette.Grey.50}",
+              "type": "color",
+              "description": "{Palette.Grey.50}"
+            },
+            "Red": {
+              "value": "{Palette.TintAlpha.Red.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Red.100}"
+            },
+            "Coral": {
+              "value": "{Palette.TintAlpha.Coral.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Coral.100}"
+            },
+            "Orange": {
+              "value": "{Palette.TintAlpha.Orange.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Orange.100}"
+            },
+            "Yellow": {
+              "value": "rgba(237, 174, 12, 1)",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Yellow.100}"
+            },
+            "Lime": {
+              "value": "{Palette.TintAlpha.Lime.100}",
+              "type": "color"
+            },
+            "Green": {
+              "value": "{Palette.TintAlpha.Green.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Green.100}"
+            },
+            "Teal": {
+              "value": "{Palette.TintAlpha.Teal.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Teal.100}"
+            },
+            "Aqua": {
+              "value": "{Palette.TintAlpha.Aqua.100}",
+              "type": "color"
+            },
+            "Blue": {
+              "value": "{Palette.TintAlpha.Blue.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Blue.100}"
+            },
+            "Purple": {
+              "value": "{Palette.TintAlpha.Purple.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Purple.100}"
+            },
+            "Pink": {
+              "value": "{Palette.TintAlpha.Pink.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Pink.100}"
+            },
+            "Maroon": {
+              "value": "{Palette.TintAlpha.Maroon.100}",
+              "type": "color",
+              "description": "{Palette.TintAlpha.Maroon.100}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Shadows": {
+    "2dp": {
+      "value": [
+        {
+          "color": "#0b0d170a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "0.40",
+          "spread": "0"
+        },
+        {
+          "color": "#0b0d170f",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "1.59",
+          "spread": "0"
+        },
+        {
+          "color": "#0b0d171a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "5",
+          "spread": "0"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "4dp": {
+      "value": [
+        {
+          "color": "#00000008",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.16",
+          "blur": "0.81",
+          "spread": "0"
+        },
+        {
+          "color": "#0000000a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.77",
+          "blur": "3.18",
+          "spread": "0"
+        },
+        {
+          "color": "#00000012",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "2",
+          "blur": "10",
+          "spread": "0"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "8dp": {
+      "value": [
+        {
+          "color": "#0b0d170a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0.57",
+          "blur": "1.38",
+          "spread": "0"
+        },
+        {
+          "color": "#0b0d170d",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "2.69",
+          "blur": "5.41",
+          "spread": "0"
+        },
+        {
+          "color": "#0b0d1717",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "7",
+          "blur": "17",
+          "spread": "0"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "12dp": {
+      "value": [
+        {
+          "color": "#0b0d1708",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.54",
+          "blur": "2.52",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d170a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "7.31",
+          "blur": "9.87",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d1712",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "19",
+          "blur": "31",
+          "spread": "2"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "16dp": {
+      "value": [
+        {
+          "color": "#0b0d170a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.95",
+          "blur": "4.07",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d170f",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "9.24",
+          "blur": "15.92",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d171a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "24",
+          "blur": "50",
+          "spread": "2"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "24dp": {
+      "value": [
+        {
+          "color": "#0b0d170d",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "3.34",
+          "blur": "6.59",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d1717",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "15.79",
+          "blur": "25.79",
+          "spread": "2"
+        },
+        {
+          "color": "#0b0d1724",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "41",
+          "blur": "81",
+          "spread": "2"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "32dp": {
+      "value": [
+        {
+          "color": "#12141e14",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "4.88",
+          "blur": "8.14",
+          "spread": "2"
+        },
+        {
+          "color": "#12141e1f",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "23.11",
+          "blur": "31.85",
+          "spread": "2"
+        },
+        {
+          "color": "#12141e33",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "60",
+          "blur": "100",
+          "spread": "2"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "Inset": {
+      "Small": {
+        "value": "inset 0px 0.5px 0.5px 0px rgba(255,255,255,0.05)",
+        "type": "shadows"
+      }
+    },
+    "DropShadow": {
+      "Small": {
+        "value": "drop-shadow(0px 2px 4px rgba(0,0,0,0.8))",
+        "type": "shadows",
+        "description": "Pin"
+      }
+    },
+    "Interactive": {
+      "focus": {
+        "value": "inset 0 0 0 1px white",
+        "type": "shadows"
+      }
+    }
+  },
+  "Card": {
+    "Default": {
+      "value": [
+        {
+          "color": "#0000000a",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "4",
+          "blur": "8",
+          "spread": "0"
+        },
+        {
+          "color": "#0000000d",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "1.399999976158142",
+          "blur": "2.700000047683716",
+          "spread": "0"
+        },
+        {
+          "color": "#00000029",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "0",
+          "blur": "1",
+          "spread": "0"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "Folder": {
+      "value": [
+        {
+          "color": "rgba(0,0,0,0.05)",
+          "type": "dropShadow",
+          "x": "0",
+          "y": "-4",
+          "blur": "9",
+          "spread": "0"
+        }
+      ],
+      "type": "boxShadow"
+    }
+  },
+  "FontWeights": {
+    "Regular": {
+      "value": "{Typography.420}",
+      "type": "fontWeights"
+    },
+    "Medium": {
+      "value": "{Typography.520}",
+      "type": "fontWeights"
+    },
+    "SemiBold": {
+      "value": "{Typography.620}",
+      "type": "fontWeights"
+    }
+  },
+  "Elevation": {
+    "Component": {
+      "Player": {
+        "value": [
+          {
+            "x": "0",
+            "y": "584",
+            "blur": "164",
+            "spread": "0",
+            "color": "rgba(0,0,0,0)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "150",
+            "blur": "374",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.01)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "210",
+            "blur": "124",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.04)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "93",
+            "blur": "93",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.06)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "23",
+            "blur": "51",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.07)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.08)",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "Detail Sheet": {
+        "value": [
+          {
+            "x": "-16",
+            "y": "16",
+            "blur": "60",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.05)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "-2",
+            "y": "10",
+            "blur": "20",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.03)",
+            "type": "dropShadow"
+          }
+        ],
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Iillustration": {
+    "LinearColorStop01": {
+      "value": "0.05",
+      "type": "opacity"
+    },
+    "LinearColorStop02": {
+      "value": "0.16",
+      "type": "opacity"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineBlankBrokenProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineBlankBroken: React.FC<OutlineBlankBrokenProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M3 2.75C3 1.7835 3.7835 1 4.75 1H8.58579C9.04992 1 9.49503 1.18437 9.82322 1.51256L12.4874 4.17678C12.8156 4.50496 13 4.95008 13 5.41421V12.25C13 13.2165 12.2165 14 11.25 14H4.75C3.7835 14 3 13.2165 3 12.25V2.75ZM4.75 2.5C4.61193 2.5 4.5 2.61193 4.5 2.75V9.26726L6.06061 8.13908C6.28706 7.97537 6.58576 7.95113 6.83565 8.07618L9.43265 9.37584L11.3124 8.01715C11.3715 7.97447 11.4347 7.94163 11.5 7.91832V6.5H9.75C8.7835 6.5 8 5.7165 8 4.75V2.5H4.75ZM11.5 9.73238L9.94289 10.8578C9.71644 11.0215 9.41777 11.0457 9.16789 10.9207L6.57093 9.62106L4.68939 10.9813C4.62979 11.0243 4.56599 11.0574 4.5 11.0808V12.25C4.5 12.3881 4.61193 12.5 4.75 12.5H11.25C11.3881 12.5 11.5 12.3881 11.5 12.25V9.73238ZM9.5 3.31066L11.1893 5H9.75C9.61193 5 9.5 4.88807 9.5 4.75V3.31066Z" />
+  </svg>
+);
+
+OutlineBlankBroken.displayName = 'OutlineBlankBroken';
+
+export default OutlineBlankBroken;

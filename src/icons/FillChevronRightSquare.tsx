@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillChevronRightSquareProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillChevronRightSquare: React.FC<FillChevronRightSquareProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 12.25C2 13.2165 2.7835 14 3.75 14H12.25C13.2165 14 14 13.2165 14 12.25V3.75C14 2.7835 13.2165 2 12.25 2H3.75C2.7835 2 2 2.7835 2 3.75V12.25ZM6.23966 5.2996C5.93613 5.01774 5.91855 4.54319 6.2004 4.23966C6.48226 3.93613 6.95681 3.91855 7.26034 4.2004L10.7603 7.45041C10.9132 7.59231 11 7.79145 11 8C11 8.20855 10.9132 8.40769 10.7603 8.54959L7.26034 11.7996C6.95681 12.0814 6.48226 12.0639 6.2004 11.7603C5.91855 11.4568 5.93613 10.9823 6.23966 10.7004L9.14779 8L6.23966 5.2996Z" />
+  </svg>
+);
+
+FillChevronRightSquare.displayName = 'FillChevronRightSquare';
+
+export default FillChevronRightSquare;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillFolderCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillFolderCircle: React.FC<FillFolderCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM4 6.25C4 5.55964 4.55964 5 5.25 5H6.79289C7.12441 5 7.44236 5.1317 7.67678 5.36612L8.31066 6H10.75C11.4404 6 12 6.55964 12 7.25V9.75C12 10.4404 11.4404 11 10.75 11H5.25C4.55964 11 4 10.4404 4 9.75V6.25Z" />
+  </svg>
+);
+
+FillFolderCircle.displayName = 'FillFolderCircle';
+
+export default FillFolderCircle;

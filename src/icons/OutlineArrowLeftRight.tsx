@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineArrowLeftRightProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineArrowLeftRight: React.FC<OutlineArrowLeftRightProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M13.8446 7.5409C14.0525 7.81062 14.0525 8.18651 13.8448 8.4563L11.3414 11.707C11.0886 12.0352 10.6177 12.0964 10.2895 11.8436C9.96137 11.5909 9.90021 11.12 10.1529 10.7918L11.7264 8.74858L4.27399 8.74857L5.84474 10.7931C6.0971 11.1216 6.03539 11.5924 5.70692 11.8448C5.37845 12.0971 4.90761 12.0354 4.65526 11.707L2.15733 8.45559C1.95015 8.18592 1.95034 7.8106 2.1578 7.54114L4.65572 4.29662C4.90841 3.96841 5.37932 3.90719 5.70753 4.15988C6.03574 4.41256 6.09696 4.88347 5.84428 5.21168L4.27609 7.24857L11.7257 7.24858L10.1531 5.20783C9.90025 4.87973 9.96126 4.40879 10.2894 4.15596C10.6175 3.90313 11.0884 3.96415 11.3412 4.29224L13.8446 7.5409Z" />
+  </svg>
+);
+
+OutlineArrowLeftRight.displayName = 'OutlineArrowLeftRight';
+
+export default OutlineArrowLeftRight;

@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineCheckmarkProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCheckmark: React.FC<OutlineCheckmarkProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M12.7493 4.1904C13.0584 4.46618 13.0854 4.94029 12.8096 5.24935L7.00961 11.7493C6.87558 11.8996 6.6868 11.9896 6.48572 11.9992C6.28465 12.0087 6.08816 11.9371 5.94045 11.8003L3.24045 9.30033C2.93651 9.01891 2.91826 8.54438 3.19968 8.24045C3.4811 7.93652 3.95563 7.91827 4.25956 8.19969L6.39902 10.1807L11.6904 4.25067C11.9662 3.9416 12.4403 3.91462 12.7493 4.1904Z" />
+  </svg>
+);
+
+OutlineCheckmark.displayName = 'OutlineCheckmark';
+
+export default OutlineCheckmark;

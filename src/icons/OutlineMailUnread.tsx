@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface OutlineMailUnreadProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineMailUnread: React.FC<OutlineMailUnreadProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M13 6C14.1046 6 15 5.10457 15 4C15 2.89543 14.1046 2 13 2C11.8954 2 11 2.89543 11 4C11 5.10457 11.8954 6 13 6Z" />
+    <path fill="currentColor" d="M3.75 4.5C3.61193 4.5 3.5 4.61193 3.5 4.75V5.40652L7.88926 7.475C7.95669 7.50678 8.03479 7.50681 8.10225 7.47508L9.93577 6.61258C10.3106 6.43627 10.7574 6.59719 10.9337 6.972C11.11 7.34682 10.9491 7.79359 10.5743 7.96991L8.74073 8.8324C8.26854 9.05452 7.72186 9.05433 7.24982 8.83188L3.5 7.06474V11.25C3.5 11.3881 3.61193 11.5 3.75 11.5H12.25C12.3881 11.5 12.5 11.3881 12.5 11.25V8.75C12.5 8.33579 12.8358 8 13.25 8C13.6642 8 14 8.33579 14 8.75V11.25C14 12.2165 13.2165 13 12.25 13H3.75C2.7835 13 2 12.2165 2 11.25V4.75C2 3.7835 2.7835 3 3.75 3H8.25C8.66421 3 9 3.33579 9 3.75C9 4.16421 8.66421 4.5 8.25 4.5H3.75Z" />
+  </svg>
+);
+
+OutlineMailUnread.displayName = 'OutlineMailUnread';
+
+export default OutlineMailUnread;

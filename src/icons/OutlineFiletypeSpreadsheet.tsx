@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineFiletypeSpreadsheetProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineFiletypeSpreadsheet: React.FC<OutlineFiletypeSpreadsheetProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M2 4.75C2 3.7835 2.7835 3 3.75 3H12.25C13.2165 3 14 3.7835 14 4.75V11.25C14 12.2165 13.2165 13 12.25 13H3.75C2.7835 13 2 12.2165 2 11.25V4.75ZM3.75 4.5C3.61193 4.5 3.5 4.61193 3.5 4.75V7.25H7.25V4.5H3.75ZM7.25 8.75H3.5V11.25C3.5 11.3881 3.61193 11.5 3.75 11.5H7.25V8.75ZM8.75 8.75H12.5V11.25C12.5 11.3881 12.3881 11.5 12.25 11.5H8.75V8.75ZM12.5 7.25H8.75V4.5H12.25C12.3881 4.5 12.5 4.61193 12.5 4.75V7.25Z" />
+  </svg>
+);
+
+OutlineFiletypeSpreadsheet.displayName = 'OutlineFiletypeSpreadsheet';
+
+export default OutlineFiletypeSpreadsheet;

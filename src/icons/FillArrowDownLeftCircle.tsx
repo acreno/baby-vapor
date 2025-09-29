@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface FillArrowDownLeftCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillArrowDownLeftCircle: React.FC<FillArrowDownLeftCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M15 8.00024C15 11.8662 11.866 15.0002 8 15.0002C4.13401 15.0002 1 11.8662 1 8.00024C1 4.13425 4.13401 1.00024 8 1.00024C11.866 1.00024 15 4.13425 15 8.00024ZM9.99997 10.2504C9.99997 9.83618 9.66419 9.50039 9.24997 9.50039L7.56021 9.50038L10.7803 6.28075C11.0732 5.98788 11.0732 5.513 10.7803 5.22009C10.4875 4.92718 10.0126 4.92714 9.71968 5.22002L6.49997 8.4393L6.49998 6.75039C6.49998 6.33617 6.16419 6.00039 5.74998 6.00038C5.33577 6.00038 4.99998 6.33617 4.99998 6.75038L4.99996 10.2504C4.99996 10.6646 5.33574 11.0004 5.74996 11.0004L9.24997 11.0004C9.66418 11.0004 9.99997 10.6646 9.99997 10.2504Z" />
+  </svg>
+);
+
+FillArrowDownLeftCircle.displayName = 'FillArrowDownLeftCircle';
+
+export default FillArrowDownLeftCircle;

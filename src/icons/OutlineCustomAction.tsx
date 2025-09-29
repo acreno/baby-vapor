@@ -1,0 +1,36 @@
+import React from 'react';
+
+export interface OutlineCustomActionProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineCustomAction: React.FC<OutlineCustomActionProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M9.25002 6C9.66424 6 10 5.66421 10 5.25C10 4.83579 9.66424 4.5 9.25002 4.5H6.74908C6.33487 4.5 5.99908 4.83579 5.99908 5.25C5.99908 5.66421 6.33487 6 6.74908 6H9.25002Z" />
+    <path fill="currentColor" d="M10 8.25C10 8.66421 9.66424 9 9.25002 9H6.74908C6.33487 9 5.99908 8.66421 5.99908 8.25C5.99908 7.83579 6.33487 7.5 6.74908 7.5H9.25002C9.66424 7.5 10 7.83579 10 8.25Z" />
+    <path fill="currentColor" d="M9.25002 12C9.66424 12 10 11.6642 10 11.25C10 10.8358 9.66424 10.5 9.25002 10.5H6.74908C6.33487 10.5 5.99908 10.8358 5.99908 11.25C5.99908 11.6642 6.33487 12 6.74908 12H9.25002Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.75 1C3.7835 1 3 1.7835 3 2.75V13.25C3 14.2165 3.7835 15 4.75 15H11.25C12.2165 15 13 14.2165 13 13.25V2.75C13 1.7835 12.2165 1 11.25 1H4.75ZM4.5 2.75C4.5 2.61193 4.61193 2.5 4.75 2.5H11.25C11.3881 2.5 11.5 2.61193 11.5 2.75V13.25C11.5 13.3881 11.3881 13.5 11.25 13.5H4.75C4.61193 13.5 4.5 13.3881 4.5 13.25V2.75Z" />
+  </svg>
+);
+
+OutlineCustomAction.displayName = 'OutlineCustomAction';
+
+export default OutlineCustomAction;

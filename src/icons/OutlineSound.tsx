@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineSoundProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineSound: React.FC<OutlineSoundProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M6.75 3C7.16421 3 7.5 3.33579 7.5 3.75L7.5 12.2529C7.5 12.6671 7.16421 13.0029 6.75 13.0029C6.33579 13.0029 6 12.6671 6 12.2529L6 3.75C6 3.33579 6.33579 3 6.75 3ZM4.5 7.75C4.5 7.33579 4.16421 7 3.75 7C3.33579 7 3 7.33579 3 7.75V12.2529C3 12.6671 3.33579 13.0029 3.75 13.0029C4.16421 13.0029 4.5 12.6671 4.5 12.2529V7.75ZM13.5 9.75073C13.5 9.33652 13.1642 9.00073 12.75 9.00073C12.3358 9.00073 12 9.33652 12 9.75073V12.2528C12 12.667 12.3358 13.0028 12.75 13.0028C13.1642 13.0028 13.5 12.667 13.5 12.2528V9.75073ZM10.5 5.75C10.5 5.33579 10.1642 5 9.75 5C9.33579 5 9 5.33579 9 5.75V12.253C9 12.6672 9.33579 13.003 9.75 13.003C10.1642 13.003 10.5 12.6672 10.5 12.253V5.75Z" />
+  </svg>
+);
+
+OutlineSound.displayName = 'OutlineSound';
+
+export default OutlineSound;

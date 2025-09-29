@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface OutlineEditCircleProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineEditCircle: React.FC<OutlineEditCircleProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.06803 6.35977L9.65191 7.92027L7.3035 10.2687C7.23765 10.3347 7.15624 10.3848 7.06782 10.4139L5.33735 10.987C5.24507 11.0174 5.14403 10.9936 5.07516 10.9249C5.00658 10.8564 4.98246 10.7549 5.01308 10.6629L5.58602 8.93193C5.6151 8.84385 5.66521 8.76261 5.73106 8.69676L8.06803 6.35977Z" />
+    <path fill="currentColor" d="M9.10219 5.32561L8.77516 5.65265L10.359 7.21314L10.6744 6.89779C11.1086 6.46363 11.1085 5.75971 10.6744 5.32557C10.2402 4.89146 9.53632 4.89148 9.10219 5.32561Z" />
+    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1ZM2.5 8C2.5 4.96243 4.96243 2.5 8 2.5C11.0376 2.5 13.5 4.96243 13.5 8C13.5 11.0376 11.0376 13.5 8 13.5C4.96243 13.5 2.5 11.0376 2.5 8Z" />
+  </svg>
+);
+
+OutlineEditCircle.displayName = 'OutlineEditCircle';
+
+export default OutlineEditCircle;

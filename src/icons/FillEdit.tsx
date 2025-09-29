@@ -1,0 +1,34 @@
+import React from 'react';
+
+export interface FillEditProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillEdit: React.FC<FillEditProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M3.45901 9.39004C3.3291 9.52004 3.22916 9.68004 3.1692 9.86004L2.02994 13.33C1.96997 13.51 2.01994 13.72 2.14986 13.85C2.28977 13.99 2.48964 14.03 2.66952 13.97L6.12729 12.82C6.30718 12.76 6.46707 12.66 6.59699 12.53L11.4638 7.66004L8.29589 4.54004L3.45901 9.39004Z" />
+    <path fill="currentColor" d="M13.3427 2.65006C12.4732 1.78006 11.0642 1.78006 10.2047 2.65006L9.37525 3.48006L12.5432 6.60006L13.3527 5.79006C14.2221 4.92006 14.2221 3.51006 13.3527 2.65006H13.3427Z" />
+  </svg>
+);
+
+FillEdit.displayName = 'FillEdit';
+
+export default FillEdit;

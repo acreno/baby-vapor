@@ -1,0 +1,35 @@
+import React from 'react';
+
+export interface FillArrowTriangularRightProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const FillArrowTriangularRight: React.FC<FillArrowTriangularRightProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor"
+        d="M4.66663 3.77071L4.66663 12.2291C4.66663 12.3953 4.76451 12.5476 4.91966 12.6214C5.07451 12.6952 5.25966 12.6777 5.39693 12.577L11.1545 8.34785C11.2672 8.26473 11.3333 8.13639 11.3333 7.99989C11.3333 7.86339 11.2672 7.73506 11.1545 7.65223L5.39693 3.42304C5.25966 3.32212 5.0745 3.30491 4.91966 3.3787C4.7645 3.45221 4.66663 3.60446 4.66663 3.77071Z"
+         />
+  </svg>
+);
+
+FillArrowTriangularRight.displayName = 'FillArrowTriangularRight';
+
+export default FillArrowTriangularRight;

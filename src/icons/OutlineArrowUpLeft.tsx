@@ -1,0 +1,33 @@
+import React from 'react';
+
+export interface OutlineArrowUpLeftProps {
+  className?: string;
+  size?: number | string;
+  color?: string;
+  style?: React.CSSProperties;
+}
+
+export const OutlineArrowUpLeft: React.FC<OutlineArrowUpLeftProps> = ({ 
+  className = '', 
+  size = 24, 
+  color = 'currentColor',
+  style,
+  ...props 
+}) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M4.75 4.00464C4.33579 4.00464 4 4.34043 4 4.75464L4.28924 4.75464C4.28924 4.75464 4.28924 4.75463 4.28924 4.75464L4 4.75464L4 9.24999C4 9.6642 4.33579 9.99999 4.75 9.99999C5.16421 9.99999 5.5 9.6642 5.5 9.24999L5.5 6.56233L10.7198 11.7804C11.0127 12.0732 11.4876 12.0731 11.7804 11.7802C12.0733 11.4873 12.0732 11.0124 11.7802 10.7195L6.56363 5.50464L9.25 5.50464C9.66422 5.50464 10 5.16885 10 4.75464C10 4.34043 9.66422 4.00464 9.25 4.00464H4.75Z" />
+  </svg>
+);
+
+OutlineArrowUpLeft.displayName = 'OutlineArrowUpLeft';
+
+export default OutlineArrowUpLeft;
