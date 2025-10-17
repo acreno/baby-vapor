@@ -40,8 +40,8 @@
   }
   
   .card {
-    background-color: var(--color-background-card);
-    border-radius: var(--radii-8);
+    background-color: var(--color-background-panel);
+    border-radius: var(--radii-16);
     padding: var(--spaces-32);
     box-shadow: var(--shadows-2dp);
   }

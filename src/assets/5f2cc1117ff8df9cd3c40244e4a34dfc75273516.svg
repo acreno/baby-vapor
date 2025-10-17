@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="switch">
+<path d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8C32 12.4183 28.4183 16 24 16H8C3.58172 16 0 12.4183 0 8Z" fill="var(--fill-0, #393D4F)" fill-opacity="0.35" style="fill:#393D4F;fill:color(display-p3 0.2235 0.2392 0.3098);fill-opacity:0.35;"/>
+<circle id="Ellipse" cx="24" cy="8" r="6" fill="var(--fill-0, #A1A4BE)" fill-opacity="0.65" style="fill:#A1A4BE;fill:color(display-p3 0.6314 0.6431 0.7451);fill-opacity:0.65;"/>
+</g>
+</svg>

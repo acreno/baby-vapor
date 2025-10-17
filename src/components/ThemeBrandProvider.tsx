@@ -24,7 +24,7 @@ const ThemeBrandContext = createContext<ThemeBrandContextType | undefined>(undef
 export const ThemeBrandProvider: React.FC<ThemeBrandProviderProps> = ({
   children,
   defaultTheme = 'light',
-  defaultBrand = 'adobe',
+  defaultBrand = 'fio',
 }) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
   const [brand, setBrand] = useState<Brand>(defaultBrand);

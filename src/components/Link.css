@@ -1,0 +1,86 @@
+/* Link component styles using semantic design tokens */
+
+.vapor-link {
+  /* Base styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--fonts-body);
+  font-weight: var(--typography-500);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  position: relative;
+  border-radius: var(--radii-6);
+  gap: 4px;
+  
+  /* Default colors from Figma */
+  color: var(--color-brand-light, #7e85ff);
+}
+
+/* Size variants */
+.vapor-link--small {
+  font-size: var(--font-sizes-60, 12px);
+  line-height: var(--line-heights-100, 20px);
+}
+
+.vapor-link--default {
+  font-size: var(--font-sizes-70, 13px);
+  line-height: var(--line-heights-100, 20px);
+}
+
+/* Icon styling */
+.vapor-link__left-icon,
+.vapor-link__right-icon {
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.vapor-link__text {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+/* Hover state */
+.vapor-link:hover:not([aria-disabled="true"]) {
+  color: var(--color-brand-primary, #5b53ff);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+}
+
+/* Pressed/Active state */
+.vapor-link:active:not([aria-disabled="true"]) {
+  color: var(--color-brand-primary, #5b53ff);
+  text-decoration: none;
+}
+
+/* Focused state */
+.vapor-link:focus-visible:not([aria-disabled="true"]) {
+  color: var(--color-brand-light, #7e85ff);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--color-brand-light, #7e85ff);
+}
+
+/* Disabled state */
+.vapor-link--disabled,
+.vapor-link[aria-disabled="true"] {
+  color: var(--color-brand-primary-alpha-medium, rgba(91, 83, 255, 0.5));
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.vapor-link--disabled .vapor-link__left-icon,
+.vapor-link--disabled .vapor-link__right-icon,
+.vapor-link[aria-disabled="true"] .vapor-link__left-icon,
+.vapor-link[aria-disabled="true"] .vapor-link__right-icon {
+  opacity: 0.5;
+}

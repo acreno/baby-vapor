@@ -1,0 +1,263 @@
+/* Button component styles using semantic design tokens */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.vapor-button {
+  /* Base styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonts-body);
+  font-weight: var(--typography-500);
+  font-size: var(--font-sizes-70);
+  line-height: var(--line-heights-100);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  position: relative;
+}
+
+/* Size variants */
+.vapor-button--small {
+  padding: 2px 8px;
+  gap: 4px;
+}
+
+.vapor-button--regular {
+  padding: 4px 8px;
+  gap: 4px;
+  min-height: 32px;
+}
+
+/* Shape variants */
+.vapor-button--rectangular {
+  border-radius: var(--radii-6);
+}
+
+.vapor-button--rounded {
+  border-radius: var(--radii-16);
+}
+
+/* Primary variant */
+.vapor-button--primary {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-text-contrast);
+}
+
+.vapor-button--primary .vapor-button__left-icon,
+.vapor-button--primary .vapor-button__right-icon {
+  color: var(--color-brand-icon-contrast);
+}
+
+.vapor-button--primary:hover:not(:disabled) {
+  background-color: var(--color-brand-dark);
+}
+
+.vapor-button--primary:active:not(:disabled) {
+  background-color: var(--color-brand-darker);
+}
+
+.vapor-button--primary:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-brand-primary);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--primary:disabled,
+.vapor-button--primary.vapor-button--disabled {
+  background-color: var(--color-brand-primary-alpha-low);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Secondary variant */
+.vapor-button--secondary {
+  background-color: var(--color-components-button-secondary-background);
+  color: var(--color-components-button-secondary-text);
+}
+
+.vapor-button--secondary .vapor-button__left-icon,
+.vapor-button--secondary .vapor-button__right-icon {
+  color: var(--color-components-button-secondary-icon);
+}
+
+.vapor-button--secondary:hover:not(:disabled) {
+  background-color: var(--color-components-button-secondary-interactive-background-hover);
+}
+
+.vapor-button--secondary:active:not(:disabled) {
+  background-color: var(--color-components-button-secondary-interactive-background-pressed);
+}
+
+.vapor-button--secondary:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-components-button-secondary-background);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--secondary:disabled,
+.vapor-button--secondary.vapor-button--disabled {
+  background-color: var(--color-components-button-secondary-interactive-background-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Tertiary variant */
+.vapor-button--tertiary {
+  background-color: transparent;
+  color: var(--color-components-button-secondary-text);
+}
+
+.vapor-button--tertiary .vapor-button__left-icon,
+.vapor-button--tertiary .vapor-button__right-icon {
+  color: var(--color-components-button-secondary-icon);
+}
+
+.vapor-button--tertiary:hover:not(:disabled) {
+  background-color: var(--color-components-button-tertiary-interactive-background-hover);
+}
+
+.vapor-button--tertiary:active:not(:disabled) {
+  background-color: var(--color-components-button-tertiary-interactive-background-pressed);
+}
+
+.vapor-button--tertiary:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-components-button-secondary-icon);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--tertiary:disabled,
+.vapor-button--tertiary.vapor-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+/* Tertiary dimmed variant */
+.vapor-button--tertiary-dimmed {
+  background-color: transparent;
+  color: var(--color-components-button-secondary-text);
+  opacity: 0.7;
+}
+
+.vapor-button--tertiary-dimmed .vapor-button__left-icon,
+.vapor-button--tertiary-dimmed .vapor-button__right-icon {
+  color: var(--color-components-button-secondary-icon);
+}
+
+.vapor-button--tertiary-dimmed:hover:not(:disabled) {
+  background-color: var(--color-components-button-tertiary-interactive-background-hover);
+  opacity: 0.8;
+}
+
+.vapor-button--tertiary-dimmed:active:not(:disabled) {
+  background-color: var(--color-components-button-tertiary-interactive-background-pressed);
+  opacity: 0.9;
+}
+
+.vapor-button--tertiary-dimmed:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-components-button-secondary-icon);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--tertiary-dimmed:disabled,
+.vapor-button--tertiary-dimmed.vapor-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+/* Destructive variant */
+.vapor-button--destructive {
+  background-color: var(--color-components-button-destructive-background);
+  color: var(--color-components-button-destructive-text);
+}
+
+.vapor-button--destructive .vapor-button__left-icon,
+.vapor-button--destructive .vapor-button__right-icon {
+  color: var(--color-components-button-destructive-icon);
+}
+
+.vapor-button--destructive:hover:not(:disabled) {
+  background-color: var(--color-components-button-destructive-interactive-background-hover);
+}
+
+.vapor-button--destructive:active:not(:disabled) {
+  background-color: var(--color-components-button-destructive-interactive-background-pressed);
+}
+
+.vapor-button--destructive:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-components-button-destructive-background);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--destructive:disabled,
+.vapor-button--destructive.vapor-button--disabled {
+  background-color: var(--color-components-button-destructive-interactive-background-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Secure variant */
+.vapor-button--secure {
+  background-color: var(--color-components-button-secure-background);
+  color: var(--color-components-button-secure-text);
+}
+
+.vapor-button--secure .vapor-button__left-icon,
+.vapor-button--secure .vapor-button__right-icon {
+  color: var(--color-components-button-secure-icon);
+}
+
+.vapor-button--secure:hover:not(:disabled) {
+  background-color: var(--color-components-button-secure-interactive-background-hover);
+}
+
+.vapor-button--secure:active:not(:disabled) {
+  background-color: var(--color-components-button-secure-interactive-background-pressed);
+}
+
+.vapor-button--secure:focus-visible:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--color-components-button-secure-background);
+  outline: 2px solid transparent;
+}
+
+.vapor-button--secure:disabled,
+.vapor-button--secure.vapor-button--disabled {
+  background-color: var(--color-components-button-secure-interactive-background-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Loading state */
+.vapor-button--loading {
+  cursor: wait;
+}
+
+.vapor-button__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.vapor-button--regular .vapor-button__spinner {
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon styling */
+.vapor-button__left-icon,
+.vapor-button__right-icon {
+  flex-shrink: 0;
+}
+
+.vapor-button__text {
+  flex: 1;
+  min-width: 0;
+}

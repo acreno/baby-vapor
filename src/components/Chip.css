@@ -1,0 +1,339 @@
+/* Chip component styles using semantic design tokens */
+
+.vapor-chip {
+  /* Base styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonts-body);
+  font-weight: var(--typography-500);
+  font-size: var(--font-sizes-50, 11px);
+  line-height: var(--line-heights-50, 16px);
+  text-align: center;
+  white-space: nowrap;
+  border-radius: var(--radii-24, 24px);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  position: relative;
+}
+
+/* Size variants */
+.vapor-chip--small {
+  padding: 2px 4px;
+  gap: 0px;
+}
+
+.vapor-chip--regular {
+  padding: 4px;
+  gap: 0px;
+}
+
+/* Clickable */
+.vapor-chip--clickable {
+  cursor: pointer;
+}
+
+.vapor-chip--clickable:not(.vapor-chip--disabled):hover {
+  transform: translateY(-1px);
+}
+
+.vapor-chip--clickable:not(.vapor-chip--disabled):active {
+  transform: translateY(0);
+}
+
+/* Label */
+.vapor-chip__label {
+  padding: 0 4px;
+}
+
+/* Icons */
+.vapor-chip__left-icon,
+.vapor-chip__right-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+/* Fill variant - Default */
+.vapor-chip--fill.vapor-chip--default {
+  background-color: rgba(85, 88, 110, 0.4);
+  color: #7d8198;
+}
+
+.vapor-chip--fill.vapor-chip--default:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(85, 88, 110, 0.5);
+}
+
+.vapor-chip--fill.vapor-chip--default:active:not(.vapor-chip--disabled) {
+  background-color: rgba(85, 88, 110, 0.6);
+}
+
+/* Fill variant - Blue */
+.vapor-chip--fill.vapor-chip--blue {
+  background-color: rgba(44, 82, 255, 0.2);
+  color: #5b86ff;
+}
+
+.vapor-chip--fill.vapor-chip--blue:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(44, 82, 255, 0.3);
+}
+
+/* Fill variant - Green */
+.vapor-chip--fill.vapor-chip--green {
+  background-color: rgba(36, 178, 93, 0.2);
+  color: #3fd664;
+}
+
+.vapor-chip--fill.vapor-chip--green:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(36, 178, 93, 0.3);
+}
+
+/* Fill variant - Teal */
+.vapor-chip--fill.vapor-chip--teal {
+  background-color: rgba(0, 168, 165, 0.2);
+  color: #00d4d1;
+}
+
+.vapor-chip--fill.vapor-chip--teal:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(0, 168, 165, 0.3);
+}
+
+/* Fill variant - Purple */
+.vapor-chip--fill.vapor-chip--purple {
+  background-color: rgba(106, 81, 255, 0.2);
+  color: #8b70ff;
+}
+
+.vapor-chip--fill.vapor-chip--purple:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(106, 81, 255, 0.3);
+}
+
+/* Fill variant - Pink */
+.vapor-chip--fill.vapor-chip--pink {
+  background-color: rgba(234, 76, 137, 0.2);
+  color: #ff5ba8;
+}
+
+.vapor-chip--fill.vapor-chip--pink:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(234, 76, 137, 0.3);
+}
+
+/* Fill variant - Red */
+.vapor-chip--fill.vapor-chip--red {
+  background-color: rgba(235, 87, 87, 0.2);
+  color: #ff6b6b;
+}
+
+.vapor-chip--fill.vapor-chip--red:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(235, 87, 87, 0.3);
+}
+
+/* Fill variant - Orange */
+.vapor-chip--fill.vapor-chip--orange {
+  background-color: rgba(255, 135, 31, 0.2);
+  color: #ff9850;
+}
+
+.vapor-chip--fill.vapor-chip--orange:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(255, 135, 31, 0.3);
+}
+
+/* Fill variant - Yellow */
+.vapor-chip--fill.vapor-chip--yellow {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.vapor-chip--fill.vapor-chip--yellow:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(255, 193, 7, 0.3);
+}
+
+/* Fill variant - Lime */
+.vapor-chip--fill.vapor-chip--lime {
+  background-color: rgba(139, 195, 74, 0.2);
+  color: #9ccc65;
+}
+
+.vapor-chip--fill.vapor-chip--lime:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(139, 195, 74, 0.3);
+}
+
+/* Fill variant - Aqua */
+.vapor-chip--fill.vapor-chip--aqua {
+  background-color: rgba(0, 188, 212, 0.2);
+  color: #26c6da;
+}
+
+.vapor-chip--fill.vapor-chip--aqua:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(0, 188, 212, 0.3);
+}
+
+/* Fill variant - Coral */
+.vapor-chip--fill.vapor-chip--coral {
+  background-color: rgba(255, 127, 80, 0.2);
+  color: #ff8a65;
+}
+
+.vapor-chip--fill.vapor-chip--coral:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(255, 127, 80, 0.3);
+}
+
+/* Fill variant - Maroon */
+.vapor-chip--fill.vapor-chip--maroon {
+  background-color: rgba(156, 39, 176, 0.2);
+  color: #ab47bc;
+}
+
+.vapor-chip--fill.vapor-chip--maroon:hover:not(.vapor-chip--disabled) {
+  background-color: rgba(156, 39, 176, 0.3);
+}
+
+/* Outline variant - Default */
+.vapor-chip--outline.vapor-chip--default {
+  background-color: transparent;
+  border: 2px solid rgba(145, 149, 174, 0.55);
+  color: #7d8198;
+}
+
+.vapor-chip--outline.vapor-chip--default:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(145, 149, 174, 0.7);
+}
+
+/* Outline variant - Blue */
+.vapor-chip--outline.vapor-chip--blue {
+  background-color: transparent;
+  border: 2px solid rgba(44, 82, 255, 0.6);
+  color: #5b86ff;
+}
+
+.vapor-chip--outline.vapor-chip--blue:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(44, 82, 255, 0.8);
+}
+
+/* Outline variant - Green */
+.vapor-chip--outline.vapor-chip--green {
+  background-color: transparent;
+  border: 2px solid rgba(36, 178, 93, 0.6);
+  color: #3fd664;
+}
+
+.vapor-chip--outline.vapor-chip--green:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(36, 178, 93, 0.8);
+}
+
+/* Outline variant - Teal */
+.vapor-chip--outline.vapor-chip--teal {
+  background-color: transparent;
+  border: 2px solid rgba(0, 168, 165, 0.6);
+  color: #00d4d1;
+}
+
+.vapor-chip--outline.vapor-chip--teal:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(0, 168, 165, 0.8);
+}
+
+/* Outline variant - Purple */
+.vapor-chip--outline.vapor-chip--purple {
+  background-color: transparent;
+  border: 2px solid rgba(106, 81, 255, 0.6);
+  color: #8b70ff;
+}
+
+.vapor-chip--outline.vapor-chip--purple:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(106, 81, 255, 0.8);
+}
+
+/* Outline variant - Pink */
+.vapor-chip--outline.vapor-chip--pink {
+  background-color: transparent;
+  border: 2px solid rgba(234, 76, 137, 0.6);
+  color: #ff5ba8;
+}
+
+.vapor-chip--outline.vapor-chip--pink:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(234, 76, 137, 0.8);
+}
+
+/* Outline variant - Red */
+.vapor-chip--outline.vapor-chip--red {
+  background-color: transparent;
+  border: 2px solid rgba(235, 87, 87, 0.6);
+  color: #ff6b6b;
+}
+
+.vapor-chip--outline.vapor-chip--red:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(235, 87, 87, 0.8);
+}
+
+/* Outline variant - Orange */
+.vapor-chip--outline.vapor-chip--orange {
+  background-color: transparent;
+  border: 2px solid rgba(255, 135, 31, 0.6);
+  color: #ff9850;
+}
+
+.vapor-chip--outline.vapor-chip--orange:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(255, 135, 31, 0.8);
+}
+
+/* Outline variant - Yellow */
+.vapor-chip--outline.vapor-chip--yellow {
+  background-color: transparent;
+  border: 2px solid rgba(255, 193, 7, 0.6);
+  color: #ffc107;
+}
+
+.vapor-chip--outline.vapor-chip--yellow:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(255, 193, 7, 0.8);
+}
+
+/* Outline variant - Lime */
+.vapor-chip--outline.vapor-chip--lime {
+  background-color: transparent;
+  border: 2px solid rgba(139, 195, 74, 0.6);
+  color: #9ccc65;
+}
+
+.vapor-chip--outline.vapor-chip--lime:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(139, 195, 74, 0.8);
+}
+
+/* Outline variant - Aqua */
+.vapor-chip--outline.vapor-chip--aqua {
+  background-color: transparent;
+  border: 2px solid rgba(0, 188, 212, 0.6);
+  color: #26c6da;
+}
+
+.vapor-chip--outline.vapor-chip--aqua:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(0, 188, 212, 0.8);
+}
+
+/* Outline variant - Coral */
+.vapor-chip--outline.vapor-chip--coral {
+  background-color: transparent;
+  border: 2px solid rgba(255, 127, 80, 0.6);
+  color: #ff8a65;
+}
+
+.vapor-chip--outline.vapor-chip--coral:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(255, 127, 80, 0.8);
+}
+
+/* Outline variant - Maroon */
+.vapor-chip--outline.vapor-chip--maroon {
+  background-color: transparent;
+  border: 2px solid rgba(156, 39, 176, 0.6);
+  color: #ab47bc;
+}
+
+.vapor-chip--outline.vapor-chip--maroon:hover:not(.vapor-chip--disabled) {
+  border-color: rgba(156, 39, 176, 0.8);
+}
+
+/* Disabled state */
+.vapor-chip--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

@@ -1,60 +1,15 @@
-import React from 'react';
-import { ThemeBrandProvider, useThemeBrand, Theme, Brand } from './components/ThemeBrandProvider';
+import React, { useState } from 'react';
+import { ThemeBrandProvider, useThemeBrand } from './components/ThemeBrandProvider';
 import { Icon } from './icons/index';
-
-// Color swatch component
-interface ColorSwatchProps {
-  name: string;
-  variable: string;
-  className?: string;
-}
-
-const ColorSwatch: React.FC<ColorSwatchProps> = ({ name, variable, className = '' }) => {
-  const style = { backgroundColor: `var(${variable})` };
-  
-  return (
-    <div className={`flex items-center gap-3 ${className}`} title={`${name}: ${variable}`}>
-      <div 
-        className="w-8 h-8 rounded-full flex-shrink-0" 
-        style={style}
-      />
-      <span className="text-sm font-medium text-text-primary">
-        {name}
-      </span>
-    </div>
-  );
-};
-
-// Button component
-interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'destructive';
-  children: React.ReactNode;
-  onClick?: () => void;
-  className?: string;
-}
-
-const Button: React.FC<ButtonProps> = ({ 
-  variant = 'secondary', 
-  children, 
-  onClick,
-  className = '' 
-}) => {
-  const baseClasses = 'btn';
-  const variantClasses = {
-    primary: 'btn-primary',
-    secondary: 'btn-secondary',
-    destructive: 'btn-destructive',
-  };
-  
-  return (
-    <button 
-      className={`${baseClasses} ${variantClasses[variant]} ${className}`}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-};
+import { Button } from './components/Button';
+import { Link } from './components/Link';
+import { Checkbox } from './components/Checkbox';
+import { Chip } from './components/Chip';
+import { Tooltip } from './components/Tooltip';
+import { Switch } from './components/Switch';
+import { Slider } from './components/Slider';
+import { TextField } from './components/TextField';
+import ConcentricCornersPlayground from './pages/ConcentricCornersPlayground';
 
 // Theme and brand controls
 const ThemeControls: React.FC = () => {
@@ -62,110 +17,464 @@ const ThemeControls: React.FC = () => {
   
   return (
     <div className="card">
-      <div className="flex gap-8">
-        <div>
-          <label className="block text-90 font-medium mb-2">Theme</label>
-          <div className="flex gap-2">
-            <Button
-              variant={theme === 'light' ? 'primary' : 'secondary'}
-              onClick={() => setTheme('light')}
-            >
-              Light
-            </Button>
-            <Button
-              variant={theme === 'dark' ? 'primary' : 'secondary'}
-              onClick={() => setTheme('dark')}
-            >
-              Dark
-            </Button>
+      <div className="flex items-center justify-between">
+        <div className="flex gap-8">
+          <div>
+            <label className="block text-90 font-medium mb-2">Theme</label>
+            <div className="flex gap-2">
+              <Button
+                variant={theme === 'light' ? 'primary' : 'secondary'}
+                onClick={() => setTheme('light')}
+              >
+                Light
+              </Button>
+              <Button
+                variant={theme === 'dark' ? 'primary' : 'secondary'}
+                onClick={() => setTheme('dark')}
+              >
+                Dark
+              </Button>
+            </div>
+          </div>
+          
+          <div>
+            <label className="block text-90 font-medium mb-2">Brand</label>
+            <div className="flex gap-2">
+              <Button
+                variant={brand === 'adobe' ? 'primary' : 'secondary'}
+                onClick={() => setBrand('adobe')}
+              >
+                Adobe
+              </Button>
+              <Button
+                variant={brand === 'fio' ? 'primary' : 'secondary'}
+                onClick={() => setBrand('fio')}
+              >
+                FIO
+              </Button>
+            </div>
           </div>
         </div>
         
-        <div>
-          <label className="block text-90 font-medium mb-2">Brand</label>
-          <div className="flex gap-2">
-            <Button
-              variant={brand === 'adobe' ? 'primary' : 'secondary'}
-              onClick={() => setBrand('adobe')}
-            >
-              Adobe
-            </Button>
-            <Button
-              variant={brand === 'fio' ? 'primary' : 'secondary'}
-              onClick={() => setBrand('fio')}
-            >
-              FIO
-            </Button>
-          </div>
+        <div className="text-70 font-normal text-text-secondary">
+          Baby Vapor
         </div>
       </div>
     </div>
   );
 };
 
-// Color swatches demo
-const ColorSwatches: React.FC = () => {
-  const swatchCategories = {
-    background: [
-      { name: 'primary', variable: '--color-background-primary' },
-      { name: 'secondary', variable: '--color-background-secondary' },
-      { name: 'tertiary', variable: '--color-background-tertiary' },
-      { name: 'elevated', variable: '--color-background-elevated' },
-      { name: 'inverse', variable: '--color-background-inverse' },
-    ],
-    text: [
-      { name: 'primary', variable: '--color-text-primary' },
-      { name: 'secondary', variable: '--color-text-secondary' },
-      { name: 'tertiary', variable: '--color-text-tertiary' },
-      { name: 'inverse', variable: '--color-text-inverse' },
-      { name: 'link', variable: '--color-brand-enabled' },
-      { name: 'link-hover', variable: '--color-brand-light' },
-    ],
-    border: [
-      { name: 'subtle', variable: '--color-border-subtle' },
-      { name: 'default', variable: '--color-border-default' },
-      { name: 'strong', variable: '--color-border-strong' },
-      { name: 'inverse', variable: '--color-border-inverse' },
-      { name: 'focus', variable: '--color-border-focus' },
-    ],
-    icon: [
-      { name: 'primary', variable: '--color-icon-primary' },
-      { name: 'secondary', variable: '--color-icon-secondary' },
-      { name: 'inverse', variable: '--color-icon-inverse' },
-      { name: 'accent', variable: '--color-brand-enabled' },
-    ],
-  };
-  
+// Button showcase - demonstrating all Figma variants
+const ButtonShowcase: React.FC = () => {
   return (
     <div className="card">
-      <div className="grid grid-cols-4 gap-8">
-        {Object.entries(swatchCategories).map(([category, swatches]) => (
-          <div key={category}>
-            <h3 className="text-80 font-medium text-text-secondary mb-4 capitalize">{category}</h3>
-            <div className="space-y-3">
-              {swatches.map((swatch) => (
-                <ColorSwatch
-                  key={swatch.variable}
-                  name={swatch.name}
-                  variable={swatch.variable}
-                />
-              ))}
-            </div>
-          </div>
-        ))}
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Button</h3>
+      <div className="space-y-3">
+        {/* First row */}
+        <div className="flex items-center gap-3">
+          <Button variant="primary" size="regular" shape="rectangular">
+            Primary
+          </Button>
+          <Button variant="secondary" size="regular" shape="rectangular">
+            Secondary
+          </Button>
+          <Button variant="tertiary" size="regular" shape="rectangular">
+            Tertiary
+          </Button>
+          <Button variant="secure" size="regular" shape="rectangular">
+            Secure
+          </Button>
+          <Button variant="destructive" size="regular" shape="rectangular">
+            Destructive
+          </Button>
+        </div>
+
+        {/* Second row */}
+        <div className="flex items-center gap-3">
+          <Button 
+            variant="primary" 
+            size="regular" 
+            shape="rectangular"
+            leftIcon="fill.star"
+          >
+            Primary
+          </Button>
+          <Button variant="primary" size="regular" shape="rectangular" disabled>
+            Disabled
+          </Button>
+          <Button variant="secondary" size="regular" shape="rectangular" loading>
+            Loading
+          </Button>
+          <Button variant="secondary" size="small" shape="rectangular">
+            Small
+          </Button>
+          <Button 
+            variant="destructive" 
+            size="small" 
+            shape="rounded"
+            leftIcon="outline.trash"
+          >
+            Delete
+          </Button>
+        </div>
       </div>
     </div>
   );
 };
 
-// Button showcase
-const ButtonShowcase: React.FC = () => {
+// Link showcase - demonstrating all Figma variants
+const LinkShowcase: React.FC = () => {
   return (
     <div className="card">
-      <div className="flex flex-wrap gap-4">
-        <Button variant="primary">Primary Button</Button>
-        <Button variant="secondary">Secondary Button</Button>
-        <Button variant="destructive">Destructive Button</Button>
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Link</h3>
+      <div className="flex items-center gap-3">
+        <Link href="#" size="default">
+          Default Link
+        </Link>
+        <Link href="#" size="default" rightIcon="outline.arrow.right">
+          Continue
+        </Link>
+        <Link href="#" size="small">
+          Small Link
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+// Checkbox showcase - demonstrating all Figma variants
+const CheckboxShowcase: React.FC = () => {
+  const [checked, setChecked] = useState(true);
+  
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Checkbox</h3>
+      <div className="flex items-center gap-3">
+        <Checkbox 
+          labelPosition="none"
+        />
+        <Checkbox 
+          label="Checked option" 
+          checked={checked}
+          onChange={(e) => setChecked(e.target.checked)}
+        />
+        <Checkbox 
+          label="Disabled" 
+          disabled
+        />
+      </div>
+    </div>
+  );
+};
+
+// Chip showcase - demonstrating all Figma variants
+const ChipShowcase: React.FC = () => {
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Chip</h3>
+      <div className="space-y-3">
+        {/* Fill style */}
+        <div className="flex items-center gap-3 flex-wrap">
+          <Chip variant="fill" color="default">Default</Chip>
+          <Chip variant="fill" color="blue">Blue</Chip>
+          <Chip variant="fill" color="green">Green</Chip>
+          <Chip variant="fill" color="purple">Purple</Chip>
+          <Chip variant="fill" color="red">Red</Chip>
+          <Chip variant="fill" color="orange">Orange</Chip>
+        </div>
+        
+        {/* Outline style */}
+        <div className="flex items-center gap-3 flex-wrap">
+          <Chip variant="outline" color="default">Default</Chip>
+          <Chip variant="outline" color="blue">Blue</Chip>
+          <Chip variant="outline" color="green">Green</Chip>
+          <Chip variant="outline" color="purple">Purple</Chip>
+          <Chip variant="outline" color="red">Red</Chip>
+          <Chip variant="outline" color="orange">Orange</Chip>
+        </div>
+        
+        {/* With icons and sizes */}
+        <div className="flex items-center gap-3 flex-wrap">
+          <Chip variant="fill" color="blue" leftIcon="fill.star">With Icon</Chip>
+          <Chip variant="outline" color="green" size="small">Small</Chip>
+          <Chip variant="fill" color="default" disabled>Disabled</Chip>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Tooltip showcase - demonstrating all Figma variants
+const TooltipShowcase: React.FC = () => {
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Tooltip</h3>
+      <div className="flex items-center gap-3">
+        <Tooltip content="This is a tooltip" position="top">
+          <Button variant="secondary" size="small">Hover me (top)</Button>
+        </Tooltip>
+        <Tooltip content="Bottom tooltip" position="bottom">
+          <Button variant="secondary" size="small">Hover me (bottom)</Button>
+        </Tooltip>
+        <Tooltip content="Left tooltip" position="left">
+          <Button variant="secondary" size="small">Hover me (left)</Button>
+        </Tooltip>
+        <Tooltip content="Right tooltip" position="right">
+          <Button variant="secondary" size="small">Hover me (right)</Button>
+        </Tooltip>
+      </div>
+    </div>
+  );
+};
+
+// Switch showcase - demonstrating all Figma variants
+const SwitchShowcase: React.FC = () => {
+  const [checked1, setChecked1] = useState(false);
+  const [checked2, setChecked2] = useState(true);
+
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Switch</h3>
+      <div className="flex items-center gap-3">
+        <Switch 
+          label="Unchecked" 
+          labelPosition="left"
+          checked={checked1}
+          onChange={(e) => setChecked1(e.target.checked)}
+        />
+        <Switch 
+          label="Checked" 
+          labelPosition="left"
+          checked={checked2}
+          onChange={(e) => setChecked2(e.target.checked)}
+        />
+        <Switch 
+          labelPosition="none"
+          checked={checked1}
+          onChange={(e) => setChecked1(e.target.checked)}
+        />
+        <Switch 
+          label="Disabled" 
+          labelPosition="left"
+          disabled
+        />
+      </div>
+    </div>
+  );
+};
+
+// Slider showcase - demonstrating all Figma variants
+const SliderShowcase: React.FC = () => {
+  const [value1, setValue1] = useState(44);
+  const [value2, setValue2] = useState(75);
+  const [value3, setValue3] = useState(95);
+  const [value4, setValue4] = useState(20);
+  const [value5, setValue5] = useState(50);
+  const [value6, setValue6] = useState(75);
+
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">Slider</h3>
+      <div className="space-y-6">
+        {/* Default slider with icons and input */}
+        <div className="max-w-md">
+          <p className="text-60 text-text-secondary mb-2">Default</p>
+          <Slider 
+            value={value1}
+            onChange={setValue1}
+            showIconBefore={true}
+            showIconAfter={true}
+            iconBefore="fill.magnifyingglass"
+            iconAfter="fill.magnifyingglass"
+            showInput={true}
+          />
+        </div>
+        
+        {/* Slider with different value */}
+        <div className="max-w-md">
+          <p className="text-60 text-text-secondary mb-2">With Icons</p>
+          <Slider 
+            value={value2}
+            onChange={setValue2}
+            showIconBefore={true}
+            showIconAfter={true}
+            iconBefore="fill.magnifyingglass"
+            iconAfter="fill.magnifyingglass"
+            showInput={true}
+          />
+        </div>
+        
+        {/* High value */}
+        <div className="max-w-md">
+          <p className="text-60 text-text-secondary mb-2">High Value</p>
+          <Slider 
+            value={value3}
+            onChange={setValue3}
+            showIconBefore={true}
+            showIconAfter={true}
+            iconBefore="fill.magnifyingglass"
+            iconAfter="fill.magnifyingglass"
+            showInput={true}
+          />
+        </div>
+        
+        {/* Disabled */}
+        <div className="max-w-md">
+          <p className="text-60 text-text-secondary mb-2">Disabled</p>
+          <Slider 
+            value={value4}
+            onChange={setValue4}
+            showIconBefore={true}
+            showIconAfter={true}
+            iconBefore="fill.magnifyingglass"
+            iconAfter="fill.magnifyingglass"
+            showInput={true}
+            disabled
+          />
+        </div>
+        
+        {/* Segmented slider */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Segmented</p>
+          <Slider 
+            value={value5}
+            onChange={setValue5}
+            showIconBefore={false}
+            showIconAfter={false}
+            showInput={false}
+            segmented={true}
+            segments={5}
+          />
+        </div>
+        
+        {/* Segmented slider - higher value */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Segmented - High Value</p>
+          <Slider 
+            value={value6}
+            onChange={setValue6}
+            showIconBefore={false}
+            showIconAfter={false}
+            showInput={false}
+            segmented={true}
+            segments={5}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// TextField showcase - demonstrating all Figma variants
+const TextFieldShowcase: React.FC = () => {
+  const [value1, setValue1] = useState('');
+  const [value2, setValue2] = useState('example@email.com');
+  const [value3, setValue3] = useState('Valid input');
+  const [value4, setValue4] = useState('Invalid input');
+
+  return (
+    <div className="card">
+      <h3 className="text-80 font-medium text-text-secondary mb-4">TextField</h3>
+      <div className="space-y-6">
+        {/* Medium size - Default */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Medium - Default</p>
+          <TextField 
+            size="medium"
+            placeholder="Placeholder"
+            leftIcon="fill.magnifyingglass"
+            rightIcon="fill.x.circle"
+            shortcut="Kg"
+            hint="Hint"
+            value={value1}
+            onChange={(e) => setValue1(e.target.value)}
+            showClearButton={true}
+            onClear={() => setValue1('')}
+          />
+        </div>
+
+        {/* Medium size - Filled */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Medium - Filled</p>
+          <TextField 
+            size="medium"
+            placeholder="Email"
+            leftIcon="fill.magnifyingglass"
+            shortcut="⌘K"
+            hint="Enter your email address"
+            value={value2}
+            onChange={(e) => setValue2(e.target.value)}
+            showClearButton={true}
+            onClear={() => setValue2('')}
+          />
+        </div>
+
+        {/* Medium size - Positive */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Medium - Success</p>
+          <TextField 
+            size="medium"
+            variant="positive"
+            placeholder="Placeholder"
+            leftIcon="fill.magnifyingglass"
+            shortcut="Kg"
+            hint="Hint Message"
+            value={value3}
+            onChange={(e) => setValue3(e.target.value)}
+            showClearButton={true}
+            onClear={() => setValue3('')}
+          />
+        </div>
+
+        {/* Medium size - Negative */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Medium - Error</p>
+          <TextField 
+            size="medium"
+            variant="negative"
+            placeholder="Placeholder"
+            leftIcon="fill.magnifyingglass"
+            shortcut="Kg"
+            hint="Hint Message"
+            value={value4}
+            onChange={(e) => setValue4(e.target.value)}
+            showClearButton={true}
+            onClear={() => setValue4('')}
+          />
+        </div>
+
+        {/* Small size */}
+        <div className="max-w-xs">
+          <p className="text-60 text-text-secondary mb-2">Small - Default</p>
+          <TextField 
+            size="small"
+            placeholder="Search..."
+            leftIcon="fill.magnifyingglass"
+            hint="Search hint"
+          />
+        </div>
+
+        {/* Disabled */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Disabled</p>
+          <TextField 
+            size="medium"
+            placeholder="Placeholder"
+            leftIcon="fill.magnifyingglass"
+            hint="This field is disabled"
+            disabled
+          />
+        </div>
+
+        {/* Read-only */}
+        <div className="max-w-sm">
+          <p className="text-60 text-text-secondary mb-2">Read-only</p>
+          <TextField 
+            size="medium"
+            value="Read-only value"
+            readOnly
+          />
+        </div>
       </div>
     </div>
   );
@@ -209,13 +518,6 @@ const IconsShowcase: React.FC = () => {
           </div>
         ))}
       </div>
-      
-      {iconNames.length === 0 && (
-        <div className="text-center py-8 text-text-secondary">
-          <Icon name="fill.archive" size={48} className="mx-auto mb-2 opacity-50" />
-          <p>No icons available yet. Run the build:icons script to generate them.</p>
-        </div>
-      )}
     </div>
   );
 };
@@ -253,34 +555,73 @@ const TypographyShowcase: React.FC = () => {
   );
 };
 
-// Main playground component
-const Playground: React.FC = () => {
+// Main design system showcase component
+const DesignSystemShowcase: React.FC = () => {
   return (
-    <div className="min-h-screen bg-bg-base p-8 pt-16">
-      <div className="max-w-6xl mx-auto space-y-12">
-        
-        <div className="grid gap-6">
-          <ThemeControls />
-          <ColorSwatches />
-          <ButtonShowcase />
-          <TypographyShowcase />
-          <IconsShowcase />
-        </div>
-        
-        <footer className="text-center text-70 text-text-tertiary pt-8">
-          <p>Built with Vite + React + TypeScript + Tailwind CSS</p>
-          <p>Design tokens from Tokens Studio • Icons auto-generated from SVG</p>
-        </footer>
+    <div className="space-y-12">
+      <div className="grid gap-6">
+        <ThemeControls />
+        <ButtonShowcase />
+        <LinkShowcase />
+        <CheckboxShowcase />
+        <SwitchShowcase />
+        <SliderShowcase />
+        <TextFieldShowcase />
+        <ChipShowcase />
+        <TooltipShowcase />
+        <TypographyShowcase />
+        <IconsShowcase />
       </div>
+      
+      <footer className="text-center text-70 text-text-tertiary pt-8">
+        <p>Built with Vite + React + TypeScript + Tailwind CSS</p>
+        <p>Design tokens from Tokens Studio • Icons auto-generated from SVG</p>
+      </footer>
     </div>
   );
 };
 
 // Root App component
 const App: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState<'showcase' | 'playground'>('showcase');
+
   return (
-    <ThemeBrandProvider defaultTheme="light" defaultBrand="adobe">
-      <Playground />
+    <ThemeBrandProvider defaultTheme="light" defaultBrand="fio">
+      <div className="min-h-screen bg-bg-base">
+        {/* Navigation */}
+        <nav className="border-b border-border-secondary bg-bg-component sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-8 py-4">
+            <div className="flex items-center gap-4">
+              <h1 className="text-100 font-semibold mr-8">Baby Vapor</h1>
+              <Button
+                size="small"
+                variant={currentPage === 'showcase' ? 'primary' : 'secondary'}
+                onClick={() => setCurrentPage('showcase')}
+              >
+                Component Showcase
+              </Button>
+              <Button
+                size="small"
+                variant={currentPage === 'playground' ? 'primary' : 'secondary'}
+                onClick={() => setCurrentPage('playground')}
+              >
+                Concentric Corners
+              </Button>
+            </div>
+          </div>
+        </nav>
+
+        {/* Content */}
+        {currentPage === 'showcase' ? (
+          <div className="p-8 pt-16">
+            <div className="max-w-6xl mx-auto">
+              <DesignSystemShowcase />
+            </div>
+          </div>
+        ) : (
+          <ConcentricCornersPlayground />
+        )}
+      </div>
     </ThemeBrandProvider>
   );
 };

@@ -1,0 +1,245 @@
+/* TextField component styles using semantic design tokens */
+
+.vapor-textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+/* Label */
+.vapor-textfield__label {
+  font-family: var(--fonts-body);
+  font-size: 13px;
+  font-weight: var(--typography-400);
+  line-height: 20px;
+  color: var(--color-text-secondary);
+}
+
+/* Field Container */
+.vapor-textfield__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background-color: var(--color-components-input-background);
+  border: 1.5px solid var(--color-border-secondary);
+  border-radius: 6px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.vapor-textfield--small .vapor-textfield__field {
+  padding: 4px 8px;
+  min-height: 24px;
+}
+
+.vapor-textfield--medium .vapor-textfield__field {
+  padding: 6px 8px;
+  min-height: 32px;
+}
+
+/* Hover State */
+.vapor-textfield--hovered .vapor-textfield__field {
+  border-color: var(--color-border-secondary);
+}
+
+/* Focus State */
+.vapor-textfield--focused .vapor-textfield__field {
+  border-width: 2px;
+  border-color: var(--color-border-interactive-selected);
+  padding: 5px 7px;
+}
+
+.vapor-textfield--small.vapor-textfield--focused .vapor-textfield__field {
+  padding: 3px 7px;
+}
+
+/* Disabled State */
+.vapor-textfield--disabled .vapor-textfield__field {
+  background-color: var(--color-background-interactive-disabled);
+  border-color: var(--color-border-secondary);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Readonly/Uneditable State */
+.vapor-textfield--readonly .vapor-textfield__field {
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Positive/Success State */
+.vapor-textfield--positive .vapor-textfield__field {
+  background-color: var(--color-background-interactive-success);
+  border-color: var(--color-border-secondary);
+}
+
+/* Negative/Error State */
+.vapor-textfield--negative .vapor-textfield__field {
+  background-color: var(--color-background-interactive-error);
+  border-color: var(--color-border-secondary);
+}
+
+/* Input */
+.vapor-textfield__input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--fonts-body);
+  font-size: 13px;
+  font-weight: var(--typography-400);
+  line-height: 20px;
+  color: var(--color-text-primary);
+  padding: 0;
+}
+
+.vapor-textfield--small .vapor-textfield__input {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.vapor-textfield__input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.vapor-textfield__input:disabled {
+  cursor: not-allowed;
+  color: var(--color-text-interactive-disabled);
+}
+
+.vapor-textfield--readonly .vapor-textfield__input {
+  cursor: default;
+}
+
+/* Icons */
+.vapor-textfield__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+}
+
+.vapor-textfield__icon--left {
+  color: var(--color-text-primary);
+}
+
+.vapor-textfield__icon--right {
+  color: var(--color-text-tertiary);
+}
+
+.vapor-textfield__icon--validation {
+  color: var(--color-text-tertiary);
+}
+
+.vapor-textfield__icon--positive {
+  color: var(--color-text-interactive-success);
+}
+
+.vapor-textfield__icon--negative {
+  color: var(--color-text-interactive-error);
+}
+
+.vapor-textfield--disabled .vapor-textfield__icon {
+  opacity: 0.5;
+}
+
+/* Right Section */
+.vapor-textfield__right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* Keyboard Shortcut */
+.vapor-textfield__shortcut {
+  font-family: var(--fonts-body);
+  font-size: 13px;
+  font-weight: var(--typography-400);
+  line-height: 20px;
+  color: var(--color-text-tertiary);
+  white-space: pre;
+}
+
+.vapor-textfield--small .vapor-textfield__shortcut {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* Clear Button */
+.vapor-textfield__clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-tertiary);
+  transition: color 0.15s ease;
+  outline: none;
+}
+
+.vapor-textfield__clear:hover {
+  color: var(--color-text-primary);
+}
+
+.vapor-textfield__clear:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Hint Text */
+.vapor-textfield__hint {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--fonts-body);
+  font-size: 11px;
+  font-weight: var(--typography-400);
+  line-height: 16px;
+  color: var(--color-text-tertiary);
+}
+
+.vapor-textfield__hint--positive {
+  color: var(--color-text-interactive-success);
+}
+
+.vapor-textfield__hint--negative {
+  color: var(--color-text-interactive-error);
+}
+
+.vapor-textfield--disabled .vapor-textfield__hint {
+  opacity: 0.5;
+}
+
+/* Hint Indicator (colored dot for validation states) */
+.vapor-textfield__hint-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 8px;
+}
+
+.vapor-textfield__hint-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.vapor-textfield--positive .vapor-textfield__hint-indicator {
+  background-color: var(--color-text-interactive-success);
+}
+
+.vapor-textfield--negative .vapor-textfield__hint-indicator {
+  background-color: var(--color-text-interactive-error);
+}
+
